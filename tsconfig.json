@@ -22,7 +22,15 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@ngx-neoumorphic/button": [
+        "./src/button/button"
+      ],
+      "@ngx-neoumorphic/input": [
+        "./src/input/input"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

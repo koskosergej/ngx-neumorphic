@@ -33,6 +33,7 @@ import { CommonModule } from '@angular/common';
         color: palette.$disabled-color;
         background: linear-gradient(0deg, palette.$disabled-color, palette.$disabled-color), inherit;
         box-shadow: inset 1px 1px 2px palette.$disabled-color, inset -1px -1px 2px palette.$inner-box-shadow;
+        cursor: no-drop;
       }
     }
 
