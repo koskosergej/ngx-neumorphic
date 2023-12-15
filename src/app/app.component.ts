@@ -6,9 +6,7 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template: '<h1>Neumorphic UI-kit</h1>'
 })
 export class AppComponent {
-  title = 'neumorphic';
 }
