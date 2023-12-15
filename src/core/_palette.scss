@@ -1,5 +1,16 @@
+// names based on site https://chir.ag/projects/name-that-color
+
 $silver: #c7c7c7;
 $gallery: #f0f0f0;
 $white: #ffffff;
 $tundora: #474747;
 $concrete: #f3f3f3;
+
+$background-color: $gallery;
+
+$outer-box-shadow: $silver;
+$inner-box-shadow: $white;
+
+$label-color: $tundora;
+$disabled-color: $tundora;
+$disabled-background: $concrete;
