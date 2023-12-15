@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, ElementRef, ViewEncapsulation } from '@angular/core';
-import { InputBaseDirective } from './input-base.directive';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'input[neo-input]',
   standalone: true,
-  imports: [InputBaseDirective],
+  imports: [CommonModule],
   template: '<ng-content></ng-content>',
   styles: [`
     @use '../core/palette';
@@ -40,8 +40,10 @@ import { InputBaseDirective } from './input-base.directive';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NeoInput extends InputBaseDirective {
+export class NeoInput {
   constructor(private el: ElementRef) {
-    super(el);
+    const element = el.nativeElement;
+    const classList = (element as HTMLElement).classList;
+    classList.add('neumorphic-input');
   }
 }

@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { NeoInputModule } from '../../input/neo-input.module';
+import { NeoInput } from '../../input/input';
 import { WrapperComponent } from '../wrapper/wrapper.component';
 
 @Component({
   selector: 'storybook-input',
-  imports: [CommonModule, NeoInputModule, WrapperComponent],
+  imports: [CommonModule, NeoInput, WrapperComponent],
   template: `
       <neo-storybook-wrapper>
           <input neo-input

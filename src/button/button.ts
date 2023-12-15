@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, ElementRef, ViewEncapsulation } from '@angular/core';
-import { ButtonBaseDirective } from './button-base.directive';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'button[neo-button]',
   standalone: true,
-  imports: [ButtonBaseDirective],
+  imports: [CommonModule],
   template: '<ng-content></ng-content>',
   styles: [`
     @use '../core/palette';
@@ -39,8 +39,10 @@ import { ButtonBaseDirective } from './button-base.directive';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NeoButton extends ButtonBaseDirective {
+export class NeoButton {
   constructor(private el: ElementRef) {
-    super(el);
+    const element = el.nativeElement;
+    const classList = (element as HTMLElement).classList;
+    classList.add('neumorphic-button');
   }
 }

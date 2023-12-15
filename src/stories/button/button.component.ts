@@ -1,11 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { NeoButtonModule } from '../../button/neo-button.module';
 import { WrapperComponent } from '../wrapper/wrapper.component';
+import { NeoButton } from '../../button/button';
 
 @Component({
   selector: 'storybook-button',
-  imports: [CommonModule, NeoButtonModule, WrapperComponent],
+  imports: [NeoButton, WrapperComponent],
   template: `
       <neo-storybook-wrapper>
           <button neo-button
