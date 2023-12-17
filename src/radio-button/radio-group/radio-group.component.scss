@@ -1,0 +1,32 @@
+.neumorphic-radio-group {
+  display: flex;
+  flex-direction: column;
+
+  .neumorphic-radio-label {
+    margin-bottom: 10px;
+
+    input[type="radio"] {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      &:checked + span {
+        background-color: #2196F3; /* Change color for checked state */
+      }
+
+      &:focus + span {
+        box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2); /* Example focus style */
+      }
+    }
+
+    span {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: #f0f0f0;
+      box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff;
+      transition: background-color 0.3s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
