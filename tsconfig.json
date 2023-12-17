@@ -35,6 +35,9 @@
       ],
       "@ngx-neoumorphic/textarea": [
         "./src/textarea/textarea.component"
+      ],
+      "@ngx-neoumorphic/selector": [
+        "./src/selector/selector.component"
       ]
     }
   },

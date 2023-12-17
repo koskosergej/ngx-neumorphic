@@ -1,0 +1,19 @@
+.neumorphic-selector-wrapper {
+  display: inline-block;
+}
+
+.neumorphic-selector {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff;
+  transition: box-shadow 0.3s ease-in-out;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+
+  &:focus {
+    box-shadow: 7px 7px 20px #bebebe, -7px -7px 20px #ffffff;
+  }
+}
