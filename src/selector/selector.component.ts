@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { ControlValueAccessor, FormsModule } from '@angular/forms';
+import { Component, forwardRef, Input } from '@angular/core';
+import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { SelectorOption, SelectorOptions } from './type';
 import { NgFor } from '@angular/common';
 
@@ -9,6 +9,13 @@ import { NgFor } from '@angular/common';
   imports: [
     FormsModule,
     NgFor
+  ],
+  providers: [
+    {
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => NeoSelectorComponent),
+      multi: true
+    }
   ],
   template: `
       <div class="neumorphic-selector-wrapper">

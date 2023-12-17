@@ -3,11 +3,20 @@ import { NeoInput } from '@ngx-neoumorphic/input';
 import { NeoTextArea } from '@ngx-neoumorphic/textarea';
 import { NeumorphicRadioButtonComponent, NeumorphicRadioGroupComponent } from '@ngx-neoumorphic/radio-button';
 import { NeoSelectorComponent } from '@ngx-neoumorphic/selector';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'neo-inputs',
   standalone: true,
-  imports: [NeoInput, NeumorphicRadioButtonComponent, NeumorphicRadioGroupComponent, NeoTextArea, NeoSelectorComponent, NeoSelectorComponent],
+  imports: [
+    NeoInput,
+    NeumorphicRadioButtonComponent,
+    NeumorphicRadioGroupComponent,
+    NeoTextArea,
+    NeoSelectorComponent,
+    NeoSelectorComponent,
+    ReactiveFormsModule
+  ],
   template: `
       <input neo-input placeholder="input component">
       <br />
@@ -32,6 +41,17 @@ import { NeoSelectorComponent } from '@ngx-neoumorphic/selector';
       <br />
       <br />
       <neo-selector
+              [formControl]="selectorCntrl"
+              [options]="[
+    { label: 'Option 1', value: 'option1' },
+    { label: 'Option 2', value: 'option2' },
+    { label: 'Option 3', value: 'option3' }
+  ]">
+      </neo-selector>
+      <br />
+      <br />
+      <neo-selector
+              [formControl]="disabledSelector"
               [options]="[
     { label: 'Option 1', value: 'option1' },
     { label: 'Option 2', value: 'option2' },
@@ -41,5 +61,6 @@ import { NeoSelectorComponent } from '@ngx-neoumorphic/selector';
   `
 })
 export class InputsComponent {
-
+  selectorCntrl = new FormControl({ value: 'option1', disabled: false });
+  disabledSelector = new FormControl({ value: 'option1', disabled: true });
 }
