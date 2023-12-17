@@ -9,6 +9,10 @@ export const routes: Routes = [
   {
     path: 'buttons',
     loadComponent: () => import('./features/buttons/buttons.component').then(m => m.ButtonsComponent)
+  },
+  {
+    path: 'alerts',
+    loadComponent: () => import('./features/alerts/alerts.component').then(m => m.AlertsComponent)
   }
 ];
 

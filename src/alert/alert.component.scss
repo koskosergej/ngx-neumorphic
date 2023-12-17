@@ -1,0 +1,45 @@
+.neumorphic-alert__container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+
+  .neumorphic-alert {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff;
+    transition: box-shadow 0.3s ease-in-out;
+    font-size: 16px;
+    margin-bottom: 15px;
+
+    &.warning {
+      background-color: #FFCC80;
+      color: #FF7043;
+    }
+
+    &.info {
+      background-color: #81D4FA;
+      color: #0288D1;
+    }
+
+    &.success {
+      background-color: #C5E1A5;
+      color: #689F38;
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .message {
+      max-width: 300px;
+      word-break: break-all;
+      text-align: left;
+    }
+  }
+}

@@ -13,6 +13,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
           <div class="navigation">
               <a [routerLink]="'/inputs'">Form Controls</a>
               <a [routerLink]="'/buttons'">Buttons</a>
+              <a [routerLink]="'/alerts'">Alerts</a>
           </div>
           <hr />
           <div class="app-content">

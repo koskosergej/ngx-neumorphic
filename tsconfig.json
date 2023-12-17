@@ -41,6 +41,9 @@
       ],
       "@ngx-neoumorphic/slide-toggle": [
         "./src/slide-toggle/slide-toggle.component"
+      ],
+      "@ngx-neoumorphic/alert": [
+        "./src/alert/"
       ]
     }
   },
