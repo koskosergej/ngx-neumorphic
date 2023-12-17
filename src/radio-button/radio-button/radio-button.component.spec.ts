@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RadioButtonComponent } from './radio-button.component';
+import { NeumorphicRadioButtonComponent } from './radio-button.component';
 
-describe('RadioButtonComponent', () => {
-  let component: RadioButtonComponent;
-  let fixture: ComponentFixture<RadioButtonComponent>;
+describe('NeumorphicRadioButtonComponent', () => {
+  let component: NeumorphicRadioButtonComponent;
+  let fixture: ComponentFixture<NeumorphicRadioButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RadioButtonComponent]
+      imports: [NeumorphicRadioButtonComponent]
     })
       .compileComponents();
 
-    fixture = TestBed.createComponent(RadioButtonComponent);
+    fixture = TestBed.createComponent(NeumorphicRadioButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

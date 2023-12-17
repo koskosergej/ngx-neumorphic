@@ -29,6 +29,12 @@
       ],
       "@ngx-neoumorphic/input": [
         "./src/input/input"
+      ],
+      "@ngx-neoumorphic/radio-button": [
+        "./src/radio-button"
+      ],
+      "@ngx-neoumorphic/textarea": [
+        "./src/textarea/textarea.component"
       ]
     }
   },

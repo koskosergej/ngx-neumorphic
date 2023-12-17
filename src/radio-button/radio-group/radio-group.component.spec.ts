@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RadioGroupComponent } from './radio-group.component';
+import { NeumorphicRadioGroupComponent } from './radio-group.component';
 
-describe('RadioGroupComponent', () => {
-  let component: RadioGroupComponent;
-  let fixture: ComponentFixture<RadioGroupComponent>;
+describe('NeumorphicRadioGroupComponent', () => {
+  let component: NeumorphicRadioGroupComponent;
+  let fixture: ComponentFixture<NeumorphicRadioGroupComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RadioGroupComponent]
+      imports: [NeumorphicRadioGroupComponent]
     })
       .compileComponents();
 
-    fixture = TestBed.createComponent(RadioGroupComponent);
+    fixture = TestBed.createComponent(NeumorphicRadioGroupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
