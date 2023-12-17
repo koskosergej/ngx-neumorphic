@@ -4,6 +4,7 @@ import { NeoTextArea } from '@ngx-neoumorphic/textarea';
 import { NeumorphicRadioButtonComponent, NeumorphicRadioGroupComponent } from '@ngx-neoumorphic/radio-button';
 import { NeoSelectorComponent } from '@ngx-neoumorphic/selector';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { NeoSlideToggleComponent } from '@ngx-neoumorphic/slide-toggle';
 
 @Component({
   selector: 'neo-inputs',
@@ -15,7 +16,8 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
     NeoTextArea,
     NeoSelectorComponent,
     NeoSelectorComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NeoSlideToggleComponent
   ],
   template: `
       <input neo-input placeholder="input component">
@@ -58,9 +60,14 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
     { label: 'Option 3', value: 'option3' }
   ]">
       </neo-selector>
+      <br />
+      <br />
+      <br />
+      <neo-slide-toggle [formControl]="slideToggle"></neo-slide-toggle>
   `
 })
 export class InputsComponent {
   selectorCntrl = new FormControl({ value: 'option1', disabled: false });
   disabledSelector = new FormControl({ value: 'option1', disabled: true });
+  slideToggle = new FormControl(true);
 }

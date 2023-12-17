@@ -38,6 +38,9 @@
       ],
       "@ngx-neoumorphic/selector": [
         "./src/selector/selector.component"
+      ],
+      "@ngx-neoumorphic/slide-toggle": [
+        "./src/slide-toggle/slide-toggle.component"
       ]
     }
   },
