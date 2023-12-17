@@ -1,5 +1,0 @@
-<div class="neumorphic-selector-wrapper">
-  <select (change)="optionsSelected()" [(ngModel)]="selectedValue" [disabled]="disabled" class="neumorphic-selector">
-    <option *ngFor="let option of options" [value]="option.value">{{ option.label }}</option>
-  </select>
-</div>
