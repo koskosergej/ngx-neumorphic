@@ -44,6 +44,9 @@
       ],
       "@ngx-neoumorphic/alert": [
         "./src/alert/"
+      ],
+      "@ngx-neoumorphic/card": [
+        "./src/card/"
       ]
     }
   },

@@ -1,0 +1,19 @@
+<div class="neumorphic-card">
+  <ng-container *ngIf="cardHeaderList?.length">
+    <div class="neumorphic-card-header">
+      <ng-content select="[neoCardHeader]"></ng-content>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="cardBodyList?.length">
+    <div class="neumorphic-card-body">
+      <ng-content select="[neoCardBody]"></ng-content>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="cardFooterList?.length">
+    <div class="neumorphic-card-footer">
+      <ng-content select="[neoCardFooter]"></ng-content>
+    </div>
+  </ng-container>
+</div>

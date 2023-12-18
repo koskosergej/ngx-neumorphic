@@ -17,11 +17,11 @@ export class AlertService {
 
   emitMessage(alert: Omit<Alert, 'id'>): void {
     const tempAlert = { ...alert, id: generateID() };
-    
+
     tempAlert.timeOutID = setTimeout(
       this.destroy.bind(this, tempAlert.id),
       this.alertConfig?.timeout ?? DEFAULT_ALERTS_CONFIG.timeout
-    );
+    ) as unknown as number;
 
     this.alertsMap[tempAlert.id] = tempAlert;
 
@@ -41,7 +41,7 @@ export class AlertService {
   }
 
   destroy(id: string) {
-    if (!this.alertsMap.hasOwnProperty(id)) return;
+    if (!Object.prototype.hasOwnProperty.call(this.alertsMap, id)) return;
 
     this.alertsMap[id].timeOutID && clearTimeout(this.alertsMap[id].timeOutID);
 
