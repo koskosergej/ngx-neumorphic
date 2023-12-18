@@ -47,6 +47,9 @@
       ],
       "@ngx-neoumorphic/card": [
         "./src/card/"
+      ],
+      "@ngx-neoumorphic/login-page": [
+        "./src/login-page"
       ]
     }
   },

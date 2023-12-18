@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
       @use '../core/palette';
 
       .neumorphic-input {
-        width: 100%;
+        width: auto;
         padding: 10px;
         border: none;
         border-radius: 8px;
@@ -43,6 +43,10 @@ import { CommonModule } from '@angular/common';
             inset 1px 1px 2px palette.$disabled-color,
             inset -1px -1px 2px palette.$inner-box-shadow;
           cursor: no-drop;
+        }
+
+        &.ng-touched.ng-invalid {
+          border: 1px solid palette.$invalid;
         }
       }
     `

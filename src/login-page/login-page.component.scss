@@ -1,0 +1,14 @@
+neo-card {
+  max-width: 300px;
+
+  .login-page-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+  }
+
+  .login-page-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

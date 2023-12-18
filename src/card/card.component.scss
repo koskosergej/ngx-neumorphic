@@ -7,6 +7,7 @@
   -5px -5px 10px palette.$inner-box-shadow;
   transition: box-shadow 0.3s ease-in-out;
   color: palette.$label-color;
+  width: 100%;
 
   &-header,
   &-footer {

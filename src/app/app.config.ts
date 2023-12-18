@@ -18,6 +18,10 @@ export const routes: Routes = [
   {
     path: 'cards',
     loadComponent: () => import('./features/cards/cards.component').then((m) => m.CardsComponent)
+  },
+  {
+    path: 'common-pages',
+    loadComponent: () => import('./features/common-pages/common-pages.component').then((m) => m.CommonPagesComponent)
   }
 ];
 
