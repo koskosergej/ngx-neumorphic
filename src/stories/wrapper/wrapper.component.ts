@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
   template: '<div class="storybook-wrapper"><ng-content></ng-content></div>',
   styleUrl: './wrapper.component.scss'
 })
-export class WrapperComponent {
-
-}
+export class WrapperComponent {}

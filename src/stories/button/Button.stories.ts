@@ -7,10 +7,10 @@ const meta: Meta<Button> = {
   component: Button,
   render: (args: Button) => ({
     props: {
-      ...args,
-    },
+      ...args
+    }
   }),
-  argTypes: {},
+  argTypes: {}
 };
 
 export default meta;
@@ -18,12 +18,12 @@ type Story = StoryObj<Button>;
 
 export const Default: Story = {
   args: {
-    label: 'Button',
-  },
+    label: 'Button'
+  }
 };
 export const Disabled: Story = {
   args: {
     label: 'Button',
     disabled: true
-  },
+  }
 };

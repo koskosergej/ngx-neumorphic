@@ -4,11 +4,12 @@ export type Alert = {
   type: AlertType;
   message: string;
   id: string;
-
-  timestamp?: number;
   duration?: number;
   timeOutID?: number;
-
 };
 
 export type Alerts = Array<Alert>;
+
+export type AlertConfig = {
+  timeout?: number;
+};

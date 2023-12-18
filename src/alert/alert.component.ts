@@ -12,11 +12,9 @@ import { AlertService } from './alert.service';
   styleUrl: './alert.component.scss'
 })
 export class AlertComponent implements OnInit {
-
   alerts$!: Observable<Alerts>;
 
-  constructor(private alertService: AlertService) {
-  }
+  constructor(private alertService: AlertService) {}
 
   ngOnInit() {
     this.alerts$ = this.alertService.alerts$;

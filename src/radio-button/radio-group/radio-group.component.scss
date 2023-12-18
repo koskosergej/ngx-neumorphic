@@ -5,13 +5,13 @@
   .neumorphic-radio-label {
     margin-bottom: 10px;
 
-    input[type="radio"] {
+    input[type='radio'] {
       opacity: 0;
       width: 0;
       height: 0;
 
       &:checked + span {
-        background-color: #2196F3; /* Change color for checked state */
+        background-color: #2196f3; /* Change color for checked state */
       }
 
       &:focus + span {
@@ -24,7 +24,8 @@
       padding: 10px;
       border-radius: 50%;
       background-color: #f0f0f0;
-      box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff;
+      box-shadow: 5px 5px 15px #bebebe,
+      -5px -5px 15px #ffffff;
       transition: background-color 0.3s ease-in-out;
       cursor: pointer;
     }

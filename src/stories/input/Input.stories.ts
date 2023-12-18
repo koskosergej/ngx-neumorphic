@@ -7,20 +7,20 @@ const meta: Meta<Input> = {
   component: Input,
   render: (args: Input) => ({
     props: {
-      ...args,
-    },
+      ...args
+    }
   }),
-  argTypes: {},
+  argTypes: {}
 };
 
 export default meta;
 type Story = StoryObj<Input>;
 
 export const Default: Story = {
-  args: {},
+  args: {}
 };
 export const Disabled: Story = {
   args: {
     disabled: true
-  },
+  }
 };

@@ -9,8 +9,7 @@ describe('NeumorphicRadioGroupComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [NeumorphicRadioGroupComponent]
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NeumorphicRadioGroupComponent);
     component = fixture.componentInstance;

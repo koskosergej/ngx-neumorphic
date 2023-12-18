@@ -4,10 +4,10 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 @Component({
   selector: 'neo-neumorphic-radio-button',
   template: `
-      <label class="neumorphic-radio-label">
-          <input type="radio" [value]="value" [checked]="checked" (change)="choseValue()" [name]="name">
-          <span><ng-content></ng-content></span>
-      </label>
+    <label class="neumorphic-radio-label">
+      <input type="radio" [value]="value" [checked]="checked" (change)="choseValue()" [name]="name" />
+      <span><ng-content></ng-content></span>
+    </label>
   `,
   providers: [
     {
@@ -18,15 +18,14 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   ],
   standalone: true,
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NeumorphicRadioButtonComponent implements ControlValueAccessor {
   @Input() value: any;
   @Input() name: any;
   checked: boolean = false;
 
-  constructor() {
-  }
+  constructor() {}
 
   writeValue(value: any): void {
     this.checked = this.value === value;
@@ -49,6 +48,5 @@ export class NeumorphicRadioButtonComponent implements ControlValueAccessor {
     this.onChange(true);
   }
 
-  private onChange: any = () => {
-  };
+  private onChange: any = () => {};
 }

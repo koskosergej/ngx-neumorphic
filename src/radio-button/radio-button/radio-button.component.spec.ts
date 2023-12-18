@@ -9,8 +9,7 @@ describe('NeumorphicRadioButtonComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [NeumorphicRadioButtonComponent]
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NeumorphicRadioButtonComponent);
     component = fixture.componentInstance;

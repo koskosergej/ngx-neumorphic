@@ -6,14 +6,11 @@ import { NeoButton } from '../../button/button';
   selector: 'storybook-button',
   imports: [NeoButton, WrapperComponent],
   template: `
-      <neo-storybook-wrapper>
-          <button neo-button
-                  (click)="onClick($event)"
-                  [disabled]="disabled"
-          >
-              {{ label }}
-          </button>
-      </neo-storybook-wrapper>
+    <neo-storybook-wrapper>
+      <button neo-button (click)="onClick($event)" [disabled]="disabled">
+        {{ label }}
+      </button>
+    </neo-storybook-wrapper>
   `,
   standalone: true
 })

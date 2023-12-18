@@ -23,16 +23,15 @@ import { NeumorphicRadioButtonComponent } from '../radio-button/radio-button.com
   ],
   standalone: true,
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NeumorphicRadioGroupComponent implements ControlValueAccessor, AfterContentInit {
   @ContentChildren(NeumorphicRadioButtonComponent) radioButtons!: QueryList<NeumorphicRadioButtonComponent>;
 
-  constructor() {
-  }
+  constructor() {}
 
   ngAfterContentInit(): void {
-    this.radioButtons.forEach(button => {
+    this.radioButtons.forEach((button) => {
       button.registerOnChange(this.onRadioButtonChange.bind(this));
       button.name = 'name';
     });
@@ -40,7 +39,7 @@ export class NeumorphicRadioGroupComponent implements ControlValueAccessor, Afte
 
   // ControlValueAccessor methods
   writeValue(value: any): void {
-    this.radioButtons.forEach(button => {
+    this.radioButtons.forEach((button) => {
       button.writeValue(value);
     });
   }
@@ -63,9 +62,7 @@ export class NeumorphicRadioGroupComponent implements ControlValueAccessor, Afte
   }
 
   // Functions to propagate changes and touch events
-  private onChange: any = () => {
-  };
+  private onChange: any = () => {};
 
-  private onTouched: any = () => {
-  };
+  private onTouched: any = () => {};
 }

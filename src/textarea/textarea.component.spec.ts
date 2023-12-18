@@ -9,8 +9,7 @@ describe('NeoTextArea', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [NeoTextArea]
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NeoTextArea);
     component = fixture.componentInstance;

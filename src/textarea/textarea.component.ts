@@ -6,42 +6,51 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: '<ng-content></ng-content>',
-  styles: [`
-    @use '../core/palette';
+  styles: [
+    `
+      @use '../core/palette';
 
-    .neumorphic-textarea {
-      width: 300px;
-      height: 150px;
-      padding: 10px;
-      border: none;
-      border-radius: 8px;
-      background-color: palette.$background-color;
-      box-shadow: inset 2px 2px 3px palette.$outer-box-shadow, inset -1px -1px 2px palette.$inner-box-shadow;
-      transition: box-shadow 0.3s ease-in-out;
-      font-size: 16px;
-      outline: none;
-      resize: none;
+      .neumorphic-textarea {
+        width: 300px;
+        height: 150px;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: palette.$background-color;
+        box-shadow:
+          inset 2px 2px 3px palette.$outer-box-shadow,
+          inset -1px -1px 2px palette.$inner-box-shadow;
+        transition: box-shadow 0.3s ease-in-out;
+        font-size: 16px;
+        outline: none;
+        resize: none;
 
-      &:hover {
-        box-shadow: inset 5px 5px 10px palette.$outer-box-shadow, inset -5px -5px 10px palette.$inner-box-shadow;
+        &:hover {
+          box-shadow:
+            inset 5px 5px 10px palette.$outer-box-shadow,
+            inset -5px -5px 10px palette.$inner-box-shadow;
+        }
+
+        &:focus {
+          box-shadow:
+            inset 5px 5px 10px palette.$outer-box-shadow,
+            inset -5px -5px 10px palette.$inner-box-shadow;
+        }
+
+        &:disabled {
+          opacity: 0.5;
+          color: palette.$disabled-color;
+          background: linear-gradient(0deg, palette.$disabled-color, palette.$disabled-color), inherit;
+          box-shadow:
+            inset 1px 1px 2px palette.$disabled-color,
+            inset -1px -1px 2px palette.$inner-box-shadow;
+          cursor: no-drop;
+        }
       }
-
-      &:focus {
-        box-shadow: inset 5px 5px 10px palette.$outer-box-shadow, inset -5px -5px 10px palette.$inner-box-shadow;
-      }
-
-      &:disabled {
-        opacity: .5;
-        color: palette.$disabled-color;
-        background: linear-gradient(0deg, palette.$disabled-color, palette.$disabled-color), inherit;
-        box-shadow: inset 1px 1px 2px palette.$disabled-color, inset -1px -1px 2px palette.$inner-box-shadow;
-        cursor: no-drop;
-      }
-    }
-
-  `],
+    `
+  ],
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NeoTextArea {
   constructor(private el: ElementRef) {

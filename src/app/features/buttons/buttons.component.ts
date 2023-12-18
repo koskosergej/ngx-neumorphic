@@ -6,12 +6,10 @@ import { NeoButton } from '@ngx-neoumorphic/button';
   standalone: true,
   imports: [NeoButton],
   template: `
-      <button neo-button>Button</button>
-      <br />
-      <br />
-      <button neo-button disabled>Disabled</button>
+    <button neo-button>Button</button>
+    <br />
+    <br />
+    <button neo-button disabled>Disabled</button>
   `
 })
-export class ButtonsComponent {
-
-}
+export class ButtonsComponent {}

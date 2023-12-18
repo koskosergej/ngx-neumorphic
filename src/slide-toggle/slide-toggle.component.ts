@@ -4,9 +4,7 @@ import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/f
 @Component({
   selector: 'neo-slide-toggle',
   standalone: true,
-  imports: [
-    FormsModule
-  ],
+  imports: [FormsModule],
   templateUrl: './slide-toggle.component.html',
   styleUrl: './slide-toggle.component.scss',
   providers: [
@@ -20,8 +18,7 @@ import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/f
 export class NeoSlideToggleComponent implements ControlValueAccessor {
   isChecked: boolean = false;
 
-  constructor() {
-  }
+  constructor() {}
 
   writeValue(value: any): void {
     this.isChecked = value;
@@ -46,9 +43,7 @@ export class NeoSlideToggleComponent implements ControlValueAccessor {
     this.onTouched();
   }
 
-  private onChange: any = () => {
-  };
+  private onChange: any = () => {};
 
-  private onTouched: any = () => {
-  };
+  private onTouched: any = () => {};
 }

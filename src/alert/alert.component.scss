@@ -9,24 +9,25 @@
     align-items: center;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff;
+    box-shadow: 5px 5px 15px #bebebe,
+    -5px -5px 15px #ffffff;
     transition: box-shadow 0.3s ease-in-out;
     font-size: 16px;
     margin-bottom: 15px;
 
     &.warning {
-      background-color: #FFCC80;
-      color: #FF7043;
+      background-color: #ffcc80;
+      color: #ff7043;
     }
 
     &.info {
-      background-color: #81D4FA;
-      color: #0288D1;
+      background-color: #81d4fa;
+      color: #0288d1;
     }
 
     &.success {
-      background-color: #C5E1A5;
-      color: #689F38;
+      background-color: #c5e1a5;
+      color: #689f38;
     }
 
     .icon {

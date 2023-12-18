@@ -7,7 +7,7 @@
   height: 20px;
 
   /* Hide the default checkbox */
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     opacity: 0;
     width: 0;
     height: 0;
@@ -24,7 +24,8 @@
     bottom: 0;
     background-color: #f0f0f0;
     border-radius: 34px;
-    box-shadow: 5px 5px 15px palette.$outer-box-shadow, -5px -5px 15px palette.$inner-box-shadow;
+    box-shadow: 5px 5px 15px palette.$outer-box-shadow,
+    -5px -5px 15px palette.$inner-box-shadow;
     transition: background-color 0.3s ease-in-out;
   }
 
@@ -37,7 +38,8 @@
     bottom: 3px;
     background-color: white;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px palette.$outer-box-shadow, -2px -2px 5px palette.$inner-box-shadow;
+    box-shadow: 2px 2px 5px palette.$outer-box-shadow,
+    -2px -2px 5px palette.$inner-box-shadow;
     transition: transform 0.3s ease-in-out;
   }
 
@@ -46,21 +48,21 @@
     border-radius: 34px;
   }
 
-  input[type="checkbox"]:checked + .slider {
+  input[type='checkbox']:checked + .slider {
     background-color: palette.$cornflowerblue; /* Change color for checked state */
   }
 
-  input[type="checkbox"] + .slider:before {
+  input[type='checkbox'] + .slider:before {
     left: 5px;
   }
 
-  input[type="checkbox"]:checked + .slider:before {
+  input[type='checkbox']:checked + .slider:before {
     transform: translateX(16px); /* Move the thumb to the right */
     left: 10px;
   }
 
   /* Focus style */
-  input[type="checkbox"]:focus + .slider {
+  input[type='checkbox']:focus + .slider {
     box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
   }
 }

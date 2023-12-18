@@ -7,13 +7,9 @@ import { WrapperComponent } from '../wrapper/wrapper.component';
   selector: 'storybook-input',
   imports: [CommonModule, NeoInput, WrapperComponent],
   template: `
-      <neo-storybook-wrapper>
-          <input neo-input
-                 style="width: 200px"
-                 placeholder="placeholder"
-                 [disabled]="disabled"
-          >
-      </neo-storybook-wrapper>
+    <neo-storybook-wrapper>
+      <input neo-input style="width: 200px" placeholder="placeholder" [disabled]="disabled" />
+    </neo-storybook-wrapper>
   `,
   standalone: true
 })

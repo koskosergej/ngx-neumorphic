@@ -9,8 +9,7 @@ describe('SlideToggleComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [SlideToggleComponent]
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(SlideToggleComponent);
     component = fixture.componentInstance;

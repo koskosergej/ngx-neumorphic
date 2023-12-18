@@ -1,7 +1,8 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable, Optional } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { Alert, Alerts } from './types';
+import { Alert, AlertConfig, Alerts } from './types';
 import { generateID } from './utils';
+import { ALERTS_CONFIG, DEFAULT_ALERTS_CONFIG } from './constants';
 
 @Injectable({
   providedIn: 'root'
@@ -12,10 +13,15 @@ export class AlertService {
   private _alerts$ = new BehaviorSubject<Alerts>([]);
   public alerts$ = this._alerts$.asObservable();
 
+  constructor(@Optional() @Inject(ALERTS_CONFIG) private alertConfig: AlertConfig) {}
+
   emitMessage(alert: Omit<Alert, 'id'>): void {
     const tempAlert = { ...alert, id: generateID() };
-    tempAlert.timestamp = +new Date();
-    tempAlert.timeOutID = setTimeout(this.destroy.bind(this, tempAlert.id), 3000);
+    
+    tempAlert.timeOutID = setTimeout(
+      this.destroy.bind(this, tempAlert.id),
+      this.alertConfig?.timeout ?? DEFAULT_ALERTS_CONFIG.timeout
+    );
 
     this.alertsMap[tempAlert.id] = tempAlert;
 
@@ -37,12 +43,10 @@ export class AlertService {
   destroy(id: string) {
     if (!this.alertsMap.hasOwnProperty(id)) return;
 
-    this.alertsMap[id].timeOutID &&
-    clearTimeout(this.alertsMap[id].timeOutID);
+    this.alertsMap[id].timeOutID && clearTimeout(this.alertsMap[id].timeOutID);
 
     delete this.alertsMap[id];
 
-    this._alerts$.next([...this._alerts$.value.filter(item => item.id !== id)]);
+    this._alerts$.next([...this._alerts$.value.filter((item) => item.id !== id)]);
   }
-
 }

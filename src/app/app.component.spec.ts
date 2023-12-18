@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent, ActivatedRoute],
+      imports: [AppComponent, ActivatedRoute]
     }).compileComponents();
   });
 

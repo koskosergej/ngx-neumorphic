@@ -9,8 +9,7 @@ describe('NeoInput', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [NeoInput]
-    })
-      .compileComponents();
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NeoInput);
     component = fixture.componentInstance;
