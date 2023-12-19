@@ -60,6 +60,15 @@
       "@ngx-ks/textarea": [
         "./src/components/textarea/textarea.component"
       ],
+      "@ngx-ks/form-field": [
+        "./src/components/form-field"
+      ],
+      "@ngx-ks/label": [
+        "./src/directives/label"
+      ],
+      "@ngx-ks/form-field-control": [
+        "./src/directives/form-field-control"
+      ],
       "@ngx-ks/pipes/memo": [
         "./src/pipes/memo"
       ],

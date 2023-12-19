@@ -3,9 +3,13 @@ import { KsInput } from '@ngx-ks/input';
 import { KsTextArea } from '@ngx-ks/textarea';
 import { KsRadioButtonComponent, KsRadioGroupComponent } from '@ngx-ks/radio-button';
 import { KsSelectorComponent } from '@ngx-ks/selector';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { KsSlideToggleComponent } from '@ngx-ks/slide-toggle';
 import { KsDividerComponent } from '@ngx-ks/divider';
+import { FormFieldComponent } from '@ngx-ks/form-field';
+import { KsLabel } from '@ngx-ks/label';
+import { ErrorDirective } from '@ngx-ks/error';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'ks-inputs',
@@ -19,13 +23,25 @@ import { KsDividerComponent } from '@ngx-ks/divider';
     KsSlideToggleComponent,
     KsDividerComponent,
     KsRadioGroupComponent,
-    KsRadioButtonComponent
+    KsRadioButtonComponent,
+    FormFieldComponent,
+    KsLabel,
+    ErrorDirective,
+    NgIf
   ],
   template: `
-    <input ks-input placeholder="input component" />
-    <br />
-    <br />
-    <input ks-input placeholder="disabled input" disabled />
+    <ks-form-field>
+      <ks-label>Label Text</ks-label>
+      <input ks-input placeholder="input component" />
+    </ks-form-field>
+    <ks-form-field>
+      <input ks-input placeholder="disabled input" [disabled]="true" />
+    </ks-form-field>
+    <ks-form-field>
+      <ks-label>RequiredInput</ks-label>
+      <input ks-input placeholder="required input" [formControl]="inputCntrl" />
+      <ks-error *ngIf="inputCntrl.hasError('required') && inputCntrl.touched">Required</ks-error>
+    </ks-form-field>
     <ks-divider></ks-divider>
     <ks-radio-group>
       <ks-radio-button value="option1">Option 1</ks-radio-button>
@@ -33,10 +49,17 @@ import { KsDividerComponent } from '@ngx-ks/divider';
       <ks-radio-button value="option3">Option 3</ks-radio-button>
     </ks-radio-group>
     <ks-divider></ks-divider>
-    <textarea ks-textarea placeholder="simple text area"></textarea>
-    <br />
-    <br />
-    <textarea ks-textarea placeholder="disabled text area" disabled></textarea>
+    <ks-form-field>
+      <textarea ks-textarea placeholder="simple text area"></textarea>
+    </ks-form-field>
+    <ks-form-field>
+      <ks-label>Disabled</ks-label>
+      <textarea ks-textarea placeholder="disabled text area" [disabled]="true"></textarea>
+    </ks-form-field>
+    <ks-form-field>
+      <ks-label>RequiredTextarea</ks-label>
+      <textarea ks-textarea placeholder="required textarea" [formControl]="textareaCntrl"></textarea>
+    </ks-form-field>
     <ks-divider></ks-divider>
     <ks-selector
       [formControl]="selectorCntrl"
@@ -63,6 +86,8 @@ import { KsDividerComponent } from '@ngx-ks/divider';
   `
 })
 export class InputsComponent {
+  inputCntrl = new FormControl(null, [Validators.required]);
+  textareaCntrl = new FormControl(null, [Validators.required]);
   selectorCntrl = new FormControl({ value: 'option1', disabled: false });
   disabledSelector = new FormControl({ value: 'option1', disabled: true });
   slideToggle = new FormControl(true);

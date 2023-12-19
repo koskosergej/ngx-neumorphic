@@ -1,16 +1,18 @@
-import { ChangeDetectionStrategy, Component, ContentChildren, QueryList, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ContentChild, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ErrorDirective } from '@ngx-ks/error';
+import { KsFormFieldControl } from '@ngx-ks/form-field-control';
+import { KsLabel } from '@ngx-ks/label';
 
 @Component({
   selector: 'ks-form-field',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './form-field.component.html',
-  styleUrl: './form-field.component.css',
+  styleUrl: './form-field.component.scss',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FormFieldComponent {
-  @ContentChildren(ErrorDirective, { descendants: true }) _errorChildren?: QueryList<ErrorDirective>;
+  @ContentChild(KsFormFieldControl) formFieldControl: KsFormFieldControl | undefined;
+  @ContentChild(KsLabel) contentLabel?: KsLabel;
 }

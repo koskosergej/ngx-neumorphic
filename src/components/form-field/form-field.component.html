@@ -1,4 +1,8 @@
 <div class="ks-form-field-container">
+  <label class="ks-form-field-label">
+    <ng-content select="ks-label, [ksLabel]"></ng-content>
+    <span *ngIf="formFieldControl?.required && contentLabel" class="ks-required-marker">*</span>
+  </label>
   <div class="filed-container">
     <ng-content></ng-content>
   </div>

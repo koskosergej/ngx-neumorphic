@@ -5,8 +5,9 @@ import { KsButton } from '@ngx-ks/button';
 import { LoginData } from './type';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ErrorDirective } from '@ngx-ks/error';
-import { FormFieldComponent } from '../form-field/form-field.component';
+import { FormFieldComponent } from '@ngx-ks/form-field';
 import { NgIf } from '@angular/common';
+import { KsLabel } from '@ngx-ks/label';
 
 @Component({
   selector: 'ks-login-page',
@@ -17,6 +18,7 @@ import { NgIf } from '@angular/common';
     KsButton,
     ReactiveFormsModule,
     ErrorDirective,
+    KsLabel,
     FormFieldComponent,
     KsCardBodyDirective,
     KsCardFooterDirective,

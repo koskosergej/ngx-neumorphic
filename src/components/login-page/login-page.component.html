@@ -2,11 +2,13 @@
   <div ksCardBody>
     <form [formGroup]="form" class="login-page-body">
       <ks-form-field>
+        <ks-label>Username</ks-label>
         <input formControlName="username" ks-input placeholder="username">
         <ks-error *ngIf="form.controls.username.hasError('required') && form.controls.username.touched">Required
         </ks-error>
       </ks-form-field>
       <ks-form-field>
+        <ks-label>Password</ks-label>
         <input formControlName="password" ks-input placeholder="password" type="password">
         @if (form.controls.password.invalid && form.controls.password.touched) {
           <ks-error>Required</ks-error>
