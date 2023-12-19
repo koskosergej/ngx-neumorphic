@@ -55,6 +55,9 @@
       ],
       "@ngx-ks/textarea": [
         "./src/components/textarea/textarea.component"
+      ],
+      "@ngx-ks/pipes/memo": [
+        "./src/pipes/memo"
       ]
     }
   },
