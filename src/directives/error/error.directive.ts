@@ -8,6 +8,6 @@ import { Directive } from '@angular/core';
     'aria-atomic': 'true'
   }
 })
-export class KsError {
+export class ErrorDirective {
   constructor() {}
 }

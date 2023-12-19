@@ -1,1 +1,1 @@
-export { KsError } from './error.directive';
+export { ErrorDirective } from './error.directive';

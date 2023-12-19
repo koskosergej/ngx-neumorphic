@@ -1,8 +1,8 @@
-import { KsError } from './error.directive';
+import { ErrorDirective } from './error.directive';
 
-describe('KsError', () => {
+describe('ErrorDirective', () => {
   it('should create an instance', () => {
-    const directive = new KsError();
+    const directive = new ErrorDirective();
     expect(directive).toBeTruthy();
   });
 });
