@@ -5,6 +5,7 @@ import { NeumorphicRadioButtonComponent, NeumorphicRadioGroupComponent } from '@
 import { NeoSelectorComponent } from '@ngx-neoumorphic/selector';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { NeoSlideToggleComponent } from '@ngx-neoumorphic/slide-toggle';
+import { NeoDividerComponent } from '@ngx-neoumorphic/divider';
 
 @Component({
   selector: 'neo-inputs',
@@ -17,31 +18,26 @@ import { NeoSlideToggleComponent } from '@ngx-neoumorphic/slide-toggle';
     NeoSelectorComponent,
     NeoSelectorComponent,
     ReactiveFormsModule,
-    NeoSlideToggleComponent
+    NeoSlideToggleComponent,
+    NeoDividerComponent
   ],
   template: `
     <input neo-input placeholder="input component" />
     <br />
     <br />
     <input neo-input placeholder="disabled input" disabled />
-    <br />
-    <br />
-    <br />
+    <neo-divider></neo-divider>
     <neo-neumorphic-radio-group>
       <neo-neumorphic-radio-button value="option1">Option 1</neo-neumorphic-radio-button>
       <neo-neumorphic-radio-button value="option2">Option 2</neo-neumorphic-radio-button>
       <neo-neumorphic-radio-button value="option3">Option 3</neo-neumorphic-radio-button>
     </neo-neumorphic-radio-group>
-    <br />
-    <br />
-    <br />
+    <neo-divider></neo-divider>
     <textarea neo-textarea placeholder="simple text area"></textarea>
     <br />
     <br />
     <textarea neo-textarea placeholder="disabled text area" disabled></textarea>
-    <br />
-    <br />
-    <br />
+    <neo-divider></neo-divider>
     <neo-selector
       [formControl]="selectorCntrl"
       [options]="[
@@ -62,9 +58,7 @@ import { NeoSlideToggleComponent } from '@ngx-neoumorphic/slide-toggle';
       ]"
     >
     </neo-selector>
-    <br />
-    <br />
-    <br />
+    <neo-divider></neo-divider>
     <neo-slide-toggle [formControl]="slideToggle"></neo-slide-toggle>
   `
 })

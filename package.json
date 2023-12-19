@@ -7,8 +7,8 @@
     "build": "nx build",
     "watch": "nx build --watch --configuration development",
     "test": "nx test",
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
+    "lint": "eslint --ext .ts src",
+    "lint:fix": "eslint --ext .ts src --fix",
     "storybook": "nx run neumorphic:storybook",
     "build-storybook": "nx run neumorphic:build-storybook"
   },

@@ -19,5 +19,8 @@
     "@typescript-eslint",
     "sonarjs"
   ],
-  "rules": {}
+  "rules": {},
+  "ignorePatterns": [
+    "*.html"
+  ]
 }

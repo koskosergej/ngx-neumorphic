@@ -33,7 +33,7 @@
         "./src/components/card/"
       ],
       "@ngx-neoumorphic/divider": [
-        "./src/components/divider/divider.component"
+        "./src/components/divider/divider.component.ts"
       ],
       "@ngx-neoumorphic/input": [
         "./src/components/input/input"
