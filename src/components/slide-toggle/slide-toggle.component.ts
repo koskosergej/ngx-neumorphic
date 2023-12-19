@@ -20,11 +20,11 @@ export class NeoSlideToggleComponent implements ControlValueAccessor {
 
   constructor() {}
 
-  writeValue(value: any): void {
+  writeValue(value: boolean): void {
     this.isChecked = value;
   }
 
-  registerOnChange(fn: any): void {
+  registerOnChange(fn: never): void {
     this.onChange = fn;
   }
 

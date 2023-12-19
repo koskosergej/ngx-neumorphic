@@ -25,31 +25,31 @@
     ],
     "paths": {
       "@ngx-neoumorphic/button": [
-        "./src/button/button"
+        "./src/components/button/button"
       ],
       "@ngx-neoumorphic/input": [
-        "./src/input/input"
+        "./src/components/input/input"
       ],
       "@ngx-neoumorphic/radio-button": [
-        "./src/radio-button"
+        "./src/components/radio-button"
       ],
       "@ngx-neoumorphic/textarea": [
-        "./src/textarea/textarea.component"
+        "./src/components/textarea/textarea.component"
       ],
       "@ngx-neoumorphic/selector": [
-        "./src/selector/selector.component"
+        "./src/components/selector/selector.component"
       ],
       "@ngx-neoumorphic/slide-toggle": [
-        "./src/slide-toggle/slide-toggle.component"
+        "./src/components/slide-toggle/slide-toggle.component"
       ],
       "@ngx-neoumorphic/alert": [
-        "./src/alert/"
+        "./src/components/alert/"
       ],
       "@ngx-neoumorphic/card": [
-        "./src/card/"
+        "./src/components/card/"
       ],
       "@ngx-neoumorphic/login-page": [
-        "./src/login-page"
+        "./src/components/login-page"
       ]
     }
   },

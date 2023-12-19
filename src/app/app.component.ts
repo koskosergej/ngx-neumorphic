@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { NeoInput } from '../input/input';
-import { NeoButton } from '../button/button';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { NeoInput } from '@ngx-neoumorphic/input';
+import { NeoButton } from '@ngx-neoumorphic/button';
 
 @Component({
   selector: 'app-root',

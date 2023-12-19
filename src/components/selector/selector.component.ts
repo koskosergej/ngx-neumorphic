@@ -28,7 +28,7 @@ import { NgFor } from '@angular/common';
   `,
   styles: [
     `
-      @use '../core/palette';
+      @use '../../core/palette';
 
       .neumorphic-selector-wrapper {
         display: inline-block;

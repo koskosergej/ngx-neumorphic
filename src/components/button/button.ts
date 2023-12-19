@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   template: '<ng-content></ng-content>',
   styles: [
     `
-      @use '../core/palette';
+      @use '../../core/palette';
 
       .neumorphic-button {
         padding: 15px 30px;

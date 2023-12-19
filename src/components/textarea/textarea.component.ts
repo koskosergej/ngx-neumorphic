@@ -2,16 +2,17 @@ import { ChangeDetectionStrategy, Component, ElementRef, ViewEncapsulation } fro
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'input[neo-input]',
+  selector: 'textarea[neo-textarea]',
   standalone: true,
   imports: [CommonModule],
   template: '<ng-content></ng-content>',
   styles: [
     `
-      @use '../core/palette';
+      @use '../../core/palette';
 
-      .neumorphic-input {
-        width: auto;
+      .neumorphic-textarea {
+        width: 300px;
+        height: 150px;
         padding: 10px;
         border: none;
         border-radius: 8px;
@@ -22,6 +23,7 @@ import { CommonModule } from '@angular/common';
         transition: box-shadow 0.3s ease-in-out;
         font-size: 16px;
         outline: none;
+        resize: none;
 
         &:hover {
           box-shadow:
@@ -44,20 +46,16 @@ import { CommonModule } from '@angular/common';
             inset -1px -1px 2px palette.$inner-box-shadow;
           cursor: no-drop;
         }
-
-        &.ng-touched.ng-invalid {
-          border: 1px solid palette.$invalid;
-        }
       }
     `
   ],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NeoInput {
+export class NeoTextArea {
   constructor(private el: ElementRef) {
     const element = el.nativeElement;
     const classList = (element as HTMLElement).classList;
-    classList.add('neumorphic-input');
+    classList.add('neumorphic-textarea');
   }
 }
