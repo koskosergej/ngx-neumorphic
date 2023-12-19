@@ -1,0 +1,10 @@
+<div class="ks-form-field-container">
+  <div class="filed-container">
+    <ng-content></ng-content>
+  </div>
+  <div class="ks-form-field__error-container">
+    <ng-container *ngIf="_errorChildren?.length">
+      <ng-content select="ks-error, [ksError]"></ng-content>
+    </ng-container>
+  </div>
+</div>

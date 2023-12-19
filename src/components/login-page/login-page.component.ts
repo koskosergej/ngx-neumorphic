@@ -6,6 +6,7 @@ import { LoginData } from './type';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { KsError } from '@ngx-ks/error';
 import { FormFieldComponent } from '../form-field/form-field.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'ks-login-page',
@@ -18,7 +19,8 @@ import { FormFieldComponent } from '../form-field/form-field.component';
     KsError,
     FormFieldComponent,
     KsCardBodyDirective,
-    KsCardFooterDirective
+    KsCardFooterDirective,
+    NgIf
   ],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.scss'

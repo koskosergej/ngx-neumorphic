@@ -5,7 +5,7 @@
   padding: 10px;
   border: none;
   border-radius: 8px;
-  background-color: palette.$background-color;
+  background-color: palette.$background-color !important;
   box-shadow: inset 2px 2px 3px palette.$outer-box-shadow,
   inset -1px -1px 2px palette.$inner-box-shadow;
   transition: box-shadow 0.3s ease-in-out;

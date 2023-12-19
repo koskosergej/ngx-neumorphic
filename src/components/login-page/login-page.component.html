@@ -3,14 +3,15 @@
     <form [formGroup]="form" class="login-page-body">
       <ks-form-field>
         <input formControlName="username" ks-input placeholder="username">
+        <ks-error *ngIf="form.controls.username.invalid && form.controls.username.touched">Test</ks-error>
       </ks-form-field>
       <ks-form-field>
         <input formControlName="password" ks-input placeholder="password" type="password">
-        <!--        <ks-error>Test</ks-error>-->
+        <ks-error>Test</ks-error>
       </ks-form-field>
     </form>
   </div>
   <div class="login-page-footer" ksCardFooter>
-    <button (click)="onSubmit()" ks-button type="button">Submit</button>
+    <button (click)="onSubmit()" [disabled]="form.invalid" ks-button type="button">Submit</button>
   </div>
 </ks-card>

@@ -1,0 +1,18 @@
+.ks-form-field-container {
+  display: block;
+  padding: 0 10px;
+
+  .filed-container {
+    display: flex;
+    min-width: 0;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .ks-form-field__error-container {
+    height: 15px;
+    padding: 4px 0 0 5px;
+    font-size: 14px;
+  }
+}
