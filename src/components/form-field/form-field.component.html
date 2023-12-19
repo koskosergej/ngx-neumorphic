@@ -3,8 +3,6 @@
     <ng-content></ng-content>
   </div>
   <div class="ks-form-field__error-container">
-    <ng-container *ngIf="_errorChildren?.length">
-      <ng-content select="ks-error, [ksError]"></ng-content>
-    </ng-container>
+    <ng-content select="ks-error, [ksError]"></ng-content>
   </div>
 </div>

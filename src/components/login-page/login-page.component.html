@@ -3,11 +3,14 @@
     <form [formGroup]="form" class="login-page-body">
       <ks-form-field>
         <input formControlName="username" ks-input placeholder="username">
-        <ks-error *ngIf="form.controls.username.invalid && form.controls.username.touched">Test</ks-error>
+        <ks-error *ngIf="form.controls.username.hasError('required') && form.controls.username.touched">Required
+        </ks-error>
       </ks-form-field>
       <ks-form-field>
         <input formControlName="password" ks-input placeholder="password" type="password">
-        <ks-error>Test</ks-error>
+        @if (form.controls.password.invalid && form.controls.password.touched) {
+          <ks-error>Required</ks-error>
+        }
       </ks-form-field>
     </form>
   </div>
