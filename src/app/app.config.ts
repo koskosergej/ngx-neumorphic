@@ -22,6 +22,10 @@ export const routes: Routes = [
   {
     path: 'common-pages',
     loadComponent: () => import('./features/common-pages/common-pages.component').then((m) => m.CommonPagesComponent)
+  },
+  {
+    path: 'pipes',
+    loadComponent: () => import('./features/pipes/pipes.component').then((m) => m.PipesComponent)
   }
 ];
 

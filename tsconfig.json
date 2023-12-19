@@ -58,6 +58,9 @@
       ],
       "@ngx-ks/pipes/memo": [
         "./src/pipes/memo"
+      ],
+      "@ngx-ks/pipes/format-bytes": [
+        "./src/pipes/format-bytes"
       ]
     }
   },

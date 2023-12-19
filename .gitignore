@@ -42,3 +42,4 @@ testem.log
 Thumbs.db
 documentation.json
 .nx
+angular.json
