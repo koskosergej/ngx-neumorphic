@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -24,17 +23,26 @@
       "dom"
     ],
     "paths": {
+      "@ngx-neoumorphic/alert": [
+        "./src/components/alert/"
+      ],
       "@ngx-neoumorphic/button": [
         "./src/components/button/button"
+      ],
+      "@ngx-neoumorphic/card": [
+        "./src/components/card/"
+      ],
+      "@ngx-neoumorphic/divider": [
+        "./src/components/divider/divider.component"
       ],
       "@ngx-neoumorphic/input": [
         "./src/components/input/input"
       ],
+      "@ngx-neoumorphic/login-page": [
+        "./src/components/login-page"
+      ],
       "@ngx-neoumorphic/radio-button": [
         "./src/components/radio-button"
-      ],
-      "@ngx-neoumorphic/textarea": [
-        "./src/components/textarea/textarea.component"
       ],
       "@ngx-neoumorphic/selector": [
         "./src/components/selector/selector.component"
@@ -42,14 +50,8 @@
       "@ngx-neoumorphic/slide-toggle": [
         "./src/components/slide-toggle/slide-toggle.component"
       ],
-      "@ngx-neoumorphic/alert": [
-        "./src/components/alert/"
-      ],
-      "@ngx-neoumorphic/card": [
-        "./src/components/card/"
-      ],
-      "@ngx-neoumorphic/login-page": [
-        "./src/components/login-page"
+      "@ngx-neoumorphic/textarea": [
+        "./src/components/textarea/textarea.component"
       ]
     }
   },
