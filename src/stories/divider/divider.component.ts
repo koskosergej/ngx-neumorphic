@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { WrapperComponent } from '../wrapper/wrapper.component';
-import { NeoButton } from '@ngx-neoumorphic/button';
-import { NeoDividerComponent } from '@ngx-neoumorphic/divider';
+import { KsButton } from '@ngx-ks/button';
+import { KsDividerComponent } from '@ngx-ks/divider';
 
 @Component({
   selector: 'storybook-button',
-  imports: [NeoButton, WrapperComponent, NeoDividerComponent],
+  imports: [KsButton, WrapperComponent, KsDividerComponent],
   template: `
-    <neo-storybook-wrapper>
-      <neo-divider></neo-divider>
-    </neo-storybook-wrapper>
+    <ks-storybook-wrapper>
+      <ks-divider></ks-divider>
+    </ks-storybook-wrapper>
   `,
   standalone: true
 })

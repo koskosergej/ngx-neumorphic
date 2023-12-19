@@ -1,9 +1,9 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[neoCardHeader]',
+  selector: '[ksCardHeader]',
   standalone: true
 })
-export class NeoCardHeaderDirective {
+export class KsCardHeaderDirective {
   constructor() {}
 }

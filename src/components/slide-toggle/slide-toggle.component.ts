@@ -2,7 +2,7 @@ import { Component, forwardRef } from '@angular/core';
 import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
-  selector: 'neo-slide-toggle',
+  selector: 'ks-slide-toggle',
   standalone: true,
   imports: [FormsModule],
   templateUrl: './slide-toggle.component.html',
@@ -10,12 +10,12 @@ import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/f
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => NeoSlideToggleComponent),
+      useExisting: forwardRef(() => KsSlideToggleComponent),
       multi: true
     }
   ]
 })
-export class NeoSlideToggleComponent implements ControlValueAccessor {
+export class KsSlideToggleComponent implements ControlValueAccessor {
   isChecked: boolean = false;
 
   constructor() {}

@@ -23,34 +23,37 @@
       "dom"
     ],
     "paths": {
-      "@ngx-neoumorphic/alert": [
+      "@ngx-ks/alert": [
         "./src/components/alert/"
       ],
-      "@ngx-neoumorphic/button": [
+      "@ngx-ks/button": [
         "./src/components/button/button"
       ],
-      "@ngx-neoumorphic/card": [
+      "@ngx-ks/card": [
         "./src/components/card/"
       ],
-      "@ngx-neoumorphic/divider": [
+      "@ngx-ks/divider": [
         "./src/components/divider/divider.component.ts"
       ],
-      "@ngx-neoumorphic/input": [
+      "@ngx-ks/error": [
+        "./src/directives/error"
+      ],
+      "@ngx-ks/input": [
         "./src/components/input/input"
       ],
-      "@ngx-neoumorphic/login-page": [
+      "@ngx-ks/login-page": [
         "./src/components/login-page"
       ],
-      "@ngx-neoumorphic/radio-button": [
+      "@ngx-ks/radio-button": [
         "./src/components/radio-button"
       ],
-      "@ngx-neoumorphic/selector": [
+      "@ngx-ks/selector": [
         "./src/components/selector/selector.component"
       ],
-      "@ngx-neoumorphic/slide-toggle": [
+      "@ngx-ks/slide-toggle": [
         "./src/components/slide-toggle/slide-toggle.component"
       ],
-      "@ngx-neoumorphic/textarea": [
+      "@ngx-ks/textarea": [
         "./src/components/textarea/textarea.component"
       ]
     }

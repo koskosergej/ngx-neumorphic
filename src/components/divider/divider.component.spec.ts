@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NeoDividerComponent } from './divider.component';
+import { KsDividerComponent } from './divider.component';
 
-describe('NeoDividerComponent', () => {
-  let component: NeoDividerComponent;
-  let fixture: ComponentFixture<NeoDividerComponent>;
+describe('KsDividerComponent', () => {
+  let component: KsDividerComponent;
+  let fixture: ComponentFixture<KsDividerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NeoDividerComponent]
+      imports: [KsDividerComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(NeoDividerComponent);
+    fixture = TestBed.createComponent(KsDividerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

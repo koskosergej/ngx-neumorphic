@@ -1,0 +1,6 @@
+@use './palette';
+
+.ks-form-field-error {
+  display: block;
+  color: palette.$invalid;
+}

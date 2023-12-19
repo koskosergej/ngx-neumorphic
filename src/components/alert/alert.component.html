@@ -1,4 +1,4 @@
-<div class="neumorphic-alert__container">
+<div class="ks-alert__container">
   <div
     *ngFor="let alert of alerts$ | async; trackBy: trackByFn"
     [ngClass]="{
@@ -6,7 +6,7 @@
       info: alert.type === 'info',
       success: alert.type === 'success'
     }"
-    class="neumorphic-alert"
+    class="ks-alert"
   >
     <div class="message">
       {{ alert.message }}

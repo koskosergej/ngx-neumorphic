@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NeoSlideToggleComponent } from './slide-toggle.component';
+import { KsSlideToggleComponent } from './slide-toggle.component';
 
-describe('NeoSlideToggleComponent', () => {
-  let component: NeoSlideToggleComponent;
-  let fixture: ComponentFixture<NeoSlideToggleComponent>;
+describe('KsSlideToggleComponent', () => {
+  let component: KsSlideToggleComponent;
+  let fixture: ComponentFixture<KsSlideToggleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NeoSlideToggleComponent]
+      imports: [KsSlideToggleComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(NeoSlideToggleComponent);
+    fixture = TestBed.createComponent(KsSlideToggleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

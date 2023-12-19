@@ -5,7 +5,7 @@ import { Alert, Alerts } from './types';
 import { AlertService } from './alert.service';
 
 @Component({
-  selector: 'neo-alert',
+  selector: 'ks-alert',
   standalone: true,
   imports: [CommonModule, NgFor],
   templateUrl: './alert.component.html',

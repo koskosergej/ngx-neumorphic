@@ -1,4 +1,4 @@
-export { NeoCardComponent } from './card.component';
-export { NeoCardBodyDirective } from './card-body.directive';
-export { NeoCardFooterDirective } from './card-footer.directive';
-export { NeoCardHeaderDirective } from './card-header.directive';
+export { KsCardComponent } from './card.component';
+export { KsCardBodyDirective } from './card-body.directive';
+export { KsCardFooterDirective } from './card-footer.directive';
+export { KsCardHeaderDirective } from './card-header.directive';

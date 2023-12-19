@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { AlertComponent, AlertService, AlertType } from '@ngx-neoumorphic/alert';
-import { NeoButton } from '@ngx-neoumorphic/button';
-import { NeoInput } from '@ngx-neoumorphic/input';
+import { AlertComponent, AlertService, AlertType } from '@ngx-ks/alert';
+import { KsButton } from '@ngx-ks/button';
+import { KsInput } from '@ngx-ks/input';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'neo-alerts',
+  selector: 'ks-alerts',
   standalone: true,
-  imports: [AlertComponent, NeoButton, NeoInput, ReactiveFormsModule],
+  imports: [AlertComponent, KsButton, KsInput, ReactiveFormsModule],
   templateUrl: './alerts.component.html',
   styleUrl: './alerts.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

@@ -1,16 +1,16 @@
 import { Component, Input } from '@angular/core';
 import { WrapperComponent } from '../wrapper/wrapper.component';
-import { NeoButton } from '@ngx-neoumorphic/button';
+import { KsButton } from '@ngx-ks/button';
 
 @Component({
   selector: 'storybook-button',
-  imports: [NeoButton, WrapperComponent],
+  imports: [KsButton, WrapperComponent],
   template: `
-    <neo-storybook-wrapper>
-      <button neo-button (click)="onClick($event)" [disabled]="disabled">
+    <ks-storybook-wrapper>
+      <button ks-button (click)="onClick($event)" [disabled]="disabled">
         {{ label }}
       </button>
-    </neo-storybook-wrapper>
+    </ks-storybook-wrapper>
   `,
   standalone: true
 })

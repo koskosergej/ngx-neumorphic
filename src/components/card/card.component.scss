@@ -1,6 +1,6 @@
-@use '../../core/palette';
+@use '../../core/styles/palette';
 
-.neumorphic-card {
+.ks-card {
   border-radius: 8px;
   background-color: palette.$background-color;
   box-shadow: 5px 5px 10px palette.$outer-box-shadow,

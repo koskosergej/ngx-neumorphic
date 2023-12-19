@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/nx/schemas/project-schema.json",
-  "name": "neumorphic",
+  "name": "ks",
   "projectType": "application",
   "generators": {
     "@schematics/angular:component": {
@@ -8,12 +8,12 @@
     }
   },
   "sourceRoot": "src",
-  "prefix": "neo",
+  "prefix": "ks",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "options": {
-        "outputPath": "dist/neumorphic",
+        "outputPath": "dist/ks",
         "index": "src/index.html",
         "browser": "src/main.ts",
         "polyfills": [
@@ -58,10 +58,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "neumorphic:build:production"
+          "buildTarget": "ks:build:production"
         },
         "development": {
-          "buildTarget": "neumorphic:build:development"
+          "buildTarget": "ks:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "neumorphic:build"
+        "buildTarget": "ks:build"
       }
     },
     "test": {
@@ -95,7 +95,7 @@
       "executor": "@storybook/angular:start-storybook",
       "options": {
         "configDir": ".storybook",
-        "browserTarget": "neumorphic:build",
+        "browserTarget": "ks:build",
         "compodoc": true,
         "compodocArgs": [
           "-e",
@@ -110,7 +110,7 @@
       "executor": "@storybook/angular:build-storybook",
       "options": {
         "configDir": ".storybook",
-        "browserTarget": "neumorphic:build",
+        "browserTarget": "ks:build",
         "compodoc": true,
         "compodocArgs": [
           "-e",

@@ -1,15 +1,15 @@
 import type { OnInit } from '@angular/core';
 import { Component, Input } from '@angular/core';
 import { WrapperComponent } from '../wrapper/wrapper.component';
-import { NeoSelectorComponent } from '@ngx-neoumorphic/selector';
+import { KsSelectorComponent } from '@ngx-ks/selector';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'storybook-selector',
-  imports: [WrapperComponent, NeoSelectorComponent, ReactiveFormsModule],
+  imports: [WrapperComponent, KsSelectorComponent, ReactiveFormsModule],
   template: `
-    <neo-storybook-wrapper>
-      <neo-selector
+    <ks-storybook-wrapper>
+      <ks-selector
         [formControl]="formCntrl"
         [options]="[
           { label: 'Option 1', value: 'option1' },
@@ -17,8 +17,8 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
           { label: 'Option 3', value: 'option3' }
         ]"
       >
-      </neo-selector>
-    </neo-storybook-wrapper>
+      </ks-selector>
+    </ks-storybook-wrapper>
   `,
   standalone: true
 })

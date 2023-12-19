@@ -1,14 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { WrapperComponent } from '../wrapper/wrapper.component';
-import { NeoTextArea } from '@ngx-neoumorphic/textarea';
+import { KsTextArea } from '@ngx-ks/textarea';
 
 @Component({
   selector: 'storybook-button',
-  imports: [WrapperComponent, NeoTextArea],
+  imports: [WrapperComponent, KsTextArea],
   template: `
-    <neo-storybook-wrapper>
-      <textarea neo-textarea placeholder="simple text area" [disabled]="disabled"></textarea>
-    </neo-storybook-wrapper>
+    <ks-storybook-wrapper>
+      <textarea ks-textarea placeholder="simple text area" [disabled]="disabled"></textarea>
+    </ks-storybook-wrapper>
   `,
   standalone: true
 })

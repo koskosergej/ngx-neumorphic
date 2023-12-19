@@ -1,20 +1,20 @@
 import { ChangeDetectionStrategy, Component, ContentChildren, QueryList, ViewEncapsulation } from '@angular/core';
-import { NeoCardBodyDirective } from './card-body.directive';
-import { NeoCardHeaderDirective } from './card-header.directive';
-import { NeoCardFooterDirective } from './card-footer.directive';
+import { KsCardBodyDirective } from './card-body.directive';
+import { KsCardHeaderDirective } from './card-header.directive';
+import { KsCardFooterDirective } from './card-footer.directive';
 import { JsonPipe, NgIf } from '@angular/common';
 
 @Component({
-  selector: 'neo-card',
+  selector: 'ks-card',
   standalone: true,
-  imports: [NeoCardBodyDirective, NeoCardHeaderDirective, NeoCardFooterDirective, NgIf, JsonPipe],
+  imports: [KsCardBodyDirective, KsCardHeaderDirective, KsCardFooterDirective, NgIf, JsonPipe],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NeoCardComponent {
-  @ContentChildren(NeoCardHeaderDirective) cardHeaderList?: QueryList<NeoCardHeaderDirective>;
-  @ContentChildren(NeoCardBodyDirective) cardBodyList?: QueryList<NeoCardBodyDirective>;
-  @ContentChildren(NeoCardFooterDirective) cardFooterList?: QueryList<NeoCardFooterDirective>;
+export class KsCardComponent {
+  @ContentChildren(KsCardHeaderDirective) cardHeaderList?: QueryList<KsCardHeaderDirective>;
+  @ContentChildren(KsCardBodyDirective) cardBodyList?: QueryList<KsCardBodyDirective>;
+  @ContentChildren(KsCardFooterDirective) cardFooterList?: QueryList<KsCardFooterDirective>;
 }

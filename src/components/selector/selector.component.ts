@@ -4,75 +4,26 @@ import { SelectorOption, SelectorOptions } from './type';
 import { NgFor } from '@angular/common';
 
 @Component({
-  selector: 'neo-selector',
+  selector: 'ks-selector',
   standalone: true,
   imports: [FormsModule, NgFor],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => NeoSelectorComponent),
+      useExisting: forwardRef(() => KsSelectorComponent),
       multi: true
     }
   ],
   template: `
-    <div class="neumorphic-selector-wrapper">
-      <select
-        (change)="optionsSelected()"
-        [(ngModel)]="selectedValue"
-        [disabled]="disabled"
-        class="neumorphic-selector"
-      >
+    <div class="ks-selector-wrapper">
+      <select (change)="optionsSelected()" [(ngModel)]="selectedValue" [disabled]="disabled" class="ks-selector">
         <option *ngFor="let option of options" [value]="option.value">{{ option.label }}</option>
       </select>
     </div>
   `,
-  styles: [
-    `
-      @use '../../core/palette';
-
-      .neumorphic-selector-wrapper {
-        display: inline-block;
-      }
-
-      .neumorphic-selector {
-        padding: 10px;
-        border: none;
-        border-radius: 8px;
-        background-color: #f0f0f0;
-        box-shadow:
-          inset 2px 2px 3px palette.$outer-box-shadow,
-          inset -1px -1px 2px palette.$inner-box-shadow;
-        transition: box-shadow 0.3s ease-in-out;
-        font-size: 16px;
-        outline: none;
-        cursor: pointer;
-
-        &:hover {
-          box-shadow:
-            inset 5px 5px 10px palette.$outer-box-shadow,
-            inset -5px -5px 10px palette.$inner-box-shadow;
-        }
-
-        &:focus {
-          box-shadow:
-            inset 5px 5px 10px palette.$outer-box-shadow,
-            inset -5px -5px 10px palette.$inner-box-shadow;
-        }
-
-        &:disabled {
-          opacity: 0.5;
-          color: palette.$disabled-color;
-          background: linear-gradient(0deg, palette.$disabled-color, palette.$disabled-color), inherit;
-          box-shadow:
-            inset 1px 1px 2px palette.$disabled-color,
-            inset -1px -1px 2px palette.$inner-box-shadow;
-          cursor: no-drop;
-        }
-      }
-    `
-  ]
+  styleUrls: [`./selector.component.scss`]
 })
-export class NeoSelectorComponent implements ControlValueAccessor {
+export class KsSelectorComponent implements ControlValueAccessor {
   selectedValue: SelectorOption['value'];
 
   @Input() options!: SelectorOptions;

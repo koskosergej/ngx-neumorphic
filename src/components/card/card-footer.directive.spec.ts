@@ -1,8 +1,8 @@
-import { NeoCardFooterDirective } from './card-footer.directive';
+import { KsCardFooterDirective } from './card-footer.directive';
 
-describe('NeoCardFooterDirective', () => {
+describe('KsCardFooterDirective', () => {
   it('should create an instance', () => {
-    const directive = new NeoCardFooterDirective();
+    const directive = new KsCardFooterDirective();
     expect(directive).toBeTruthy();
   });
 });

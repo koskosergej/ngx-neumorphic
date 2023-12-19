@@ -1,8 +1,8 @@
-import { NeoCardHeaderDirective } from './card-header.directive';
+import { KsCardHeaderDirective } from './card-header.directive';
 
-describe('NeoCardHeaderDirective', () => {
+describe('ksCardHeaderDirective', () => {
   it('should create an instance', () => {
-    const directive = new NeoCardHeaderDirective();
+    const directive = new KsCardHeaderDirective();
     expect(directive).toBeTruthy();
   });
 });

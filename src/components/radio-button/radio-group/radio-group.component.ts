@@ -8,16 +8,16 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { NeumorphicRadioButtonComponent } from '../radio-button/radio-button.component';
+import { KsRadioButtonComponent } from '../radio-button/radio-button.component';
 
 @Component({
-  selector: 'neo-neumorphic-radio-group',
+  selector: 'ks-radio-group',
   templateUrl: './radio-group.component.html',
   styleUrls: ['./radio-group.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => NeumorphicRadioGroupComponent),
+      useExisting: forwardRef(() => KsRadioGroupComponent),
       multi: true
     }
   ],
@@ -25,8 +25,8 @@ import { NeumorphicRadioButtonComponent } from '../radio-button/radio-button.com
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NeumorphicRadioGroupComponent implements ControlValueAccessor, AfterContentInit {
-  @ContentChildren(NeumorphicRadioButtonComponent) radioButtons!: QueryList<NeumorphicRadioButtonComponent>;
+export class KsRadioGroupComponent implements ControlValueAccessor, AfterContentInit {
+  @ContentChildren(KsRadioButtonComponent) radioButtons!: QueryList<KsRadioButtonComponent>;
 
   constructor() {}
 

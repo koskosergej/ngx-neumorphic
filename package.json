@@ -1,5 +1,5 @@
 {
-  "name": "ngx-neumorphic",
+  "name": "ngx-ks",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
@@ -9,8 +9,8 @@
     "test": "nx test",
     "lint": "eslint --ext .ts src",
     "lint:fix": "eslint --ext .ts src --fix",
-    "storybook": "nx run neumorphic:storybook",
-    "build-storybook": "nx run neumorphic:build-storybook"
+    "storybook": "nx run ks:storybook",
+    "build-storybook": "nx run ks:build-storybook"
   },
   "private": true,
   "dependencies": {

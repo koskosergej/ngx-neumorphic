@@ -1,11 +1,16 @@
-<neo-card>
-  <div neoCardBody>
+<ks-card>
+  <div ksCardBody>
     <form [formGroup]="form" class="login-page-body">
-      <input formControlName="username" neo-input placeholder="username">
-      <input formControlName="password" neo-input placeholder="password" type="password">
+      <ks-form-field>
+        <input formControlName="username" ks-input placeholder="username">
+      </ks-form-field>
+      <ks-form-field>
+        <input formControlName="password" ks-input placeholder="password" type="password">
+        <!--        <ks-error>Test</ks-error>-->
+      </ks-form-field>
     </form>
   </div>
-  <div class="login-page-footer" neoCardFooter>
-    <button (click)="onSubmit()" neo-button type="button">Submit</button>
+  <div class="login-page-footer" ksCardFooter>
+    <button (click)="onSubmit()" ks-button type="button">Submit</button>
   </div>
-</neo-card>
+</ks-card>

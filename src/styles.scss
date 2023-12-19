@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@use './core/palette';
+@import 'core/styles/form-field';
+@import 'core/styles/palette';
 
 body {
-  background-color: palette.$background-color;
+  background-color: $background-color;
 }

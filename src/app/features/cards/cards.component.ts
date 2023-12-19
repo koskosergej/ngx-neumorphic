@@ -1,16 +1,11 @@
 import { Component } from '@angular/core';
-import {
-  NeoCardBodyDirective,
-  NeoCardComponent,
-  NeoCardFooterDirective,
-  NeoCardHeaderDirective
-} from '@ngx-neoumorphic/card';
+import { KsCardBodyDirective, KsCardComponent, KsCardFooterDirective, KsCardHeaderDirective } from '@ngx-ks/card';
 import { NgIf } from '@angular/common';
 
 @Component({
-  selector: 'neo-cards',
+  selector: 'ks-cards',
   standalone: true,
-  imports: [NeoCardComponent, NeoCardFooterDirective, NeoCardHeaderDirective, NeoCardBodyDirective, NgIf],
+  imports: [KsCardComponent, KsCardFooterDirective, KsCardHeaderDirective, KsCardBodyDirective, NgIf],
   templateUrl: './cards.component.html',
   styleUrl: './cards.component.scss'
 })

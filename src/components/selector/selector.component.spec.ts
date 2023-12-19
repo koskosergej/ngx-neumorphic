@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NeoSelectorComponent } from './selector.component';
+import { KsSelectorComponent } from './selector.component';
 
-describe('NeoSelectorComponent', () => {
-  let component: NeoSelectorComponent;
-  let fixture: ComponentFixture<NeoSelectorComponent>;
+describe('KsSelectorComponent', () => {
+  let component: KsSelectorComponent;
+  let fixture: ComponentFixture<KsSelectorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NeoSelectorComponent]
+      imports: [KsSelectorComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(NeoSelectorComponent);
+    fixture = TestBed.createComponent(KsSelectorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

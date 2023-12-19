@@ -1,44 +1,44 @@
 import { Component } from '@angular/core';
-import { NeoInput } from '@ngx-neoumorphic/input';
-import { NeoTextArea } from '@ngx-neoumorphic/textarea';
-import { NeumorphicRadioButtonComponent, NeumorphicRadioGroupComponent } from '@ngx-neoumorphic/radio-button';
-import { NeoSelectorComponent } from '@ngx-neoumorphic/selector';
+import { KsInput } from '@ngx-ks/input';
+import { KsTextArea } from '@ngx-ks/textarea';
+import { KsRadioButtonComponent, KsRadioGroupComponent } from '@ngx-ks/radio-button';
+import { KsSelectorComponent } from '@ngx-ks/selector';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { NeoSlideToggleComponent } from '@ngx-neoumorphic/slide-toggle';
-import { NeoDividerComponent } from '@ngx-neoumorphic/divider';
+import { KsSlideToggleComponent } from '@ngx-ks/slide-toggle';
+import { KsDividerComponent } from '@ngx-ks/divider';
 
 @Component({
-  selector: 'neo-inputs',
+  selector: 'ks-inputs',
   standalone: true,
   imports: [
-    NeoInput,
-    NeumorphicRadioButtonComponent,
-    NeumorphicRadioGroupComponent,
-    NeoTextArea,
-    NeoSelectorComponent,
-    NeoSelectorComponent,
+    KsInput,
+    KsTextArea,
+    KsSelectorComponent,
+    KsSelectorComponent,
     ReactiveFormsModule,
-    NeoSlideToggleComponent,
-    NeoDividerComponent
+    KsSlideToggleComponent,
+    KsDividerComponent,
+    KsRadioGroupComponent,
+    KsRadioButtonComponent
   ],
   template: `
-    <input neo-input placeholder="input component" />
+    <input ks-input placeholder="input component" />
     <br />
     <br />
-    <input neo-input placeholder="disabled input" disabled />
-    <neo-divider></neo-divider>
-    <neo-neumorphic-radio-group>
-      <neo-neumorphic-radio-button value="option1">Option 1</neo-neumorphic-radio-button>
-      <neo-neumorphic-radio-button value="option2">Option 2</neo-neumorphic-radio-button>
-      <neo-neumorphic-radio-button value="option3">Option 3</neo-neumorphic-radio-button>
-    </neo-neumorphic-radio-group>
-    <neo-divider></neo-divider>
-    <textarea neo-textarea placeholder="simple text area"></textarea>
+    <input ks-input placeholder="disabled input" disabled />
+    <ks-divider></ks-divider>
+    <ks-radio-group>
+      <ks-radio-button value="option1">Option 1</ks-radio-button>
+      <ks-radio-button value="option2">Option 2</ks-radio-button>
+      <ks-radio-button value="option3">Option 3</ks-radio-button>
+    </ks-radio-group>
+    <ks-divider></ks-divider>
+    <textarea ks-textarea placeholder="simple text area"></textarea>
     <br />
     <br />
-    <textarea neo-textarea placeholder="disabled text area" disabled></textarea>
-    <neo-divider></neo-divider>
-    <neo-selector
+    <textarea ks-textarea placeholder="disabled text area" disabled></textarea>
+    <ks-divider></ks-divider>
+    <ks-selector
       [formControl]="selectorCntrl"
       [options]="[
         { label: 'Option 1', value: 'option1' },
@@ -46,10 +46,10 @@ import { NeoDividerComponent } from '@ngx-neoumorphic/divider';
         { label: 'Option 3', value: 'option3' }
       ]"
     >
-    </neo-selector>
+    </ks-selector>
     <br />
     <br />
-    <neo-selector
+    <ks-selector
       [formControl]="disabledSelector"
       [options]="[
         { label: 'Option 1', value: 'option1' },
@@ -57,9 +57,9 @@ import { NeoDividerComponent } from '@ngx-neoumorphic/divider';
         { label: 'Option 3', value: 'option3' }
       ]"
     >
-    </neo-selector>
-    <neo-divider></neo-divider>
-    <neo-slide-toggle [formControl]="slideToggle"></neo-slide-toggle>
+    </ks-selector>
+    <ks-divider></ks-divider>
+    <ks-slide-toggle [formControl]="slideToggle"></ks-slide-toggle>
   `
 })
 export class InputsComponent {

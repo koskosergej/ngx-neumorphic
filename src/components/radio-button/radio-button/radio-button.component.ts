@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component, forwardRef, Input, ViewEncapsulatio
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
-  selector: 'neo-neumorphic-radio-button',
+  selector: 'ks-radio-button',
   template: `
-    <label class="neumorphic-radio-label">
+    <label class="ks-radio-label">
       <input type="radio" [value]="value" [checked]="checked" (change)="choseValue()" [name]="name" />
       <span><ng-content></ng-content></span>
     </label>
@@ -12,7 +12,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => NeumorphicRadioButtonComponent),
+      useExisting: forwardRef(() => KsRadioButtonComponent),
       multi: true
     }
   ],
@@ -20,7 +20,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NeumorphicRadioButtonComponent implements ControlValueAccessor {
+export class KsRadioButtonComponent implements ControlValueAccessor {
   @Input() value: any;
   @Input() name: any;
   checked: boolean = false;

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { LoginData, LoginPageComponent } from '@ngx-neoumorphic/login-page';
+import { LoginData, LoginPageComponent } from '@ngx-ks/login-page';
 import { JsonPipe } from '@angular/common';
-import { NeoDividerComponent } from '@ngx-neoumorphic/divider';
+import { KsDividerComponent } from '@ngx-ks/divider';
 
 @Component({
-  selector: 'neo-common-pages',
+  selector: 'ks-common-pages',
   standalone: true,
-  imports: [LoginPageComponent, JsonPipe, NeoDividerComponent],
+  imports: [LoginPageComponent, JsonPipe, KsDividerComponent],
   templateUrl: './common-pages.component.html',
   styleUrl: './common-pages.component.scss'
 })

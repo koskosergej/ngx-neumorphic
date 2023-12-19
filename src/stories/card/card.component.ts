@@ -1,35 +1,23 @@
 import { Component, Input } from '@angular/core';
 import { WrapperComponent } from '../wrapper/wrapper.component';
-import {
-  NeoCardBodyDirective,
-  NeoCardComponent,
-  NeoCardFooterDirective,
-  NeoCardHeaderDirective
-} from '@ngx-neoumorphic/card';
+import { ksCardBodyDirective, KsCardComponent, ksCardFooterDirective, ksCardHeaderDirective } from '@ngx-ks/card';
 import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'storybook-card',
-  imports: [
-    NeoCardComponent,
-    WrapperComponent,
-    NeoCardHeaderDirective,
-    NeoCardBodyDirective,
-    NeoCardFooterDirective,
-    NgIf
-  ],
+  imports: [KsCardComponent, WrapperComponent, ksCardHeaderDirective, ksCardBodyDirective, ksCardFooterDirective, NgIf],
   template: `
-    <neo-storybook-wrapper>
+    <ks-storybook-wrapper>
       <div class="card-container">
-        <neo-card>
-          <div neoCardHeader *ngIf="withHeader">Card Header</div>
+        <ks-card>
+          <div ksCardHeader *ngIf="withHeader">Card Header</div>
 
-          <div neoCardBody *ngIf="withBody">Card body</div>
+          <div ksCardBody *ngIf="withBody">Card body</div>
 
-          <div neoCardFooter *ngIf="withFooter">Card Footer</div>
-        </neo-card>
+          <div ksCardFooter *ngIf="withFooter">Card Footer</div>
+        </ks-card>
       </div>
-    </neo-storybook-wrapper>
+    </ks-storybook-wrapper>
   `,
   standalone: true,
   styles: [

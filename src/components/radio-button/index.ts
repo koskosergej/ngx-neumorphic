@@ -1,2 +1,2 @@
-export { NeumorphicRadioButtonComponent } from './radio-button/radio-button.component';
-export { NeumorphicRadioGroupComponent } from './radio-group/radio-group.component';
+export { KsRadioButtonComponent } from './radio-button/radio-button.component';
+export { KsRadioGroupComponent } from './radio-group/radio-group.component';

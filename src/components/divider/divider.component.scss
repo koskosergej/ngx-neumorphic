@@ -1,6 +1,6 @@
-@use '../../core/palette';
+@use '../../core/styles/palette';
 
-.neumorphic-divider {
+.ks-divider {
   height: 2px;
   box-shadow: inset 1px 1px 1px palette.$outer-box-shadow, inset -1px -1px 1px palette.$inner-box-shadow;
   border-top-width: 0;

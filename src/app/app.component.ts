@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { NeoInput } from '@ngx-neoumorphic/input';
-import { NeoButton } from '@ngx-neoumorphic/button';
+import { KsInput } from '@ngx-ks/input';
+import { KsButton } from '@ngx-ks/button';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NeoInput, NeoButton, RouterOutlet, RouterLink],
+  imports: [KsInput, KsButton, RouterOutlet, RouterLink],
   template: `
     <div class="app-container">
-      <h1>Neumorphic UI-kit</h1>
+      <h1>ks UI-kit</h1>
       <div class="navigation">
         <a [routerLink]="'/inputs'">Form Controls</a>
         <a [routerLink]="'/buttons'">Buttons</a>

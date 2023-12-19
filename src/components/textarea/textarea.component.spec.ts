@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NeoTextArea } from './textarea.component';
+import { KsTextArea } from './textarea.component';
 
-describe('NeoTextArea', () => {
-  let component: NeoTextArea;
-  let fixture: ComponentFixture<NeoTextArea>;
+describe('KsTextArea', () => {
+  let component: KsTextArea;
+  let fixture: ComponentFixture<KsTextArea>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NeoTextArea]
+      imports: [KsTextArea]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(NeoTextArea);
+    fixture = TestBed.createComponent(KsTextArea);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

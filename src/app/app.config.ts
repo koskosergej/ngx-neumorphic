@@ -1,6 +1,6 @@
 import { ApplicationConfig } from '@angular/core';
 import { provideRouter, Routes } from '@angular/router';
-import { ALERTS_CONFIG } from '@ngx-neoumorphic/alert';
+import { ALERTS_CONFIG } from '@ngx-ks/alert';
 
 export const routes: Routes = [
   {

@@ -1,14 +1,25 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { NeoCardBodyDirective, NeoCardComponent, NeoCardFooterDirective } from '@ngx-neoumorphic/card';
-import { NeoInput } from '@ngx-neoumorphic/input';
-import { NeoButton } from '@ngx-neoumorphic/button';
+import { KsCardBodyDirective, KsCardComponent, KsCardFooterDirective } from '@ngx-ks/card';
+import { KsInput } from '@ngx-ks/input';
+import { KsButton } from '@ngx-ks/button';
 import { LoginData } from './type';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { KsError } from '@ngx-ks/error';
+import { FormFieldComponent } from '../form-field/form-field.component';
 
 @Component({
-  selector: 'neo-login-page',
+  selector: 'ks-login-page',
   standalone: true,
-  imports: [NeoCardComponent, NeoInput, NeoCardBodyDirective, NeoCardFooterDirective, NeoButton, ReactiveFormsModule],
+  imports: [
+    KsCardComponent,
+    KsInput,
+    KsButton,
+    ReactiveFormsModule,
+    KsError,
+    FormFieldComponent,
+    KsCardBodyDirective,
+    KsCardFooterDirective
+  ],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.scss'
 })
