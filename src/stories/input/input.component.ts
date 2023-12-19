@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { NeoInput } from '../../input/input';
 import { WrapperComponent } from '../wrapper/wrapper.component';
+import { NeoInput } from '@ngx-neoumorphic/input';
 
 @Component({
   selector: 'storybook-input',

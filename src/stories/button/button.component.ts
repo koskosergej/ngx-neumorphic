@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { WrapperComponent } from '../wrapper/wrapper.component';
-import { NeoButton } from '../../button/button';
+import { NeoButton } from '@ngx-neoumorphic/button';
 
 @Component({
   selector: 'storybook-button',
