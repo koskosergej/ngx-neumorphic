@@ -4,7 +4,7 @@ import { KsInput } from '@ngx-ks/input';
 import { KsButton } from '@ngx-ks/button';
 import { LoginData } from './type';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { KsError } from '@ngx-ks/error';
+import { ErrorDirective } from '@ngx-ks/error';
 import { FormFieldComponent } from '../form-field/form-field.component';
 import { NgIf } from '@angular/common';
 
@@ -16,7 +16,7 @@ import { NgIf } from '@angular/common';
     KsInput,
     KsButton,
     ReactiveFormsModule,
-    KsError,
+    ErrorDirective,
     FormFieldComponent,
     KsCardBodyDirective,
     KsCardFooterDirective,

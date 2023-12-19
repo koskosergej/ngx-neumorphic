@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ContentChildren, QueryList, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { KsError } from '@ngx-ks/error';
+import { ErrorDirective } from '@ngx-ks/error';
 
 @Component({
   selector: 'ks-form-field',
@@ -12,5 +12,5 @@ import { KsError } from '@ngx-ks/error';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FormFieldComponent {
-  @ContentChildren(KsError, { descendants: true }) _errorChildren?: QueryList<KsError>;
+  @ContentChildren(ErrorDirective, { descendants: true }) _errorChildren?: QueryList<ErrorDirective>;
 }
