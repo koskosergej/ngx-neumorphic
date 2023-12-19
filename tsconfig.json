@@ -74,6 +74,9 @@
       ],
       "@ngx-ks/pipes/format-bytes": [
         "./src/pipes/format-bytes"
+      ],
+      "@ngx-ks/decorators/cache": [
+        "./src/decorators/cache"
       ]
     }
   },
