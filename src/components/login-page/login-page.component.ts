@@ -36,6 +36,8 @@ export class LoginPageComponent {
   });
 
   onSubmit(): void {
-    this.submit.emit(this.form.value);
+    if (this.form.valid) {
+      this.submit.emit(this.form.value);
+    }
   }
 }
