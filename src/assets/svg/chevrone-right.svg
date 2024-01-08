@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="24px" version="1.1" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: sketchtool 61 (101010) - https://sketch.com -->
+  <title>C3259BCD-A951-4E7B-B2A8-7DD1E02FA0A3</title>
+  <desc>Created with sketchtool.</desc>
+  <defs>
+    <polygon id="path-1" points="10 6 8.59 7.41 13.17 12 8.59 16.59 10 18 16 12"></polygon>
+  </defs>
+  <g fill="none" fill-rule="evenodd" id="Asset-Artboard-Page" stroke="none" stroke-width="1">
+    <g id="Icon/Chevrone/Right">
+      <g id="Chevron/Right">
+        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+        <mask fill="white" id="mask-2">
+          <use xlink:href="#path-1"></use>
+        </mask>
+        <use fill="#E11C24" fill-rule="nonzero" id="Path" xlink:href="#path-1"></use>
+        <g fill="#E11C24" id="Color-Color/Primary/primaryMono100" mask="url(#mask-2)">
+          <rect height="24" id="Rectangle" width="24" x="0" y="0"></rect>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

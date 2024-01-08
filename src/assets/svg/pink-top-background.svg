@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="466px" version="1.1" viewBox="0 0 1440 466" width="1440px" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+  <title>3972BCDA-4D30-4F73-B2FD-7F8149F0D929</title>
+  <desc>Created with sketchtool.</desc>
+  <defs>
+    <linearGradient id="linearGradient-1" x1="50%" x2="50%" y1="20.1646959%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2F0"></stop>
+      <stop offset="100%" stop-color="#F7F5FE"></stop>
+    </linearGradient>
+    <polygon id="path-2" points="0 0 1440 0 1440 324.710938 0 465.910156"></polygon>
+  </defs>
+  <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+    <g id="Landing-Page-Inner">
+      <g id="First-Screen">
+        <g id="Background-Photo">
+          <mask fill="white" id="mask-3">
+            <use xlink:href="#path-2"></use>
+          </mask>
+          <use fill="url(#linearGradient-1)" id="Mask" xlink:href="#path-2"></use>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

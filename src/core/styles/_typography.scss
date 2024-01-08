@@ -1,0 +1,98 @@
+label {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  &.required:after {
+    color: $red;
+    content: ' *';
+  }
+}
+
+.font-size-small {
+  font-size: 0.8rem;
+}
+
+.font-size-normal {
+  font-size: 1rem;
+}
+
+.font-size-big {
+  font-size: 1.5rem;
+}
+
+.font-size-xl {
+  font-size: 2rem;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 2.5rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 3rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 3rem;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 3rem;
+  }
+
+}
+
+.text-block-truncate {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 3.6em;
+  text-align: justify;
+  margin-right: 0;
+  padding-right: 1em;
+}
+
+.text-block-truncate:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.text-block-truncate:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+
+typeahead-container.dropdown.dropdown-menu {
+  z-index: 2000;
+}
+
+.ks-sales-sources-filter {
+  .dropdown-header {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: #6c757d3d;
+  }
+}
+
+.list-helper {
+  opacity: 1 !important;
+
+  .tooltip-arrow.arrow::before {
+    border-left-color: #95b5bb;
+  }
+
+  .tooltip-inner {
+    margin-top: 10px;
+    max-width: 350px;
+    color: black;
+    background-color: #a3a3a3;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+

@@ -1,0 +1,74 @@
+.carousel-inner {
+
+  .item {
+    margin-right: 0;
+  }
+
+  .item.active {
+    flex: 1;
+  }
+}
+
+a.carousel-control {
+  width: 62px;
+  height: 62px;
+  background-color: white;
+  box-shadow: 0 4px 23px 0 rgba(4, 0, 77, 0.35);
+  border-radius: 50%;
+  opacity: 1;
+  margin-top: 140px;
+  cursor: pointer;
+  z-index: 10;
+
+  span {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+ks-carousel.center-navigation {
+  a.carousel-control {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  div.item.active {
+    height: 100%;
+  }
+}
+
+.carousel-control-next {
+  right: -10px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("assets/svg/chevrone-right.svg");
+}
+
+.carousel-control-prev {
+  left: -10px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("assets/svg/chevrone-left.svg");
+}
+
+@media screen and (max-width: 1290px) {
+  a.carousel-control {
+    margin-top: 110px;
+  }
+
+  a.carousel-control-next {
+    right: 0;
+  }
+
+  a.carousel-control-prev {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  a.carousel-control {
+    margin-top: 110px;
+  }
+}

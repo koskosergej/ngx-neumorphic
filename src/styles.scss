@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'core/styles/palette';
+@import 'core/styles/carousel';
+@import 'core/styles/page-not-found';
+@import 'core/styles/table';
+@import 'core/styles/typography';
+@import 'core/styles/print-version';
+@import 'core/styles/form-styles';
 
 body {
   background-color: $background-color;

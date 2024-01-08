@@ -1,0 +1,247 @@
+$new-contact-less-30-days-without-open-bids-row-background-color: #d8cdee;
+$new-contact-less-90-days-without-open-bids-row-background-color: #d8cdee;
+$open-bids-no-calls-row-background-color: #f8d7da;
+$open-bids-with-calls-row-background-color: #f8d7da;
+$purchased-90-days-plus-row-background-color: #fff3cd;
+$purchased-30-90-days-row-background-color: #d4edda;
+$purchased-less-30-days-row-background-color: #d4edda;
+
+.ks-other-payment-row {
+  background-color: rgba(0, 165, 77, 0.26) !important;
+}
+
+ks-contact-table-actions {
+  li.pagination-first.page-item a.page-link::before {
+    content: '';
+  }
+
+  li.pagination-last.page-item a.page-link::before {
+    content: '';
+  }
+}
+
+ks-contacts-table {
+
+  .ngx-datatable {
+    font-size: 0.875rem !important;
+    box-shadow: 0px -3px 2px -1px #333 !important;
+    height: 70vh;
+  }
+
+  datatable-header,
+  .ngx-datatable.bootstrap .datatable-header {
+    height: 72px !important;
+
+    .datatable-header-inner,
+    .datatable-row-left,
+    datatable-header-cell {
+      height: 100%;
+      background: #fff;
+    }
+
+    .datatable-row-left {
+      &::after {
+        content: '';
+        height: 100%;
+        box-shadow: 8px 0px 7px 2px #3333336b;
+        position: absolute;
+        right: 0;
+        width: 5px;
+        background: inherit;
+        border-bottom: 1px solid #d1d4d7;
+      }
+    }
+
+    .datatable-row-center::after {
+      content: '';
+      width: 100%;
+      height: 0;
+      box-shadow: 0 8px 8px 10px #3333336b;
+      border: none;
+      position: absolute;
+      bottom: 0;
+      z-index: 999;
+    }
+
+
+    datatable-header-cell {
+      div {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .ngx-datatable.bootstrap .datatable-body .datatable-body-row {
+    border-top: 1px solid #babcbd;
+
+    &.active {
+      color: #bcbcbc;
+    }
+  }
+
+  datatable-footer {
+    display: none !important;
+  }
+
+  datatable-body {
+    max-height: 85vh;
+
+    &-row {
+      .datatable-body-cell-label {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+
+      &.datatable-body-row {
+        background: #fff !important;
+      }
+
+      &.open-bids-no-calls-row {
+        background-color: $open-bids-no-calls-row-background-color !important;
+        font-weight: bold;
+      }
+
+      &.open-bids-with-calls-row {
+        background-color: $open-bids-with-calls-row-background-color !important;
+        font-weight: normal;
+      }
+
+      &.purchased-90-days-plus-row {
+        background-color: $purchased-90-days-plus-row-background-color !important;
+        font-weight: normal;
+      }
+
+      &.purchased-30-90-days-row {
+        background-color: $purchased-30-90-days-row-background-color !important;
+        font-weight: normal;
+      }
+
+      &.purchased-less-30-days-row {
+        background-color: $purchased-less-30-days-row-background-color !important;
+        font-weight: bold;
+      }
+
+      &.new-contact-less-30-days-without-open-bids-row {
+        background-color: $new-contact-less-30-days-without-open-bids-row-background-color !important;
+        font-weight: bold;
+      }
+
+      &.new-contact-less-90-days-without-open-bids-row {
+        background-color: $new-contact-less-90-days-without-open-bids-row-background-color !important;
+        font-weight: normal;
+      }
+
+      .datatable-row-left {
+        background: inherit;
+
+        &::after {
+          content: '';
+          height: 100%;
+          box-shadow: 8px 0px 7px 2px #3333336b;
+          position: absolute;
+          right: 0;
+          width: 5px;
+          background: inherit;
+        }
+      }
+    }
+  }
+}
+
+.contact-table-legend-container {
+
+  .row > [class*="col-"] {
+    padding: 3px;
+  }
+
+  .ks-legend-item {
+    border-radius: 5px;
+    padding: .7rem;
+    font-size: .7rem;
+    height: 100%;
+    box-sizing: border-box;
+
+    &.new-contact-in-last-30-days {
+      background-color: #d8cdee;
+      font-weight: bold;
+    }
+
+    &.new-contact-in-30-90-days {
+      background-color: #d8cdee;
+    }
+
+    &.never-purchased {
+      background-color: white;
+    }
+
+    &.open-bids-no-calls {
+      background-color: $open-bids-no-calls-row-background-color;
+      font-weight: bold;
+    }
+
+    &.open-bids-one-or-more-calls {
+      background-color: $open-bids-with-calls-row-background-color;
+    }
+
+    &.last-sale-in-30-days {
+      background-color: $purchased-less-30-days-row-background-color;
+      font-weight: bold;
+    }
+
+    &.last-sale-30-90-days {
+      background-color: $purchased-30-90-days-row-background-color;
+    }
+
+    &.last-sale-more-90-days {
+      background-color: $purchased-90-days-plus-row-background-color;
+    }
+  }
+}
+
+.table-nav-container {
+  .page-item {
+    &.active {
+      .page-link {
+        color: #fff;
+        border-radius: .3rem;
+        background: #007bff;
+      }
+    }
+
+    .page-link {
+      margin-right: .25rem;
+      color: #9EA0A5;
+      background: none;
+      border-color: transparent;
+    }
+
+    &:last-child .page-link {
+      margin-right: 0;
+    }
+  }
+}
+
+.ks-other-payment-row {
+  background-color: rgba(0, 165, 77, 0.26) !important;
+}
+
+.ks-old-landing-page-row {
+  background-color: rgba(255, 137, 12, 0.23) !important;
+}
+
+.ks-crm-table {
+  height: 750px;
+}
+
+.upcoming-auctions-action-column {
+  display: flex;
+  align-self: center;
+
+  .datatable-body-cell-label {
+    display: flex;
+    flex-direction: column;
+  }
+}
