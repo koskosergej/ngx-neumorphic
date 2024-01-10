@@ -1,9 +1,22 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { KsCardBodyDirective, KsCardComponent, KsCardFooterDirective } from '@ngx-ks/card';
+import {
+  Component,
+  EventEmitter,
+  Output
+} from '@angular/core';
+import {
+  KsCardBodyDirective,
+  KsCardComponent,
+  KsCardFooterDirective
+} from '@ngx-ks/card';
 import { KsInput } from '@ngx-ks/input';
 import { KsButton } from '@ngx-ks/button';
 import { LoginData } from './type';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators
+} from '@angular/forms';
 import { ErrorDirective } from '@ngx-ks/error';
 import { FormFieldComponent } from '@ngx-ks/form-field';
 import { NgIf } from '@angular/common';

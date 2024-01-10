@@ -19,7 +19,9 @@ import { NgControl, Validators } from '@angular/forms';
   styleUrls: [`./input.scss`],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [{ provide: KsFormFieldControl, useExisting: KsInput }]
+  providers: [
+    { provide: KsFormFieldControl, useExisting: KsInput }
+  ]
 })
 export class KsInput implements KsFormFieldControl {
   constructor(
@@ -35,7 +37,13 @@ export class KsInput implements KsFormFieldControl {
 
   @Input()
   get required(): boolean {
-    return this._required ?? this.ngControl?.control?.hasValidator(Validators.required) ?? false;
+    return (
+      this._required ??
+      this.ngControl?.control?.hasValidator(
+        Validators.required
+      ) ??
+      false
+    );
   }
 
   set required(value: boolean) {
@@ -46,7 +54,9 @@ export class KsInput implements KsFormFieldControl {
 
   @Input()
   get disabled(): boolean {
-    return this._disabled ?? this.ngControl.disabled ?? false;
+    return (
+      this._disabled ?? this.ngControl.disabled ?? false
+    );
   }
 
   set disabled(value: boolean) {

@@ -5,30 +5,51 @@ import { ALERTS_CONFIG } from '@ngx-ks/alert';
 export const routes: Routes = [
   {
     path: 'inputs',
-    loadComponent: () => import('./features/inputs/inputs.component').then((m) => m.InputsComponent)
+    loadComponent: () =>
+      import('./features/inputs/inputs.component').then(
+        (m) => m.InputsComponent
+      )
   },
   {
     path: 'buttons',
-    loadComponent: () => import('./features/buttons/buttons.component').then((m) => m.ButtonsComponent)
+    loadComponent: () =>
+      import('./features/buttons/buttons.component').then(
+        (m) => m.ButtonsComponent
+      )
   },
   {
     path: 'alerts',
-    loadComponent: () => import('./features/alerts/alerts.component').then((m) => m.AlertsComponent)
+    loadComponent: () =>
+      import('./features/alerts/alerts.component').then(
+        (m) => m.AlertsComponent
+      )
   },
   {
     path: 'cards',
-    loadComponent: () => import('./features/cards/cards.component').then((m) => m.CardsComponent)
+    loadComponent: () =>
+      import('./features/cards/cards.component').then(
+        (m) => m.CardsComponent
+      )
   },
   {
     path: 'common-pages',
-    loadComponent: () => import('./features/common-pages/common-pages.component').then((m) => m.CommonPagesComponent)
+    loadComponent: () =>
+      import(
+        './features/common-pages/common-pages.component'
+      ).then((m) => m.CommonPagesComponent)
   },
   {
     path: 'pipes',
-    loadComponent: () => import('./features/pipes/pipes.component').then((m) => m.PipesComponent)
+    loadComponent: () =>
+      import('./features/pipes/pipes.component').then(
+        (m) => m.PipesComponent
+      )
   }
 ];
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } }]
+  providers: [
+    provideRouter(routes),
+    { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } }
+  ]
 };

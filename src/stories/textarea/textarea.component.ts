@@ -7,7 +7,11 @@ import { KsTextArea } from '@ngx-ks/textarea';
   imports: [WrapperComponent, KsTextArea],
   template: `
     <ks-storybook-wrapper>
-      <textarea ks-textarea placeholder="simple text area" [disabled]="disabled"></textarea>
+      <textarea
+        ks-textarea
+        placeholder="simple text area"
+        [disabled]="disabled"
+      ></textarea>
     </ks-storybook-wrapper>
   `,
   standalone: true

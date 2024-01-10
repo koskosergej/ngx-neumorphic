@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component, ContentChild, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ContentChild,
+  ViewEncapsulation
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { KsFormFieldControl } from '@ngx-ks/form-field-control';
 import { KsLabel } from '@ngx-ks/label';
@@ -13,6 +18,8 @@ import { KsLabel } from '@ngx-ks/label';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FormFieldComponent {
-  @ContentChild(KsFormFieldControl) formFieldControl: KsFormFieldControl | undefined;
+  @ContentChild(KsFormFieldControl) formFieldControl:
+    | KsFormFieldControl
+    | undefined;
   @ContentChild(KsLabel) contentLabel?: KsLabel;
 }

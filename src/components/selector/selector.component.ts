@@ -1,5 +1,13 @@
-import { Component, forwardRef, Input } from '@angular/core';
-import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
+import {
+  Component,
+  forwardRef,
+  Input
+} from '@angular/core';
+import {
+  ControlValueAccessor,
+  FormsModule,
+  NG_VALUE_ACCESSOR
+} from '@angular/forms';
 import { SelectorOption, SelectorOptions } from './type';
 import { NgFor } from '@angular/common';
 
@@ -16,14 +24,26 @@ import { NgFor } from '@angular/common';
   ],
   template: `
     <div class="ks-selector-wrapper">
-      <select (change)="optionsSelected()" [(ngModel)]="selectedValue" [disabled]="disabled" class="ks-selector">
-        <option *ngFor="let option of options" [value]="option.value">{{ option.label }}</option>
+      <select
+        (change)="optionsSelected()"
+        [(ngModel)]="selectedValue"
+        [disabled]="disabled"
+        class="ks-selector"
+      >
+        <option
+          *ngFor="let option of options"
+          [value]="option.value"
+        >
+          {{ option.label }}
+        </option>
       </select>
     </div>
   `,
   styleUrls: [`./selector.component.scss`]
 })
-export class KsSelectorComponent implements ControlValueAccessor {
+export class KsSelectorComponent
+  implements ControlValueAccessor
+{
   selectedValue: SelectorOption['value'];
 
   @Input() options!: SelectorOptions;

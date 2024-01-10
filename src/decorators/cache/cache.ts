@@ -21,31 +21,45 @@ export interface CacheOptions {
  *
  */
 export function Cache(options: CacheOptions) {
-  const cacheMap: Map<string, ReplaySubject<any>> = new Map();
+  const cacheMap: Map<
+    string,
+    ReplaySubject<any>
+  > = new Map();
 
-  return (target: any, propertyKey: string, descriptor: PropertyDescriptor) => {
+  return (
+    target: any,
+    propertyKey: string,
+    descriptor: PropertyDescriptor
+  ) => {
     const originalFunction = descriptor.value;
 
     descriptor.value = function (...args: any[]) {
       const key = `${propertyKey}_${args.toString()}`;
 
       if (!cacheMap.has(key)) {
-        cacheMap.set(key, new ReplaySubject<any>(1, options.ttl));
+        cacheMap.set(
+          key,
+          new ReplaySubject<any>(1, options.ttl)
+        );
       }
 
-      const cachedSubject = cacheMap.get(key) as ReplaySubject<any>;
+      const cachedSubject = cacheMap.get(
+        key
+      ) as ReplaySubject<any>;
 
-      const req: Observable<any> = originalFunction.apply(this, args).pipe(
-        tap(
-          (response) => {
-            cachedSubject.next(response);
-          },
-          (error) => {
-            // Forward errors to the ReplaySubject
-            cachedSubject.error(error);
-          }
-        )
-      );
+      const req: Observable<any> = originalFunction
+        .apply(this, args)
+        .pipe(
+          tap(
+            (response) => {
+              cachedSubject.next(response);
+            },
+            (error) => {
+              // Forward errors to the ReplaySubject
+              cachedSubject.error(error);
+            }
+          )
+        );
 
       return race(cachedSubject, req);
     };

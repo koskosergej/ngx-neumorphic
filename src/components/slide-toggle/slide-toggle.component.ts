@@ -1,5 +1,9 @@
 import { Component, forwardRef } from '@angular/core';
-import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
+import {
+  ControlValueAccessor,
+  FormsModule,
+  NG_VALUE_ACCESSOR
+} from '@angular/forms';
 
 @Component({
   selector: 'ks-slide-toggle',
@@ -15,7 +19,9 @@ import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/f
     }
   ]
 })
-export class KsSlideToggleComponent implements ControlValueAccessor {
+export class KsSlideToggleComponent
+  implements ControlValueAccessor
+{
   isChecked: boolean = false;
 
   constructor() {}

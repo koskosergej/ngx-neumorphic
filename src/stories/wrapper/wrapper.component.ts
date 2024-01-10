@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'ks-storybook-wrapper',
   standalone: true,
   imports: [],
-  template: '<div class="storybook-wrapper"><ng-content></ng-content></div>',
+  template:
+    '<div class="storybook-wrapper"><ng-content></ng-content></div>',
   styleUrl: './wrapper.component.scss'
 })
 export class WrapperComponent {}

@@ -1,4 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  ComponentFixture,
+  TestBed
+} from '@angular/core/testing';
 import { ElementRef } from '@angular/core';
 import { NgControl } from '@angular/forms';
 import { KsInput } from '@ngx-ks/input';
@@ -50,16 +53,22 @@ describe('KsInputComponent', () => {
     component.ngControl = ngControl as any;
 
     if (!component.ngControl.control) {
-      throw new Error('component.ngControl.control is not defined');
+      throw new Error(
+        'component.ngControl.control is not defined'
+      );
     }
 
     // Simulate NgControl having a required validator
-    component.ngControl.control.hasValidator = jest.fn().mockReturnValue(true);
+    component.ngControl.control.hasValidator = jest
+      .fn()
+      .mockReturnValue(true);
 
     expect(component.required).toBe(true);
 
     // Simulate NgControl not having a required validator
-    component.ngControl.control.hasValidator = jest.fn().mockReturnValue(false);
+    component.ngControl.control.hasValidator = jest
+      .fn()
+      .mockReturnValue(false);
 
     expect(component.required).toBe(false);
   });

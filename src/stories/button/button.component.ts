@@ -7,7 +7,11 @@ import { KsButton } from '@ngx-ks/button';
   imports: [KsButton, WrapperComponent],
   template: `
     <ks-storybook-wrapper>
-      <button ks-button (click)="onClick($event)" [disabled]="disabled">
+      <button
+        ks-button
+        (click)="onClick($event)"
+        [disabled]="disabled"
+      >
         {{ label }}
       </button>
     </ks-storybook-wrapper>

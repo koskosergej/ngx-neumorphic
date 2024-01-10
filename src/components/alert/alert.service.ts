@@ -1,8 +1,15 @@
-import { Inject, Injectable, Optional } from '@angular/core';
+import {
+  Inject,
+  Injectable,
+  Optional
+} from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { Alert, AlertConfig, Alerts } from './types';
 import { generateID } from './utils';
-import { ALERTS_CONFIG, DEFAULT_ALERTS_CONFIG } from './constants';
+import {
+  ALERTS_CONFIG,
+  DEFAULT_ALERTS_CONFIG
+} from './constants';
 
 @Injectable({
   providedIn: 'root'
@@ -13,19 +20,27 @@ export class AlertService {
   private _alerts$ = new BehaviorSubject<Alerts>([]);
   public alerts$ = this._alerts$.asObservable();
 
-  constructor(@Optional() @Inject(ALERTS_CONFIG) private alertConfig: AlertConfig) {}
+  constructor(
+    @Optional()
+    @Inject(ALERTS_CONFIG)
+    private alertConfig: AlertConfig
+  ) {}
 
   emitMessage(alert: Omit<Alert, 'id'>): void {
     const tempAlert = { ...alert, id: generateID() };
 
     tempAlert.timeOutID = setTimeout(
       this.destroy.bind(this, tempAlert.id),
-      this.alertConfig?.timeout ?? DEFAULT_ALERTS_CONFIG.timeout
+      this.alertConfig?.timeout ??
+        DEFAULT_ALERTS_CONFIG.timeout
     ) as unknown as number;
 
     this.alertsMap[tempAlert.id] = tempAlert;
 
-    this._alerts$.next([{ ...tempAlert }, ...this._alerts$.value]);
+    this._alerts$.next([
+      { ...tempAlert },
+      ...this._alerts$.value
+    ]);
   }
 
   success(message: string): void {
@@ -41,12 +56,23 @@ export class AlertService {
   }
 
   destroy(id: string) {
-    if (!Object.prototype.hasOwnProperty.call(this.alertsMap, id)) return;
+    if (
+      !Object.prototype.hasOwnProperty.call(
+        this.alertsMap,
+        id
+      )
+    )
+      return;
 
-    this.alertsMap[id].timeOutID && clearTimeout(this.alertsMap[id].timeOutID);
+    this.alertsMap[id].timeOutID &&
+      clearTimeout(this.alertsMap[id].timeOutID);
 
     delete this.alertsMap[id];
 
-    this._alerts$.next([...this._alerts$.value.filter((item) => item.id !== id)]);
+    this._alerts$.next([
+      ...this._alerts$.value.filter(
+        (item) => item.id !== id
+      )
+    ]);
   }
 }

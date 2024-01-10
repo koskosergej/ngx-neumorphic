@@ -1,4 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  ComponentFixture,
+  TestBed
+} from '@angular/core/testing';
 import { CommonPagesComponent } from './common-pages.component';
 import { LoginPageComponent } from '@ngx-ks/login-page';
 import { JsonPipe } from '@angular/common';
@@ -11,7 +14,13 @@ describe('CommonPagesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CommonPagesComponent, LoginPageComponent, JsonPipe, KsDividerComponent, PageNotFoundComponent]
+      declarations: [
+        CommonPagesComponent,
+        LoginPageComponent,
+        JsonPipe,
+        KsDividerComponent,
+        PageNotFoundComponent
+      ]
     }).compileComponents();
   });
 
@@ -33,16 +42,30 @@ describe('CommonPagesComponent', () => {
     const originalLoginData = component.loginData;
 
     // Call loginPageSubmit method with mock data
-    component.loginPageSubmit({ username: 'test', password: '123456' });
+    component.loginPageSubmit({
+      username: 'test',
+      password: '123456'
+    });
 
     // Check if loginData got updated
-    expect(component.loginData).not.toEqual(originalLoginData);
-    expect(component.loginData).toEqual({ username: 'test', password: '123456' });
+    expect(component.loginData).not.toEqual(
+      originalLoginData
+    );
+    expect(component.loginData).toEqual({
+      username: 'test',
+      password: '123456'
+    });
 
     // Call loginPageSubmit method again with different mock data
-    component.loginPageSubmit({ username: 'another', password: '654321' });
+    component.loginPageSubmit({
+      username: 'another',
+      password: '654321'
+    });
 
     // Check if loginData got updated with the new data
-    expect(component.loginData).toEqual({ username: 'another', password: '654321' });
+    expect(component.loginData).toEqual({
+      username: 'another',
+      password: '654321'
+    });
   });
 });

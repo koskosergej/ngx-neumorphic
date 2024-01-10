@@ -1,4 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  ComponentFixture,
+  TestBed
+} from '@angular/core/testing';
 
 import { KsSlideToggleComponent } from './slide-toggle.component';
 
@@ -11,7 +14,9 @@ describe('KsSlideToggleComponent', () => {
       imports: [KsSlideToggleComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(KsSlideToggleComponent);
+    fixture = TestBed.createComponent(
+      KsSlideToggleComponent
+    );
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

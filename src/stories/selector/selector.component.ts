@@ -2,11 +2,18 @@ import type { OnInit } from '@angular/core';
 import { Component, Input } from '@angular/core';
 import { WrapperComponent } from '../wrapper/wrapper.component';
 import { KsSelectorComponent } from '@ngx-ks/selector';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormControl,
+  ReactiveFormsModule
+} from '@angular/forms';
 
 @Component({
   selector: 'storybook-selector',
-  imports: [WrapperComponent, KsSelectorComponent, ReactiveFormsModule],
+  imports: [
+    WrapperComponent,
+    KsSelectorComponent,
+    ReactiveFormsModule
+  ],
   template: `
     <ks-storybook-wrapper>
       <ks-selector
@@ -28,6 +35,9 @@ export default class SelectorComponent implements OnInit {
   formCntrl!: FormControl;
 
   ngOnInit() {
-    this.formCntrl = new FormControl({ value: null, disabled: this.disabled });
+    this.formCntrl = new FormControl({
+      value: null,
+      disabled: this.disabled
+    });
   }
 }

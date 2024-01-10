@@ -8,7 +8,12 @@ import { KsInput } from '@ngx-ks/input';
   imports: [CommonModule, KsInput, WrapperComponent],
   template: `
     <ks-storybook-wrapper>
-      <input ks-input style="width: 200px" placeholder="placeholder" [disabled]="disabled" />
+      <input
+        ks-input
+        style="width: 200px"
+        placeholder="placeholder"
+        [disabled]="disabled"
+      />
     </ks-storybook-wrapper>
   `,
   standalone: true

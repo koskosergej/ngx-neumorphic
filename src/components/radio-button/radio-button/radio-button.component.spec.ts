@@ -1,4 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  ComponentFixture,
+  TestBed
+} from '@angular/core/testing';
 
 import { KsRadioButtonComponent } from './radio-button.component';
 
@@ -11,7 +14,9 @@ describe('KsRadioButtonComponent', () => {
       imports: [KsRadioButtonComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(KsRadioButtonComponent);
+    fixture = TestBed.createComponent(
+      KsRadioButtonComponent
+    );
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,4 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  ComponentFixture,
+  TestBed
+} from '@angular/core/testing';
 import { FormControl } from '@angular/forms';
 import { LoginPageComponent } from './login-page.component';
 
@@ -59,8 +62,12 @@ describe('LoginPageComponent', () => {
   });
 
   it('should have required validators for username and password fields', () => {
-    const usernameControl = component.form.get('username') as FormControl;
-    const passwordControl = component.form.get('password') as FormControl;
+    const usernameControl = component.form.get(
+      'username'
+    ) as FormControl;
+    const passwordControl = component.form.get(
+      'password'
+    ) as FormControl;
 
     usernameControl.setValue('');
     passwordControl.setValue('');

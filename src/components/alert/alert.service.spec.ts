@@ -17,8 +17,12 @@ describe('AlertService', () => {
   it('should emit a success alert', () => {
     alertService.success(successMessage);
 
-    expect(Object.keys(alertService['alertsMap']).length).toEqual(1); // Assuming generateID() returns '1'
-    expect(Object.values(alertService['alertsMap'])[0]).toMatchObject({
+    expect(
+      Object.keys(alertService['alertsMap']).length
+    ).toEqual(1); // Assuming generateID() returns '1'
+    expect(
+      Object.values(alertService['alertsMap'])[0]
+    ).toMatchObject({
       type: 'success',
       message: successMessage
     });
@@ -29,8 +33,12 @@ describe('AlertService', () => {
 
     alertService.warning(warningMessage);
 
-    expect(Object.keys(alertService['alertsMap']).length).toEqual(1); // Assuming generateID() returns '1'
-    expect(Object.values(alertService['alertsMap'])[0]).toMatchObject({
+    expect(
+      Object.keys(alertService['alertsMap']).length
+    ).toEqual(1); // Assuming generateID() returns '1'
+    expect(
+      Object.values(alertService['alertsMap'])[0]
+    ).toMatchObject({
       type: 'warning',
       message: warningMessage
     });
@@ -41,8 +49,12 @@ describe('AlertService', () => {
 
     alertService.info(infoMessage);
 
-    expect(Object.keys(alertService['alertsMap']).length).toEqual(1); // Assuming generateID() returns '1'
-    expect(Object.values(alertService['alertsMap'])[0]).toMatchObject({
+    expect(
+      Object.keys(alertService['alertsMap']).length
+    ).toEqual(1); // Assuming generateID() returns '1'
+    expect(
+      Object.values(alertService['alertsMap'])[0]
+    ).toMatchObject({
       type: 'info',
       message: infoMessage
     });
@@ -54,21 +66,35 @@ describe('AlertService', () => {
       id: alertID,
       type: 'success',
       message: successMessage,
-      timeOutID: setTimeout(() => {}, 500) as unknown as number // Mocked timeout ID
+      timeOutID: setTimeout(
+        () => {},
+        500
+      ) as unknown as number // Mocked timeout ID
     };
-    const initialAlertsCount = Object.keys(alertService['alertsMap']).length;
+    const initialAlertsCount = Object.keys(
+      alertService['alertsMap']
+    ).length;
 
     alertService.destroy(alertID);
 
-    expect(Object.keys(alertService['alertsMap']).length).toBe(initialAlertsCount - 1);
+    expect(
+      Object.keys(alertService['alertsMap']).length
+    ).toBe(initialAlertsCount - 1);
   });
 
   it('should emit a message and destroy an alert after the timeout', () => {
     jest.useFakeTimers();
-    alertService.emitMessage({ type: 'success', message: successMessage });
+    alertService.emitMessage({
+      type: 'success',
+      message: successMessage
+    });
 
-    jest.advanceTimersByTime(DEFAULT_ALERTS_CONFIG.timeout + 1000);
+    jest.advanceTimersByTime(
+      DEFAULT_ALERTS_CONFIG.timeout + 1000
+    );
 
-    expect(Object.keys(alertService['alertsMap']).length).toBe(0);
+    expect(
+      Object.keys(alertService['alertsMap']).length
+    ).toBe(0);
   });
 });

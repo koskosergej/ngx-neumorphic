@@ -1,11 +1,26 @@
-import { ChangeDetectionStrategy, Component, forwardRef, Input, ViewEncapsulation } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  forwardRef,
+  Input,
+  ViewEncapsulation
+} from '@angular/core';
+import {
+  ControlValueAccessor,
+  NG_VALUE_ACCESSOR
+} from '@angular/forms';
 
 @Component({
   selector: 'ks-radio-button',
   template: `
     <label class="ks-radio-label">
-      <input type="radio" [value]="value" [checked]="checked" (change)="choseValue()" [name]="name" />
+      <input
+        type="radio"
+        [value]="value"
+        [checked]="checked"
+        (change)="choseValue()"
+        [name]="name"
+      />
       <span><ng-content></ng-content></span>
     </label>
   `,
@@ -20,7 +35,9 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class KsRadioButtonComponent implements ControlValueAccessor {
+export class KsRadioButtonComponent
+  implements ControlValueAccessor
+{
   @Input() value: any;
   @Input() name: any;
   checked: boolean = false;

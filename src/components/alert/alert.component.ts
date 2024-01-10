@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnInit,
+  ViewEncapsulation
+} from '@angular/core';
 import { CommonModule, NgFor } from '@angular/common';
 import { Observable } from 'rxjs';
 import { Alert, Alerts } from './types';

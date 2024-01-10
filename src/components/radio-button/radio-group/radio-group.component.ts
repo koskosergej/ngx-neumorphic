@@ -7,7 +7,10 @@ import {
   QueryList,
   ViewEncapsulation
 } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import {
+  ControlValueAccessor,
+  NG_VALUE_ACCESSOR
+} from '@angular/forms';
 import { KsRadioButtonComponent } from '../radio-button/radio-button.component';
 
 @Component({
@@ -25,14 +28,19 @@ import { KsRadioButtonComponent } from '../radio-button/radio-button.component';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class KsRadioGroupComponent implements ControlValueAccessor, AfterContentInit {
-  @ContentChildren(KsRadioButtonComponent) radioButtons!: QueryList<KsRadioButtonComponent>;
+export class KsRadioGroupComponent
+  implements ControlValueAccessor, AfterContentInit
+{
+  @ContentChildren(KsRadioButtonComponent)
+  radioButtons!: QueryList<KsRadioButtonComponent>;
 
   constructor() {}
 
   ngAfterContentInit(): void {
     this.radioButtons.forEach((button) => {
-      button.registerOnChange(this.onRadioButtonChange.bind(this));
+      button.registerOnChange(
+        this.onRadioButtonChange.bind(this)
+      );
       button.name = 'name';
     });
   }
