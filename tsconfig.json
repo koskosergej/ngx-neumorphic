@@ -48,6 +48,9 @@
       "@ngx-ks/login-page": [
         "./src/components/login-page"
       ],
+      "@ngx-ks/page-not-found": [
+        "./src/components/page-not-found"
+      ],
       "@ngx-ks/radio-button": [
         "./src/components/radio-button"
       ],

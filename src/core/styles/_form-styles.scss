@@ -1,3 +1,5 @@
+@import "palette";
+
 .form-group {
   margin-bottom: 1.5em;
   position: relative;
@@ -30,13 +32,13 @@
 
 .ng-invalid.ng-touched, .ng-valid.aa-server-error {
   & > select {
-    border-color: $red;
+    border-color: $invalid;
   }
 }
 
 input, select {
   &.ng-invalid.ng-touched, &.ng-valid.aa-server-error {
-    border-color: $red;
+    border-color: $invalid;
   }
 
   &:disabled {
@@ -62,7 +64,7 @@ textarea {
   min-height: 65px;
 
   &.ng-invalid.ng-touched, &.ng-valid.aa-server-error {
-    border-color: $red;
+    border-color: $invalid;
   }
 
   &:disabled {

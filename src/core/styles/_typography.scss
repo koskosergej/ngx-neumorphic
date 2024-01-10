@@ -1,10 +1,12 @@
+@import "palette";
+
 label {
   margin-bottom: 0;
   font-size: 0.9rem;
   font-weight: 700;
 
   &.required:after {
-    color: $red;
+    color: $invalid;
     content: ' *';
   }
 }
@@ -23,20 +25,6 @@ label {
 
 .font-size-xl {
   font-size: 2rem;
-
-  @include media-breakpoint-up(sm) {
-    font-size: 2.5rem;
-  }
-  @include media-breakpoint-up(md) {
-    font-size: 3rem;
-  }
-  @include media-breakpoint-up(lg) {
-    font-size: 3rem;
-  }
-  @include media-breakpoint-up(xl) {
-    font-size: 3rem;
-  }
-
 }
 
 .text-block-truncate {
