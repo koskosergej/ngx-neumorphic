@@ -17,6 +17,7 @@ import { FormFieldComponent } from '@ngx-ks/form-field';
 import { KsLabel } from '@ngx-ks/label';
 import { ErrorDirective } from '@ngx-ks/error';
 import { NgIf } from '@angular/common';
+import { CheckboxComponent } from '@ngx-ks/checkbox';
 
 @Component({
   selector: 'ks-inputs',
@@ -34,7 +35,8 @@ import { NgIf } from '@angular/common';
     FormFieldComponent,
     KsLabel,
     ErrorDirective,
-    NgIf
+    NgIf,
+    CheckboxComponent
   ],
   template: `
     <ks-form-field>
@@ -123,6 +125,15 @@ import { NgIf } from '@angular/common';
     <ks-slide-toggle
       [formControl]="slideToggle"
     ></ks-slide-toggle>
+    <ks-divider></ks-divider>
+    <ks-checkbox
+      label="checkbox"
+      [formControl]="checkboxCntrl"
+    ></ks-checkbox>
+    <ks-checkbox
+      label="disabled"
+      [formControl]="checkboxDisabledCntrl"
+    ></ks-checkbox>
   `
 })
 export class InputsComponent {
@@ -139,4 +150,9 @@ export class InputsComponent {
     disabled: true
   });
   slideToggle = new FormControl(true);
+  checkboxCntrl = new FormControl(false);
+  checkboxDisabledCntrl = new FormControl({
+    value: true,
+    disabled: true
+  });
 }

@@ -83,6 +83,9 @@
       ],
       "@ngx-ks/types": [
         "./src/types"
+      ],
+      "@ngx-ks/checkbox": [
+        "./src/components/checkbox"
       ]
     }
   },

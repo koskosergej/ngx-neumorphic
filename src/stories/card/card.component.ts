@@ -1,23 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { WrapperComponent } from '../wrapper/wrapper.component';
-import {
-  ksCardBodyDirective,
-  KsCardComponent,
-  ksCardFooterDirective,
-  ksCardHeaderDirective
-} from '@ngx-ks/card';
+import { KsCardComponent } from '@ngx-ks/card';
 import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'storybook-card',
-  imports: [
-    KsCardComponent,
-    WrapperComponent,
-    ksCardHeaderDirective,
-    ksCardBodyDirective,
-    ksCardFooterDirective,
-    NgIf
-  ],
+  imports: [KsCardComponent, WrapperComponent, NgIf],
   template: `
     <ks-storybook-wrapper>
       <div class="card-container">
