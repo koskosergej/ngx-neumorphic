@@ -14,7 +14,8 @@ import { KsButton } from '@ngx-ks/button';
         <a [routerLink]="'/inputs'">Form Controls</a>
         <a [routerLink]="'/buttons'">Buttons</a>
         <a [routerLink]="'/alerts'">Alerts</a>
-        <a [routerLink]="'/cards'">Cards</a>
+        <a [routerLink]="'/layout'">Layout</a>
+        <a [routerLink]="'/indicators'">Indicators</a>
         <a [routerLink]="'/pipes'">Pipes</a>
         <a [routerLink]="'/common-pages'">Common Pages</a>
       </div>

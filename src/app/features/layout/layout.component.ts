@@ -8,7 +8,7 @@ import {
 import { NgIf } from '@angular/common';
 
 @Component({
-  selector: 'ks-cards',
+  selector: 'ks-layout',
   standalone: true,
   imports: [
     KsCardComponent,
@@ -17,7 +17,7 @@ import { NgIf } from '@angular/common';
     KsCardBodyDirective,
     NgIf
   ],
-  templateUrl: './cards.component.html',
-  styleUrl: './cards.component.scss'
+  templateUrl: './layout.component.html',
+  styleUrl: './layout.component.scss'
 })
-export class CardsComponent {}
+export class LayoutComponent {}

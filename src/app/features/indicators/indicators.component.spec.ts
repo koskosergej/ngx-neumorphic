@@ -3,18 +3,18 @@ import {
   TestBed
 } from '@angular/core/testing';
 
-import { CardsComponent } from './cards.component';
+import { IndicatorsComponent } from './indicators.component';
 
-describe('CardsComponent', () => {
-  let component: CardsComponent;
-  let fixture: ComponentFixture<CardsComponent>;
+describe('IndicatorsComponent', () => {
+  let component: IndicatorsComponent;
+  let fixture: ComponentFixture<IndicatorsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CardsComponent]
+      imports: [IndicatorsComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CardsComponent);
+    fixture = TestBed.createComponent(IndicatorsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

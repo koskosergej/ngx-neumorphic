@@ -25,11 +25,18 @@ export const routes: Routes = [
       )
   },
   {
-    path: 'cards',
+    path: 'layout',
     loadComponent: () =>
-      import('./features/cards/cards.component').then(
-        (m) => m.CardsComponent
+      import('./features/layout/layout.component').then(
+        (m) => m.LayoutComponent
       )
+  },
+  {
+    path: 'indicators',
+    loadComponent: () =>
+      import(
+        './features/indicators/indicators.component'
+      ).then((m) => m.IndicatorsComponent)
   },
   {
     path: 'common-pages',

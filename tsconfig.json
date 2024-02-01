@@ -86,6 +86,9 @@
       ],
       "@ngx-ks/checkbox": [
         "./src/components/checkbox"
+      ],
+      "@ngx-ks/progress-bar": [
+        "./src/components/progress-bar"
       ]
     }
   },
