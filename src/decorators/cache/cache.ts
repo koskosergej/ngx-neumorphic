@@ -49,7 +49,7 @@ export function Cache(options: CacheOptions) {
 
       const req: Observable<any> = originalFunction
         .apply(this, args)
-        .pipe(
+        ?.pipe(
           tap(
             (response) => {
               cachedSubject.next(response);

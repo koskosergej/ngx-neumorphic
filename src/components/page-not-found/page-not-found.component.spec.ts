@@ -14,10 +14,11 @@ describe('PageNotFoundComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PageNotFoundComponent],
+      declarations: [],
       imports: [
         RouterTestingModule.withRoutes([]),
-        KsButton
+        KsButton,
+        PageNotFoundComponent
       ]
     }).compileComponents();
   });

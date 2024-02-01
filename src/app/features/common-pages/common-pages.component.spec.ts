@@ -14,7 +14,7 @@ describe('CommonPagesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
+      imports: [
         CommonPagesComponent,
         LoginPageComponent,
         JsonPipe,

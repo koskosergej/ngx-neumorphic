@@ -21,9 +21,11 @@ import { NgClass } from '@angular/common';
       class="ks-checkbox"
     >
       <input
+        class="ks-checkbox-input"
         (change)="toggleChange($event)"
         [(ngModel)]="isChecked"
         [disabled]="isDisabled"
+        (blur)="onTouched($event)"
         type="checkbox"
       />
       <span class="checkmark"></span>
@@ -69,7 +71,7 @@ export class CheckboxComponent
   }
 
   // Functions to propagate changes and touch events
-  private onChange: any = () => {};
+  public onChange: any = () => {};
 
-  private onTouched: any = () => {};
+  public onTouched: any = () => {};
 }

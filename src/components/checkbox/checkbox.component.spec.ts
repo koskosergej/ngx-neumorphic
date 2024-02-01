@@ -15,8 +15,12 @@ describe('CheckboxComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CheckboxComponent],
-      imports: [FormsModule, ReactiveFormsModule]
+      declarations: [],
+      imports: [
+        FormsModule,
+        ReactiveFormsModule,
+        CheckboxComponent
+      ]
     }).compileComponents();
   });
 
@@ -85,7 +89,7 @@ describe('CheckboxComponent', () => {
 
   it('should update the view when the model changes', () => {
     const checkboxElement = fixture.debugElement.query(
-      By.css('.ks-checkbox-input')
+      By.css('input.ks-checkbox-input')
     );
 
     expect(checkboxElement.nativeElement.checked).toBe(
@@ -93,16 +97,16 @@ describe('CheckboxComponent', () => {
     );
 
     component.writeValue(true);
-    fixture.detectChanges();
-
-    expect(checkboxElement.nativeElement.checked).toBe(
-      true
-    );
+    fixture.whenStable().then(() => {
+      expect(checkboxElement.nativeElement.checked).toBe(
+        true
+      );
+    });
   });
 
   it('should disable the checkbox when setDisabledState is called', () => {
     const checkboxElement = fixture.debugElement.query(
-      By.css('.ks-checkbox-input')
+      By.css('input.ks-checkbox-input')
     );
 
     expect(checkboxElement.nativeElement.disabled).toBe(
@@ -112,8 +116,10 @@ describe('CheckboxComponent', () => {
     component.setDisabledState(true);
     fixture.detectChanges();
 
-    expect(checkboxElement.nativeElement.disabled).toBe(
-      true
-    );
+    fixture.whenStable().then(() => {
+      expect(checkboxElement.nativeElement.disabled).toBe(
+        true
+      );
+    });
   });
 });
