@@ -87,6 +87,9 @@
       "@ngx-ks/pipes/enum-property": [
         "./src/pipes/enum-property"
       ],
+      "@ngx-ks/pipes/truncate": [
+        "./src/pipes/truncate"
+      ],
       "@ngx-ks/decorators/cache": [
         "./src/decorators/cache"
       ],

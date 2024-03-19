@@ -17,3 +17,6 @@
 <ks-divider></ks-divider>
 <h3>EnumPropertyPipe:</h3>
 <div>A | enumProperty:&#123;A: 'abc', D: '42'&#125; - {{ $any('A') | enumProperty:{ A: 'abc', D: '42' } }}</div>
+<ks-divider></ks-divider>
+<h3>Truncate:</h3>
+<div>long long long long text | truncate:10 - {{ 'long long long long text' | truncate:10 }}</div>
