@@ -14,3 +14,6 @@
 <div>undefined | defaultValue:100 - {{ undefined | defaultValue:100 }}</div>
 <div>null | defaultValue:42 - {{ null | defaultValue:42 }}</div>
 <div>'' | defaultValue:42 - "{{ '' | defaultValue:42 }}"</div>
+<ks-divider></ks-divider>
+<h3>EnumPropertyPipe:</h3>
+<div>A | enumProperty:&#123;A: 'abc', D: '42'&#125; - {{ $any('A') | enumProperty:{ A: 'abc', D: '42' } }}</div>

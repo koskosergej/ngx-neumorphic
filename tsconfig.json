@@ -84,6 +84,9 @@
       "@ngx-ks/pipes/default-value": [
         "./src/pipes/default-value"
       ],
+      "@ngx-ks/pipes/enum-property": [
+        "./src/pipes/enum-property"
+      ],
       "@ngx-ks/decorators/cache": [
         "./src/decorators/cache"
       ],

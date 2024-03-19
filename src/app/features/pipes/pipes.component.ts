@@ -4,6 +4,7 @@ import { KsDividerComponent } from '@ngx-ks/divider';
 import { MemoPipe } from '@ngx-ks/pipes/memo';
 import { EllipsisPipe } from '@ngx-ks/pipes/ellipsis';
 import { DefaultValuePipe } from '@ngx-ks/pipes/default-value';
+import { EnumPropertyPipe } from '@ngx-ks/pipes/enum-property';
 
 @Component({
   selector: 'ks-pipes',
@@ -13,7 +14,8 @@ import { DefaultValuePipe } from '@ngx-ks/pipes/default-value';
     KsDividerComponent,
     MemoPipe,
     EllipsisPipe,
-    DefaultValuePipe
+    DefaultValuePipe,
+    EnumPropertyPipe
   ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.scss'
