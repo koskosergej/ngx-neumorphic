@@ -90,6 +90,9 @@
       "@ngx-ks/pipes/truncate": [
         "./src/pipes/truncate"
       ],
+      "@ngx-ks/pipes/first": [
+        "./src/pipes/first"
+      ],
       "@ngx-ks/decorators/cache": [
         "./src/decorators/cache"
       ],

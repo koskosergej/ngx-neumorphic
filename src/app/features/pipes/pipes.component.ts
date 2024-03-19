@@ -6,6 +6,7 @@ import { EllipsisPipe } from '@ngx-ks/pipes/ellipsis';
 import { DefaultValuePipe } from '@ngx-ks/pipes/default-value';
 import { EnumPropertyPipe } from '@ngx-ks/pipes/enum-property';
 import { TruncatePipe } from '@ngx-ks/pipes/truncate';
+import { FirstPipe } from '@ngx-ks/pipes/first';
 
 @Component({
   selector: 'ks-pipes',
@@ -17,7 +18,8 @@ import { TruncatePipe } from '@ngx-ks/pipes/truncate';
     EllipsisPipe,
     DefaultValuePipe,
     EnumPropertyPipe,
-    TruncatePipe
+    TruncatePipe,
+    FirstPipe
   ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.scss'
