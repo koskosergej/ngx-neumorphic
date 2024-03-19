@@ -81,6 +81,9 @@
       "@ngx-ks/pipes/ellipsis": [
         "./src/pipes/ellipsis"
       ],
+      "@ngx-ks/pipes/default-value": [
+        "./src/pipes/default-value"
+      ],
       "@ngx-ks/decorators/cache": [
         "./src/decorators/cache"
       ],

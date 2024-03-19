@@ -9,3 +9,8 @@
 <h3>EllipsisPipe:</h3>
 <div>Short text | ellipsis:100 - {{ 'Short text' | ellipsis:100 }}</div>
 <div>Long long long long long long text | ellipsis:10 - {{ 'Long long long long long long text' | ellipsis:10 }}</div>
+<ks-divider></ks-divider>
+<h3>DefaultValuePipe:</h3>
+<div>undefined | defaultValue:100 - {{ undefined | defaultValue:100 }}</div>
+<div>null | defaultValue:42 - {{ null | defaultValue:42 }}</div>
+<div>'' | defaultValue:42 - "{{ '' | defaultValue:42 }}"</div>
