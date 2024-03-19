@@ -2,11 +2,17 @@ import { Component } from '@angular/core';
 import { FormatBytesPipe } from '@ngx-ks/pipes/format-bytes';
 import { KsDividerComponent } from '@ngx-ks/divider';
 import { MemoPipe } from '@ngx-ks/pipes/memo';
+import { EllipsisPipe } from '@ngx-ks/pipes/ellipsis';
 
 @Component({
   selector: 'ks-pipes',
   standalone: true,
-  imports: [FormatBytesPipe, KsDividerComponent, MemoPipe],
+  imports: [
+    FormatBytesPipe,
+    KsDividerComponent,
+    MemoPipe,
+    EllipsisPipe
+  ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.scss'
 })
