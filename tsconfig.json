@@ -93,6 +93,9 @@
       "@ngx-ks/pipes/first": [
         "./src/pipes/first"
       ],
+      "@ngx-ks/pipes/last": [
+        "./src/pipes/last"
+      ],
       "@ngx-ks/decorators/cache": [
         "./src/decorators/cache"
       ],
