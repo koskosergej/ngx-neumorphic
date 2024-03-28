@@ -105,6 +105,9 @@
       "@ngx-ks/pipes/split": [
         "./src/pipes/split"
       ],
+      "@ngx-ks/pipes/user-name": [
+        "./src/pipes/user-name"
+      ],
       "@ngx-ks/decorators/cache": [
         "./src/decorators/cache"
       ],

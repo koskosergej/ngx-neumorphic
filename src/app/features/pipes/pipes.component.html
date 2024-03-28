@@ -33,12 +33,17 @@
     uniquePipeCollection | unique:$any(id) | json
   }}
 </div>
+<ks-divider></ks-divider>
 <h3>Join:</h3>
 <div>[1, 2, 3, 1, 3, 4] | join - {{ [1, 2, 3, 1, 3, 4] | join }}</div>
 <div>{{ "['apple', 'banana', 'orange']" }} | join: ' :: ' - {{
     ['apple', 'banana', 'orange'] | join: ' :: '
   }}
 </div>
+<ks-divider></ks-divider>
 <h3>Split:</h3>
 <div>"hello,world" | split:',' - {{ "hello,world" | split:',' | json }}</div>
 <div>"hello!&#64;world" | split:'!&#64;' - {{ "hello!@world" | split:'!@' | json }}</div>
+<ks-divider></ks-divider>
+<h3>User Name:</h3>
+<div>{{ user | json }} | userName - {{ user | userName }}</div>

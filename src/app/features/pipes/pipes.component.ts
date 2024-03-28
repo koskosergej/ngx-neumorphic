@@ -12,6 +12,7 @@ import { UniquePipe } from '@ngx-ks/pipes/unique';
 import { JsonPipe } from '@angular/common';
 import { JoinPipe } from '@ngx-ks/pipes/join';
 import { SplitPipe } from '@ngx-ks/pipes/split';
+import { UserNamePipe } from '@ngx-ks/pipes/user-name';
 
 type UniquePipeItem = { id: number; name: string };
 
@@ -31,7 +32,8 @@ type UniquePipeItem = { id: number; name: string };
     UniquePipe,
     JsonPipe,
     JoinPipe,
-    SplitPipe
+    SplitPipe,
+    UserNamePipe
   ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.scss'
@@ -46,6 +48,11 @@ export class PipesComponent {
     { id: 2, name: '2' }
   ] satisfies UniquePipeItem[];
   id = 'id' as keyof UniquePipeItem;
+
+  user = {
+    firstName: '  John ',
+    lastName: '  Doe  '
+  };
 
   divideTwo(value: number): number {
     return value / 2;
