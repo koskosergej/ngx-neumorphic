@@ -8,6 +8,10 @@ import { EnumPropertyPipe } from '@ngx-ks/pipes/enum-property';
 import { TruncatePipe } from '@ngx-ks/pipes/truncate';
 import { FirstPipe } from '@ngx-ks/pipes/first';
 import { LastPipe } from '@ngx-ks/pipes/last';
+import { UniquePipe } from '@ngx-ks/pipes/unique';
+import { JsonPipe } from '@angular/common';
+
+type UniquePipeItem = { id: number; name: string };
 
 @Component({
   selector: 'ks-pipes',
@@ -21,12 +25,24 @@ import { LastPipe } from '@ngx-ks/pipes/last';
     EnumPropertyPipe,
     TruncatePipe,
     FirstPipe,
-    LastPipe
+    LastPipe,
+    UniquePipe,
+    JsonPipe
   ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.scss'
 })
 export class PipesComponent {
+  uniquePipeCollection = [
+    { id: 1, name: '1' },
+    {
+      id: 1,
+      name: '1'
+    },
+    { id: 2, name: '2' }
+  ] satisfies UniquePipeItem[];
+  id = 'id' as keyof UniquePipeItem;
+
   divideTwo(value: number): number {
     return value / 2;
   }
