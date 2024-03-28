@@ -102,6 +102,9 @@
       "@ngx-ks/pipes/join": [
         "./src/pipes/join"
       ],
+      "@ngx-ks/pipes/split": [
+        "./src/pipes/split"
+      ],
       "@ngx-ks/decorators/cache": [
         "./src/decorators/cache"
       ],

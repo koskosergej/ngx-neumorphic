@@ -39,3 +39,6 @@
     ['apple', 'banana', 'orange'] | join: ' :: '
   }}
 </div>
+<h3>Split:</h3>
+<div>"hello,world" | split:',' - {{ "hello,world" | split:',' | json }}</div>
+<div>"hello!&#64;world" | split:'!&#64;' - {{ "hello!@world" | split:'!@' | json }}</div>

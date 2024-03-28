@@ -11,6 +11,7 @@ import { LastPipe } from '@ngx-ks/pipes/last';
 import { UniquePipe } from '@ngx-ks/pipes/unique';
 import { JsonPipe } from '@angular/common';
 import { JoinPipe } from '@ngx-ks/pipes/join';
+import { SplitPipe } from '@ngx-ks/pipes/split';
 
 type UniquePipeItem = { id: number; name: string };
 
@@ -29,7 +30,8 @@ type UniquePipeItem = { id: number; name: string };
     LastPipe,
     UniquePipe,
     JsonPipe,
-    JoinPipe
+    JoinPipe,
+    SplitPipe
   ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.scss'
