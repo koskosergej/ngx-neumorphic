@@ -99,6 +99,9 @@
       "@ngx-ks/pipes/unique": [
         "./src/pipes/unique"
       ],
+      "@ngx-ks/pipes/join": [
+        "./src/pipes/join"
+      ],
       "@ngx-ks/decorators/cache": [
         "./src/decorators/cache"
       ],
