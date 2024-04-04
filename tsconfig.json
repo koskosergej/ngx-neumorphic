@@ -108,6 +108,9 @@
       "@ngx-ks/pipes/user-name": [
         "./src/pipes/user-name"
       ],
+      "@ngx-ks/pipes/capitalize": [
+        "./src/pipes/capitalize"
+      ],
       "@ngx-ks/decorators/cache": [
         "./src/decorators/cache"
       ],

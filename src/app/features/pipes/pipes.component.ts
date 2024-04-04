@@ -13,6 +13,7 @@ import { JsonPipe } from '@angular/common';
 import { JoinPipe } from '@ngx-ks/pipes/join';
 import { SplitPipe } from '@ngx-ks/pipes/split';
 import { UserNamePipe } from '@ngx-ks/pipes/user-name';
+import { CapitalizePipe } from '@ngx-ks/pipes/capitalize';
 
 type UniquePipeItem = { id: number; name: string };
 
@@ -33,7 +34,8 @@ type UniquePipeItem = { id: number; name: string };
     JsonPipe,
     JoinPipe,
     SplitPipe,
-    UserNamePipe
+    UserNamePipe,
+    CapitalizePipe
   ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.scss'
