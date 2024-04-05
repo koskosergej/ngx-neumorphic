@@ -111,6 +111,9 @@
       "@ngx-ks/pipes/capitalize": [
         "./src/pipes/capitalize"
       ],
+      "@ngx-ks/pipes/highlight": [
+        "./src/pipes/highlight"
+      ],
       "@ngx-ks/decorators/cache": [
         "./src/decorators/cache"
       ],

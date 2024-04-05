@@ -50,3 +50,8 @@
 <ks-divider></ks-divider>
 <h3>Capitalize:</h3>
 <div>{{ '"hello world"' }} | capitalize - {{ 'hello world' | capitalize }}</div>
+<ks-divider></ks-divider>
+<h3>Highlight:</h3>
+<div>{{ '"hello world"' }} | highlight:"wor" -
+  <span [innerHTML]="'hello world' | highlight:'wor'"></span>
+</div>
