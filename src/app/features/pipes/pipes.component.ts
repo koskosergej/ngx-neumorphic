@@ -15,6 +15,7 @@ import { SplitPipe } from '@ngx-ks/pipes/split';
 import { UserNamePipe } from '@ngx-ks/pipes/user-name';
 import { CapitalizePipe } from '@ngx-ks/pipes/capitalize';
 import { HighlightPipe } from '@ngx-ks/pipes/highlight';
+import { IdToValuePipe } from '@ngx-ks/pipes/idToValue';
 
 type UniquePipeItem = { id: number; name: string };
 
@@ -37,7 +38,8 @@ type UniquePipeItem = { id: number; name: string };
     SplitPipe,
     UserNamePipe,
     CapitalizePipe,
-    HighlightPipe
+    HighlightPipe,
+    IdToValuePipe
   ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.scss'

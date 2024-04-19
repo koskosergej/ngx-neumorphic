@@ -55,3 +55,9 @@
 <div>{{ '"hello world"' }} | highlight:"wor" -
   <span [innerHTML]="'hello world' | highlight:'wor'"></span>
 </div>
+<ks-divider></ks-divider>
+<h3>IdToValue:</h3>
+<div>
+  id1 | idToValue:"&#123; id1: 'value1', id2: 'value2' &#125;" -
+  {{ $any('id1') | idToValue: { id1: 'value1', id2: 'value2' } }}
+</div>

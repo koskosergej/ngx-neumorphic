@@ -114,6 +114,9 @@
       "@ngx-ks/pipes/highlight": [
         "./src/pipes/highlight"
       ],
+      "@ngx-ks/pipes/idToValue": [
+        "./src/pipes/IdToValue"
+      ],
       "@ngx-ks/decorators/cache": [
         "./src/decorators/cache"
       ],
