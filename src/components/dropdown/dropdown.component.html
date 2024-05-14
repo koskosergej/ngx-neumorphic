@@ -1,0 +1,6 @@
+<div (click)="toggleDropdown()" [ngClass]="{'open': isOpen}" class="ks-dropdown">
+  <div class="selected-item">{{ selectedOption }}</div>
+  <ul class="dropdown-list">
+    <li (click)="selectOption($event, option)" *ngFor="let option of options">{{ option }}</li>
+  </ul>
+</div>

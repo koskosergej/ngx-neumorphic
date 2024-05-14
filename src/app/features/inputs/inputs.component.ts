@@ -18,6 +18,7 @@ import { KsLabel } from '@ngx-ks/label';
 import { ErrorDirective } from '@ngx-ks/error';
 import { NgIf } from '@angular/common';
 import { CheckboxComponent } from '@ngx-ks/checkbox';
+import { DropdownComponent } from '@ngx-ks/dropdown';
 
 @Component({
   selector: 'ks-inputs',
@@ -36,7 +37,8 @@ import { CheckboxComponent } from '@ngx-ks/checkbox';
     KsLabel,
     ErrorDirective,
     NgIf,
-    CheckboxComponent
+    CheckboxComponent,
+    DropdownComponent
   ],
   template: `
     <ks-form-field>
@@ -134,6 +136,8 @@ import { CheckboxComponent } from '@ngx-ks/checkbox';
       label="disabled"
       [formControl]="checkboxDisabledCntrl"
     ></ks-checkbox>
+    <ks-divider></ks-divider>
+    <ks-dropdown [options]="['42', '100']"></ks-dropdown>
   `
 })
 export class InputsComponent {
