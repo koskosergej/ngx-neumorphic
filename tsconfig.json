@@ -75,6 +75,9 @@
       "@ngx-ks/tabs": [
         "./src/components/tabs"
       ],
+      "@ngx-ks/pill": [
+        "./src/components/pill"
+      ],
       "@ngx-ks/label": [
         "./src/directives/label"
       ],
