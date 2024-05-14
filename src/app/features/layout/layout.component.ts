@@ -6,6 +6,9 @@ import {
   KsCardHeaderDirective
 } from '@ngx-ks/card';
 import { NgIf } from '@angular/common';
+import { KsDividerComponent } from '@ngx-ks/divider';
+import { DialogComponent } from '@ngx-ks/dialog';
+import { KsButton } from '@ngx-ks/button';
 
 @Component({
   selector: 'ks-layout',
@@ -15,9 +18,14 @@ import { NgIf } from '@angular/common';
     KsCardFooterDirective,
     KsCardHeaderDirective,
     KsCardBodyDirective,
-    NgIf
+    NgIf,
+    KsDividerComponent,
+    DialogComponent,
+    KsButton
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
 })
-export class LayoutComponent {}
+export class LayoutComponent {
+  isOpenDialog = false;
+}

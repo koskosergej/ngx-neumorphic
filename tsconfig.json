@@ -69,6 +69,9 @@
       "@ngx-ks/dropdown": [
         "./src/components/dropdown"
       ],
+      "@ngx-ks/dialog": [
+        "./src/components/dialog"
+      ],
       "@ngx-ks/label": [
         "./src/directives/label"
       ],

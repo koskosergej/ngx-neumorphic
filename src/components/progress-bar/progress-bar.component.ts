@@ -21,7 +21,7 @@ import { Component, Input } from '@angular/core';
       .ks-progress-bar {
         width: 100%;
         height: 4px;
-        background-color: #f0f0f0;
+        background-color: palette.$background-color;
         box-shadow:
           inset 1px 1px 1px palette.$silver,
           inset -1px -1px 1px palette.$white;

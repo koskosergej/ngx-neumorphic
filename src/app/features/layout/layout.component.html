@@ -7,3 +7,9 @@
     <div ksCardFooter>Card Footer</div>
   </ks-card>
 </div>
+<ks-divider></ks-divider>
+<button (click)="isOpenDialog = true" ks-button>Open Dialog</button>
+<ks-dialog (close)="isOpenDialog = false" [isOpen]="isOpenDialog">
+  <h2>Title</h2>
+  <p>Dialog body content</p>
+</ks-dialog>

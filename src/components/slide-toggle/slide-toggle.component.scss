@@ -22,7 +22,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #f0f0f0;
+    background-color: palette.$background-color;
     border-radius: 34px;
     box-shadow: 5px 5px 15px palette.$outer-box-shadow,
     -5px -5px 15px palette.$inner-box-shadow;

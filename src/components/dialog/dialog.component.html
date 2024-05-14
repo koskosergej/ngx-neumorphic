@@ -1,0 +1,6 @@
+<div [ngClass]="{open: isOpen}" class="ks-dialog">
+  <div class="dialog-content">
+    <ng-content></ng-content>
+  </div>
+</div>
+<div (click)="closeDialog()" *ngIf="isOpen" class="overlay"></div>
