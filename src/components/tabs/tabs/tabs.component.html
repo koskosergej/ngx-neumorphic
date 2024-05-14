@@ -1,0 +1,13 @@
+<div class="ks-tabs">
+  <div class="tab-header">
+    @for (tab of tabs; track tab.title; let i = $index) {
+      <div (click)="selectTab(i)" [class.active]="selectedTabIndex === i"
+           class="tab">
+        {{ tab.title }}
+      </div>
+    }
+  </div>
+  <div class="tab-content">
+    <ng-content></ng-content>
+  </div>
+</div>

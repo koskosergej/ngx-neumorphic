@@ -72,6 +72,9 @@
       "@ngx-ks/dialog": [
         "./src/components/dialog"
       ],
+      "@ngx-ks/tabs": [
+        "./src/components/tabs"
+      ],
       "@ngx-ks/label": [
         "./src/directives/label"
       ],

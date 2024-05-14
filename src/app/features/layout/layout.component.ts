@@ -9,6 +9,7 @@ import { NgIf } from '@angular/common';
 import { KsDividerComponent } from '@ngx-ks/divider';
 import { DialogComponent } from '@ngx-ks/dialog';
 import { KsButton } from '@ngx-ks/button';
+import { TabComponent, TabsComponent } from '@ngx-ks/tabs';
 
 @Component({
   selector: 'ks-layout',
@@ -21,7 +22,9 @@ import { KsButton } from '@ngx-ks/button';
     NgIf,
     KsDividerComponent,
     DialogComponent,
-    KsButton
+    KsButton,
+    TabsComponent,
+    TabComponent
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
