@@ -19,6 +19,7 @@ import { ErrorDirective } from '@ngx-ks/error';
 import { NgIf } from '@angular/common';
 import { CheckboxComponent } from '@ngx-ks/checkbox';
 import { DropdownComponent } from '@ngx-ks/dropdown';
+import { UnitInputComponent } from '@ngx-ks/unit-input';
 
 @Component({
   selector: 'ks-inputs',
@@ -38,7 +39,8 @@ import { DropdownComponent } from '@ngx-ks/dropdown';
     ErrorDirective,
     NgIf,
     CheckboxComponent,
-    DropdownComponent
+    DropdownComponent,
+    UnitInputComponent
   ],
   template: `
     <ks-form-field>
@@ -66,6 +68,10 @@ import { DropdownComponent } from '@ngx-ks/dropdown';
         "
         >Required
       </ks-error>
+    </ks-form-field>
+    <ks-divider></ks-divider>
+    <ks-form-field>
+      <ks-unit-input></ks-unit-input>
     </ks-form-field>
     <ks-divider></ks-divider>
     <ks-radio-group>

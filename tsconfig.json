@@ -45,6 +45,9 @@
       "@ngx-ks/input": [
         "./src/components/input/input"
       ],
+      "@ngx-ks/unit-input": [
+        "./src/components/unit-input/unit-input.component.ts"
+      ],
       "@ngx-ks/login-page": [
         "./src/components/login-page"
       ],
