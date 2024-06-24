@@ -1,0 +1,15 @@
+@use '../../core/styles/palette';
+
+.ks-avatar {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px palette.$outer-box-shadow,
+  -5px -5px 10px palette.$inner-box-shadow;
+  background-color: palette.$background-color;
+
+  img {
+    border-radius: 50%;
+  }
+}

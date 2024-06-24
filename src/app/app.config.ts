@@ -1,4 +1,7 @@
-import { ApplicationConfig } from '@angular/core';
+import {
+  ApplicationConfig,
+  provideExperimentalZonelessChangeDetection
+} from '@angular/core';
 import { provideRouter, Routes } from '@angular/router';
 import { ALERTS_CONFIG } from '@ngx-ks/alert';
 
@@ -57,6 +60,7 @@ export const routes: Routes = [
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } }
+    { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } },
+    provideExperimentalZonelessChangeDetection()
   ]
 };

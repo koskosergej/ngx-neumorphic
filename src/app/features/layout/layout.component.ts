@@ -10,6 +10,7 @@ import { KsDividerComponent } from '@ngx-ks/divider';
 import { DialogComponent } from '@ngx-ks/dialog';
 import { KsButton } from '@ngx-ks/button';
 import { TabComponent, TabsComponent } from '@ngx-ks/tabs';
+import { AvatarComponent } from '@ngx-ks/avatar';
 
 @Component({
   selector: 'ks-layout',
@@ -24,7 +25,8 @@ import { TabComponent, TabsComponent } from '@ngx-ks/tabs';
     DialogComponent,
     KsButton,
     TabsComponent,
-    TabComponent
+    TabComponent,
+    AvatarComponent
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'

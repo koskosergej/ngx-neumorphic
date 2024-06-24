@@ -10,7 +10,8 @@
     "lint": "eslint --ext .ts src",
     "lint:fix": "eslint --ext .ts src --fix",
     "storybook": "nx run ks:storybook",
-    "build-storybook": "nx run ks:build-storybook"
+    "build-storybook": "nx run ks:build-storybook",
+    "graph": "nx graph"
   },
   "private": true,
   "dependencies": {

@@ -1707,6 +1707,160 @@
       "extends": []
     },
     {
+      "name": "AvatarComponent",
+      "id": "component-AvatarComponent-b3cdd72bf929d71b2afb1aa8748d0e38037781bed64833ae2ce470d19b4f9998334ebf9e1eee6db285596fc43da9738a49627cf45f0f90a2d969cf3c203f5fea",
+      "file": "src/components/avatar/avatar.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "ks-avatar",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": [
+        "./avatar.component.html"
+      ],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [
+        {
+          "name": "size",
+          "defaultValue": "100",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 13,
+          "required": false
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "imageUrl",
+          "defaultValue": "input('assets/placeholder.png')",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 12
+        },
+        {
+          "name": "size",
+          "defaultValue": "100",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 13,
+          "required": false
+        }
+      ],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "NgOptimizedImage"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, input } from '@angular/core';\nimport { NgOptimizedImage } from '@angular/common';\n\n@Component({\n  selector: 'ks-avatar',\n  standalone: true,\n  imports: [NgOptimizedImage],\n  templateUrl: './avatar.component.html',\n  styleUrl: './avatar.component.scss'\n})\nexport class AvatarComponent {\n  imageUrl = input('assets/placeholder.png');\n  size = input(100);\n}\n",
+      "styleUrl": "./avatar.component.scss",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "extends": [],
+      "templateData": "<div [style.height.px]=\"size()\" [style.width.px]=\"size()\" class=\"ks-avatar\">\n  <img [alt]=\"'Avatar'\" [src]=\"imageUrl()\" [style.height.px]=\"size()\" [style.width.px]=\"size()\" />\n</div>\n"
+    },
+    {
+      "name": "AvatarStoryComponent",
+      "id": "component-AvatarStoryComponent-3300a934aad6c2e22aa9f5c9796310beb179f7c6060b851ea0d8908b783b8a5904b404a63304fa9796474477f0f25cceba12951a46700dcbd4c39ff0e2c9dc93",
+      "file": "src/stories/avatar/avatar.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "storybook-button",
+      "styleUrls": [],
+      "styles": [],
+      "template": "<ks-storybook-wrapper>\n  <ks-avatar\n    [size]=\"size()\"\n    [imageUrl]=\"imageUrl()\"\n  ></ks-avatar>\n</ks-storybook-wrapper>\n",
+      "templateUrl": [],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [
+        {
+          "name": "size",
+          "defaultValue": "100",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 19,
+          "required": false
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "imageUrl",
+          "defaultValue": "input('assets/placeholder.png')",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 20
+        },
+        {
+          "name": "size",
+          "defaultValue": "100",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 19,
+          "required": false
+        }
+      ],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "AvatarComponent",
+          "type": "component"
+        },
+        {
+          "name": "WrapperComponent",
+          "type": "component"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, input } from '@angular/core';\nimport { WrapperComponent } from '../wrapper/wrapper.component';\nimport { AvatarComponent } from '@ngx-ks/avatar';\n\n@Component({\n  selector: 'storybook-button',\n  imports: [AvatarComponent, WrapperComponent],\n  template: `\n    <ks-storybook-wrapper>\n      <ks-avatar\n        [size]=\"size()\"\n        [imageUrl]=\"imageUrl()\"\n      ></ks-avatar>\n    </ks-storybook-wrapper>\n  `,\n  standalone: true\n})\nexport default class AvatarStoryComponent {\n  size = input(100);\n  imageUrl = input('assets/placeholder.png');\n}\n",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "extends": []
+    },
+    {
       "name": "ButtonComponent",
       "id": "component-ButtonComponent-5b188d2bdb643eab53abec97f40b0411f84a6a7544a00856d6205443d36e40150e447cc1b3f4e258f5203bb0d43bf6c94a110268c6f73173ceb2a84eed43ad38",
       "file": "src/stories/button/button.component.ts",
@@ -4791,7 +4945,7 @@
     },
     {
       "name": "LayoutComponent",
-      "id": "component-LayoutComponent-c24d4f1a7cb2273b6a87e01842f3bc87f01e10f6e7f58236a4c08bd1b9af649f26f382d8c1ee0fb138a8d0f08a7e433692aaf4c0a5509432949452a2234eb4a5",
+      "id": "component-LayoutComponent-9a635e228cf59ebd65cf1b0d10eb9b725f91d282ef793276861ae763609c1ba8c9500500fb06a777208b189309cb505527b7efee68e3fc84880c96d9bf7b4c9d",
       "file": "src/app/features/layout/layout.component.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -4817,7 +4971,7 @@
           "type": "",
           "optional": false,
           "description": "",
-          "line": 33
+          "line": 35
         }
       ],
       "methodsClass": [],
@@ -4864,18 +5018,22 @@
         {
           "name": "TabComponent",
           "type": "component"
+        },
+        {
+          "name": "AvatarComponent",
+          "type": "component"
         }
       ],
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\nimport {\n  KsCardBodyDirective,\n  KsCardComponent,\n  KsCardFooterDirective,\n  KsCardHeaderDirective\n} from '@ngx-ks/card';\nimport { NgIf } from '@angular/common';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { DialogComponent } from '@ngx-ks/dialog';\nimport { KsButton } from '@ngx-ks/button';\nimport { TabComponent, TabsComponent } from '@ngx-ks/tabs';\n\n@Component({\n  selector: 'ks-layout',\n  standalone: true,\n  imports: [\n    KsCardComponent,\n    KsCardFooterDirective,\n    KsCardHeaderDirective,\n    KsCardBodyDirective,\n    NgIf,\n    KsDividerComponent,\n    DialogComponent,\n    KsButton,\n    TabsComponent,\n    TabComponent\n  ],\n  templateUrl: './layout.component.html',\n  styleUrl: './layout.component.scss'\n})\nexport class LayoutComponent {\n  isOpenDialog = false;\n}\n",
+      "sourceCode": "import { Component } from '@angular/core';\nimport {\n  KsCardBodyDirective,\n  KsCardComponent,\n  KsCardFooterDirective,\n  KsCardHeaderDirective\n} from '@ngx-ks/card';\nimport { NgIf } from '@angular/common';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { DialogComponent } from '@ngx-ks/dialog';\nimport { KsButton } from '@ngx-ks/button';\nimport { TabComponent, TabsComponent } from '@ngx-ks/tabs';\nimport { AvatarComponent } from '@ngx-ks/avatar';\n\n@Component({\n  selector: 'ks-layout',\n  standalone: true,\n  imports: [\n    KsCardComponent,\n    KsCardFooterDirective,\n    KsCardHeaderDirective,\n    KsCardBodyDirective,\n    NgIf,\n    KsDividerComponent,\n    DialogComponent,\n    KsButton,\n    TabsComponent,\n    TabComponent,\n    AvatarComponent\n  ],\n  templateUrl: './layout.component.html',\n  styleUrl: './layout.component.scss'\n})\nexport class LayoutComponent {\n  isOpenDialog = false;\n}\n",
       "styleUrl": "./layout.component.scss",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "",
       "extends": [],
-      "templateData": "<div class=\"card-container\">\n  <ks-card>\n    <div ksCardHeader>Card Header</div>\n\n    <div ksCardBody>Card body</div>\n\n    <div ksCardFooter>Card Footer</div>\n  </ks-card>\n</div>\n<ks-divider></ks-divider>\n<button (click)=\"isOpenDialog = true\" ks-button>Open Dialog</button>\n<ks-dialog (close)=\"isOpenDialog = false\" [isOpen]=\"isOpenDialog\">\n  <h2>Title</h2>\n  <p>Dialog body content</p>\n</ks-dialog>\n<ks-divider></ks-divider>\n<ks-tabs>\n  <ks-tab title=\"Tab 1\">\n    <!-- Tab 1 content goes here -->\n    <p>Content of Tab 1</p>\n  </ks-tab>\n  <ks-tab title=\"Tab 2\">\n    <!-- Tab 2 content goes here -->\n    <p>Content of Tab 2</p>\n  </ks-tab>\n</ks-tabs>\n"
+      "templateData": "<div class=\"card-container\">\n  <ks-card>\n    <div ksCardHeader>Card Header</div>\n\n    <div ksCardBody>Card body</div>\n\n    <div ksCardFooter>Card Footer</div>\n  </ks-card>\n</div>\n<ks-divider></ks-divider>\n<button (click)=\"isOpenDialog = true\" ks-button>Open Dialog</button>\n<ks-dialog (close)=\"isOpenDialog = false\" [isOpen]=\"isOpenDialog\">\n  <h2>Title</h2>\n  <p>Dialog body content</p>\n</ks-dialog>\n<ks-divider></ks-divider>\n<ks-tabs>\n  <ks-tab title=\"Tab 1\">\n    <!-- Tab 1 content goes here -->\n    <p>Content of Tab 1</p>\n  </ks-tab>\n  <ks-tab title=\"Tab 2\">\n    <!-- Tab 2 content goes here -->\n    <p>Content of Tab 2</p>\n  </ks-tab>\n</ks-tabs>\n<ks-divider></ks-divider>\n<div style=\"display: flex; gap: 30px;\">\n  <ks-avatar></ks-avatar>\n  <ks-avatar\n    [imageUrl]=\"'https://img.freepik.com/premium-vector/kawaii-cartoon-bear-art-illustration_839893-112.jpg'\"></ks-avatar>\n  <ks-avatar\n    [imageUrl]=\"'https://img.freepik.com/premium-vector/kawaii-cartoon-bear-art-illustration_839893-112.jpg'\"\n    [size]=\"50\"></ks-avatar>\n</div>\n\n"
     },
     {
       "name": "LoginPageComponent",
@@ -6058,7 +6216,17 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "ApplicationConfig",
-        "defaultValue": "{\n  providers: [\n    provideRouter(routes),\n    { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } }\n  ]\n}"
+        "defaultValue": "{\n  providers: [\n    provideRouter(routes),\n    { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } },\n    provideExperimentalZonelessChangeDetection()\n  ]\n}"
+      },
+      {
+        "name": "Default",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/stories/avatar/Avatar.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Story",
+        "defaultValue": "{\n  args: {\n    imageUrl: '' as never\n  }\n}"
       },
       {
         "name": "Default",
@@ -6279,6 +6447,16 @@
         "deprecationMessage": "",
         "type": "number",
         "defaultValue": "1024"
+      },
+      {
+        "name": "meta",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/stories/avatar/Avatar.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Meta<AvatarStoryComponent>",
+        "defaultValue": "{\n  title: 'Example/Avatar',\n  component: AvatarStoryComponent,\n  render: (args: AvatarStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -6628,6 +6806,17 @@
         "name": "Story",
         "ctype": "miscellaneous",
         "subtype": "typealias",
+        "rawtype": "StoryObj<AvatarStoryComponent>",
+        "file": "src/stories/avatar/Avatar.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "description": "",
+        "kind": 183
+      },
+      {
+        "name": "Story",
+        "ctype": "miscellaneous",
+        "subtype": "typealias",
         "rawtype": "StoryObj<Button>",
         "file": "src/stories/button/Button.stories.ts",
         "deprecated": false,
@@ -6823,7 +7012,29 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "ApplicationConfig",
-          "defaultValue": "{\n  providers: [\n    provideRouter(routes),\n    { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } }\n  ]\n}"
+          "defaultValue": "{\n  providers: [\n    provideRouter(routes),\n    { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } },\n    provideExperimentalZonelessChangeDetection()\n  ]\n}"
+        }
+      ],
+      "src/stories/avatar/Avatar.stories.ts": [
+        {
+          "name": "Default",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/avatar/Avatar.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Story",
+          "defaultValue": "{\n  args: {\n    imageUrl: '' as never\n  }\n}"
+        },
+        {
+          "name": "meta",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/avatar/Avatar.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Meta<AvatarStoryComponent>",
+          "defaultValue": "{\n  title: 'Example/Avatar',\n  component: AvatarStoryComponent,\n  render: (args: AvatarStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
         }
       ],
       "src/stories/button/Button.stories.ts": [
@@ -7425,6 +7636,19 @@
           "kind": 183
         }
       ],
+      "src/stories/avatar/Avatar.stories.ts": [
+        {
+          "name": "Story",
+          "ctype": "miscellaneous",
+          "subtype": "typealias",
+          "rawtype": "StoryObj<AvatarStoryComponent>",
+          "file": "src/stories/avatar/Avatar.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "description": "",
+          "kind": 183
+        }
+      ],
       "src/stories/button/Button.stories.ts": [
         {
           "name": "Story",
@@ -7765,6 +7989,15 @@
         "name": "generateID",
         "coveragePercent": 0,
         "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/components/avatar/avatar.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "AvatarComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/4",
         "status": "low"
       },
       {
@@ -8173,6 +8406,35 @@
         "name": "UserNamePipe",
         "coveragePercent": 0,
         "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/avatar/Avatar.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "Default",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/avatar/Avatar.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "meta",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/avatar/avatar.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "AvatarStoryComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/4",
         "status": "low"
       },
       {

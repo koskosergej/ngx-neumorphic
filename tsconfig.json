@@ -48,6 +48,9 @@
       "@ngx-ks/unit-input": [
         "./src/components/unit-input/unit-input.component.ts"
       ],
+      "@ngx-ks/avatar": [
+        "./src/components/avatar/avatar.component.ts"
+      ],
       "@ngx-ks/login-page": [
         "./src/components/login-page"
       ],
