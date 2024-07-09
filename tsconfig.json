@@ -51,6 +51,9 @@
       "@ngx-ks/avatar": [
         "./src/components/avatar/avatar.component.ts"
       ],
+      "@ngx-ks/icon-button": [
+        "./src/components/icon-button/icon-button.component.ts"
+      ],
       "@ngx-ks/login-page": [
         "./src/components/login-page"
       ],

@@ -1955,7 +1955,7 @@
     },
     {
       "name": "ButtonsComponent",
-      "id": "component-ButtonsComponent-7644082f57a636f43058d8e6f5714b210dba6e827f957b4a997b6e9e17f253e5b71f06fa857c50449608559f700289929fed7ddcef3329b6cf25cb0601dd32cb",
+      "id": "component-ButtonsComponent-f5fab688f48e5ba1daace421ddf16ce4fff175fa5d465378fdaaf0783678fc9732fb4c326865d4e507ddaa82eeca3de6b7f3195054de6af8e953cd3f7515f154",
       "file": "src/app/features/buttons/buttons.component.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -1965,7 +1965,7 @@
       "selector": "ks-buttons",
       "styleUrls": [],
       "styles": [],
-      "template": "<button ks-button>Button</button>\n<ks-divider></ks-divider>\n<button ks-button disabled>Disabled</button>\n",
+      "template": "<button ks-button>Button</button>\n<ks-divider></ks-divider>\n<button ks-button disabled>Disabled</button>\n<ks-divider></ks-divider>\n<ks-icon-button></ks-icon-button>\n<ks-icon-button icon=\"arrow_forward\"></ks-icon-button>\n<ks-icon-button\n  icon=\"favorite\"\n  [size]=\"30\"\n></ks-icon-button>\n",
       "templateUrl": [],
       "viewProviders": [],
       "hostDirectives": [],
@@ -1985,12 +1985,16 @@
         {
           "name": "KsDividerComponent",
           "type": "component"
+        },
+        {
+          "name": "IconButtonComponent",
+          "type": "component"
         }
       ],
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\nimport { KsButton } from '@ngx-ks/button';\nimport { KsDividerComponent } from '@ngx-ks/divider';\n\n@Component({\n  selector: 'ks-buttons',\n  standalone: true,\n  imports: [KsButton, KsDividerComponent],\n  template: `\n    <button ks-button>Button</button>\n    <ks-divider></ks-divider>\n    <button ks-button disabled>Disabled</button>\n  `\n})\nexport class ButtonsComponent {}\n",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { KsButton } from '@ngx-ks/button';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { IconButtonComponent } from '@ngx-ks/icon-button';\n\n@Component({\n  selector: 'ks-buttons',\n  standalone: true,\n  imports: [\n    KsButton,\n    KsDividerComponent,\n    IconButtonComponent\n  ],\n  template: `\n    <button ks-button>Button</button>\n    <ks-divider></ks-divider>\n    <button ks-button disabled>Disabled</button>\n    <ks-divider></ks-divider>\n    <ks-icon-button></ks-icon-button>\n    <ks-icon-button icon=\"arrow_forward\"></ks-icon-button>\n    <ks-icon-button\n      icon=\"favorite\"\n      [size]=\"30\"\n    ></ks-icon-button>\n  `\n})\nexport class ButtonsComponent {}\n",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "",
@@ -2930,6 +2934,195 @@
       "stylesData": "",
       "extends": [],
       "templateData": "<div class=\"ks-form-field-container\">\n  <label class=\"ks-form-field-label\">\n    <ng-content select=\"ks-label, [ksLabel]\"></ng-content>\n    <span *ngIf=\"formFieldControl?.required && contentLabel\" class=\"ks-required-marker\">*</span>\n  </label>\n  <div class=\"filed-container\">\n    <ng-content></ng-content>\n  </div>\n  <div class=\"ks-form-field__error-container\">\n    <ng-content select=\"ks-error, [ksError]\"></ng-content>\n  </div>\n</div>\n"
+    },
+    {
+      "name": "IconButtonComponent",
+      "id": "component-IconButtonComponent-4cb3125331ffdac58bbe4e097e8a7dd5e60c2e65a9c7b3d4721c58e1bd193b8a72ae08af3b0d92772e413975995a23300ce886f5bb76915846c1c0b798332b77",
+      "file": "src/components/icon-button/icon-button.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "ks-icon-button",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": [
+        "./icon-button.component.html"
+      ],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [
+        {
+          "name": "color",
+          "defaultValue": "'#000'",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 14,
+          "type": "string",
+          "decorators": []
+        },
+        {
+          "name": "disabled",
+          "defaultValue": "false",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 15,
+          "type": "boolean",
+          "decorators": []
+        },
+        {
+          "name": "icon",
+          "defaultValue": "'home'",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 12,
+          "type": "string",
+          "decorators": []
+        },
+        {
+          "name": "size",
+          "defaultValue": "50",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 13,
+          "type": "number",
+          "decorators": []
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "MatIcon"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, Input } from '@angular/core';\nimport { MatIcon } from '@angular/material/icon';\n\n@Component({\n  selector: 'ks-icon-button',\n  standalone: true,\n  imports: [MatIcon],\n  templateUrl: './icon-button.component.html',\n  styleUrl: './icon-button.component.scss'\n})\nexport class IconButtonComponent {\n  @Input() icon = 'home';\n  @Input() size = 50;\n  @Input() color = '#000';\n  @Input() disabled = false;\n}\n",
+      "styleUrl": "./icon-button.component.scss",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "extends": [],
+      "templateData": "<button [disabled]=\"disabled\" [style.height.px]=\"size\" [style.width.px]=\"size\" class=\"ks-icon-button\">\n  <mat-icon\n    [fontIcon]=\"icon\"\n    [style.color]=\"color\"\n    [style.fontSize.px]=\"size * 0.6\"\n    [style.height]=\"'unset'\"\n    [style.width]=\"'unset'\">\n  </mat-icon>\n</button>\n"
+    },
+    {
+      "name": "IconButtonComponentStory",
+      "id": "component-IconButtonComponentStory-ead88ea741739a5719be97a10e0af2b59442a3af8ef78d0c13fd8e4e0679b5ab0c2611933595b4aa81afd00bc7627dc027b900b6ccb461d024157e3dc917fd7e",
+      "file": "src/stories/icon-button/icon-button.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "storybook-icon-button",
+      "styleUrls": [],
+      "styles": [],
+      "template": "<ks-storybook-wrapper>\n  <ks-icon-button\n    [disabled]=\"disabled\"\n    [icon]=\"icon\"\n    [size]=\"size\"\n    [color]=\"color\"\n  ></ks-icon-button>\n</ks-storybook-wrapper>\n",
+      "templateUrl": [],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [
+        {
+          "name": "color",
+          "defaultValue": "'#000'",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 24,
+          "type": "string",
+          "decorators": []
+        },
+        {
+          "name": "disabled",
+          "defaultValue": "false",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 21,
+          "type": "boolean",
+          "decorators": []
+        },
+        {
+          "name": "icon",
+          "defaultValue": "'home'",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 22,
+          "type": "string",
+          "decorators": []
+        },
+        {
+          "name": "size",
+          "defaultValue": "50",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 23,
+          "type": "number",
+          "decorators": []
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [
+        {
+          "name": "onClick",
+          "args": [
+            {
+              "name": "event",
+              "type": "MouseEvent",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 26,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "event",
+              "type": "MouseEvent",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "IconButtonComponent",
+          "type": "component"
+        },
+        {
+          "name": "WrapperComponent",
+          "type": "component"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, Input } from '@angular/core';\nimport { WrapperComponent } from '../wrapper/wrapper.component';\nimport { IconButtonComponent } from '@ngx-ks/icon-button';\n\n@Component({\n  selector: 'storybook-icon-button',\n  imports: [IconButtonComponent, WrapperComponent],\n  template: `\n    <ks-storybook-wrapper>\n      <ks-icon-button\n        [disabled]=\"disabled\"\n        [icon]=\"icon\"\n        [size]=\"size\"\n        [color]=\"color\"\n      ></ks-icon-button>\n    </ks-storybook-wrapper>\n  `,\n  standalone: true\n})\nexport default class IconButtonComponentStory {\n  @Input() disabled = false;\n  @Input() icon = 'home';\n  @Input() size = 50;\n  @Input() color = '#000';\n\n  onClick(event: MouseEvent): void {\n    console.log('clicked', event);\n  }\n}\n",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "extends": []
     },
     {
       "name": "IndicatorsComponent",
@@ -6216,7 +6409,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "ApplicationConfig",
-        "defaultValue": "{\n  providers: [\n    provideRouter(routes),\n    { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } },\n    provideExperimentalZonelessChangeDetection()\n  ]\n}"
+        "defaultValue": "{\n  providers: [\n    provideRouter(routes),\n    { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } },\n    provideExperimentalZonelessChangeDetection(),\n    provideAnimationsAsync()\n  ]\n}"
       },
       {
         "name": "Default",
@@ -6226,7 +6419,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Story",
-        "defaultValue": "{\n  args: {\n    imageUrl: '' as never\n  }\n}"
+        "defaultValue": "{\n  args: {\n    imageUrl: 'assets/placeholder.png' as never,\n    size: 100 as never\n  }\n}"
       },
       {
         "name": "Default",
@@ -6273,6 +6466,16 @@
         "ctype": "miscellaneous",
         "subtype": "variable",
         "file": "src/stories/dropdown/Dropdown.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Story",
+        "defaultValue": "{\n  args: {}\n}"
+      },
+      {
+        "name": "Default",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/stories/icon-button/IconButton.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Story",
@@ -6402,6 +6605,16 @@
         "name": "Disabled",
         "ctype": "miscellaneous",
         "subtype": "variable",
+        "file": "src/stories/icon-button/IconButton.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Story",
+        "defaultValue": "{\n  args: {\n    disabled: true\n  }\n}"
+      },
+      {
+        "name": "Disabled",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
         "file": "src/stories/input/Input.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
@@ -6507,6 +6720,16 @@
         "deprecationMessage": "",
         "type": "Meta<Dropdown>",
         "defaultValue": "{\n  title: 'Example/Dropdown',\n  component: Dropdown,\n  render: (args: Dropdown) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+      },
+      {
+        "name": "meta",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/stories/icon-button/IconButton.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Meta<Button>",
+        "defaultValue": "{\n  title: 'Example/Icon Button',\n  component: Button,\n  render: (args: Button) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -6872,6 +7095,17 @@
         "name": "Story",
         "ctype": "miscellaneous",
         "subtype": "typealias",
+        "rawtype": "StoryObj<Button>",
+        "file": "src/stories/icon-button/IconButton.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "description": "",
+        "kind": 183
+      },
+      {
+        "name": "Story",
+        "ctype": "miscellaneous",
+        "subtype": "typealias",
         "rawtype": "StoryObj<Input>",
         "file": "src/stories/input/Input.stories.ts",
         "deprecated": false,
@@ -7012,7 +7246,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "ApplicationConfig",
-          "defaultValue": "{\n  providers: [\n    provideRouter(routes),\n    { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } },\n    provideExperimentalZonelessChangeDetection()\n  ]\n}"
+          "defaultValue": "{\n  providers: [\n    provideRouter(routes),\n    { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } },\n    provideExperimentalZonelessChangeDetection(),\n    provideAnimationsAsync()\n  ]\n}"
         }
       ],
       "src/stories/avatar/Avatar.stories.ts": [
@@ -7024,7 +7258,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Story",
-          "defaultValue": "{\n  args: {\n    imageUrl: '' as never\n  }\n}"
+          "defaultValue": "{\n  args: {\n    imageUrl: 'assets/placeholder.png' as never,\n    size: 100 as never\n  }\n}"
         },
         {
           "name": "meta",
@@ -7185,6 +7419,38 @@
           "deprecationMessage": "",
           "type": "Meta<Dropdown>",
           "defaultValue": "{\n  title: 'Example/Dropdown',\n  component: Dropdown,\n  render: (args: Dropdown) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        }
+      ],
+      "src/stories/icon-button/IconButton.stories.ts": [
+        {
+          "name": "Default",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/icon-button/IconButton.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Story",
+          "defaultValue": "{\n  args: {}\n}"
+        },
+        {
+          "name": "Disabled",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/icon-button/IconButton.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Story",
+          "defaultValue": "{\n  args: {\n    disabled: true\n  }\n}"
+        },
+        {
+          "name": "meta",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/icon-button/IconButton.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Meta<Button>",
+          "defaultValue": "{\n  title: 'Example/Icon Button',\n  component: Button,\n  render: (args: Button) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
         }
       ],
       "src/stories/input/Input.stories.ts": [
@@ -7714,6 +7980,19 @@
           "kind": 183
         }
       ],
+      "src/stories/icon-button/IconButton.stories.ts": [
+        {
+          "name": "Story",
+          "ctype": "miscellaneous",
+          "subtype": "typealias",
+          "rawtype": "StoryObj<Button>",
+          "file": "src/stories/icon-button/IconButton.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "description": "",
+          "kind": 183
+        }
+      ],
       "src/stories/input/Input.stories.ts": [
         {
           "name": "Story",
@@ -8088,6 +8367,15 @@
         "name": "FormFieldComponent",
         "coveragePercent": 0,
         "coverageCount": "0/3",
+        "status": "low"
+      },
+      {
+        "filePath": "src/components/icon-button/icon-button.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "IconButtonComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/5",
         "status": "low"
       },
       {
@@ -8620,6 +8908,45 @@
         "name": "meta",
         "coveragePercent": 0,
         "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/icon-button/IconButton.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "Default",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/icon-button/IconButton.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "Disabled",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/icon-button/IconButton.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "meta",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/icon-button/icon-button.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "IconButtonComponentStory",
+        "coveragePercent": 0,
+        "coverageCount": "0/6",
         "status": "low"
       },
       {

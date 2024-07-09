@@ -4,6 +4,7 @@ import {
 } from '@angular/core';
 import { provideRouter, Routes } from '@angular/router';
 import { ALERTS_CONFIG } from '@ngx-ks/alert';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const routes: Routes = [
   {
@@ -61,6 +62,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     { provide: ALERTS_CONFIG, useValue: { timeout: 1000 } },
-    provideExperimentalZonelessChangeDetection()
+    provideExperimentalZonelessChangeDetection(),
+    provideAnimationsAsync()
   ]
 };

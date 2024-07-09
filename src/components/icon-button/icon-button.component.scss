@@ -1,0 +1,33 @@
+@use '../../core/styles/palette';
+
+.ks-icon-button {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px palette.$outer-box-shadow,
+  -5px -5px 10px palette.$inner-box-shadow;
+  background-color: palette.$background-color;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 7px 7px 15px palette.$outer-box-shadow,
+    -7px -7px 15px palette.$inner-box-shadow;
+  }
+
+  &:active {
+    box-shadow: inset 5px 5px 10px palette.$outer-box-shadow,
+    inset -5px -5px 10px palette.$inner-box-shadow;
+  }
+
+  &:disabled {
+    color: palette.$disabled-color;
+    opacity: 0.5;
+    cursor: no-drop;
+    box-shadow: 1px 1px 2px palette.$outer-box-shadow,
+    inset -1px -1px 2px palette.$inner-box-shadow;
+  }
+}
