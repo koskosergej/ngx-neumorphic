@@ -20,6 +20,7 @@ import { NgIf } from '@angular/common';
 import { CheckboxComponent } from '@ngx-ks/checkbox';
 import { DropdownComponent } from '@ngx-ks/dropdown';
 import { UnitInputComponent } from '@ngx-ks/unit-input';
+import { DateRangePickerComponent } from '@ngx-ks/date-range-picker';
 
 @Component({
   selector: 'ks-inputs',
@@ -40,7 +41,8 @@ import { UnitInputComponent } from '@ngx-ks/unit-input';
     NgIf,
     CheckboxComponent,
     DropdownComponent,
-    UnitInputComponent
+    UnitInputComponent,
+    DateRangePickerComponent
   ],
   template: `
     <ks-form-field>
@@ -144,6 +146,8 @@ import { UnitInputComponent } from '@ngx-ks/unit-input';
     ></ks-checkbox>
     <ks-divider></ks-divider>
     <ks-dropdown [options]="['42', '100']"></ks-dropdown>
+    <ks-divider></ks-divider>
+    <ks-date-range-picker></ks-date-range-picker>
   `
 })
 export class InputsComponent {

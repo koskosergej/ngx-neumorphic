@@ -1,0 +1,21 @@
+<div class="date-range-picker-container">
+  <div class="neumorphic-input">
+    <label for="start-date">Start Date</label>
+    <input
+      (change)="onStartDateChange($event)"
+      [(ngModel)]="startDate"
+      id="start-date"
+      type="date"
+    />
+  </div>
+
+  <div class="neumorphic-input">
+    <label for="end-date">End Date</label>
+    <input
+      (change)="onEndDateChange($event)"
+      [(ngModel)]="endDate"
+      id="end-date"
+      type="date"
+    />
+  </div>
+</div>

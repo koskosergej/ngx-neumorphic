@@ -57,6 +57,9 @@
       "@ngx-ks/table": [
         "./src/components/table/table.component.ts"
       ],
+      "@ngx-ks/date-range-picker": [
+        "./src/components/date-range-picker/date-range-picker.component.ts"
+      ],
       "@ngx-ks/login-page": [
         "./src/components/login-page"
       ],

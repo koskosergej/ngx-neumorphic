@@ -9,7 +9,7 @@ import { KsButton } from '@ngx-ks/button';
   imports: [KsInput, KsButton, RouterOutlet, RouterLink],
   template: `
     <div class="app-container">
-      <h1>ks UI-kit <code>14.08-16.669</code></h1>
+      <h1>ks UI-kit <code>14.08-17.505</code></h1>
       <div class="navigation">
         <a [routerLink]="'/inputs'">Form Controls</a>
         <a [routerLink]="'/buttons'">Buttons</a>

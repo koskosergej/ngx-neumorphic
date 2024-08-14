@@ -1,0 +1,37 @@
+@use '../../core/styles/palette';
+
+.date-range-picker-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  .neumorphic-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    label {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+
+    input {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 12px;
+      background-color: palette.$background-color;
+      box-shadow: inset 2px 2px 3px palette.$outer-box-shadow,
+      inset -1px -1px 2px palette.$inner-box-shadow;
+      transition: box-shadow 0.3s ease-in-out;
+      outline: none;
+      font-size: 1rem;
+      color: #333;
+
+      &:focus {
+        box-shadow: inset 5px 5px 10px palette.$outer-box-shadow,
+        inset -5px -5px 10px palette.$inner-box-shadow;
+      }
+    }
+  }
+}

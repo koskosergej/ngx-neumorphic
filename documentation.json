@@ -1658,7 +1658,7 @@
     },
     {
       "name": "AppComponent",
-      "id": "component-AppComponent-41de87fc875d374722fa6091cc67fd522cdbeeb179f209b6b92dbfff2bfbed299bef4306639c6a89d224f58c8d9408da35c41f0744089bfc7053a9cee9d50483",
+      "id": "component-AppComponent-62d84ddefdc10c1abdcfc8ee64bd2fbb3a23b2fcd15d8ff271a33eb25c868f83a2140a7607f337741bb06bd3195fad2bcf944cc732830a369d60b92271f9463e",
       "file": "src/app/app.component.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -1670,7 +1670,7 @@
       "styles": [
         "\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    "
       ],
-      "template": "<div class=\"app-container\">\n  <h1>ks UI-kit</h1>\n  <div class=\"navigation\">\n    <a [routerLink]=\"'/inputs'\">Form Controls</a>\n    <a [routerLink]=\"'/buttons'\">Buttons</a>\n    <a [routerLink]=\"'/alerts'\">Alerts</a>\n    <a [routerLink]=\"'/layout'\">Layout</a>\n    <a [routerLink]=\"'/indicators'\">Indicators</a>\n    <a [routerLink]=\"'/pipes'\">Pipes</a>\n    <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n  </div>\n  <hr />\n  <div class=\"app-content\">\n    <router-outlet></router-outlet>\n  </div>\n</div>\n",
+      "template": "<div class=\"app-container\">\n  <h1>ks UI-kit <code>14.08-16.669</code></h1>\n  <div class=\"navigation\">\n    <a [routerLink]=\"'/inputs'\">Form Controls</a>\n    <a [routerLink]=\"'/buttons'\">Buttons</a>\n    <a [routerLink]=\"'/alerts'\">Alerts</a>\n    <a [routerLink]=\"'/layout'\">Layout</a>\n    <a [routerLink]=\"'/indicators'\">Indicators</a>\n    <a [routerLink]=\"'/pipes'\">Pipes</a>\n    <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n  </div>\n  <hr />\n  <div class=\"app-content\">\n    <router-outlet></router-outlet>\n  </div>\n</div>\n",
       "templateUrl": [],
       "viewProviders": [],
       "hostDirectives": [],
@@ -1700,7 +1700,7 @@
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\nimport { RouterLink, RouterOutlet } from '@angular/router';\nimport { KsInput } from '@ngx-ks/input';\nimport { KsButton } from '@ngx-ks/button';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [KsInput, KsButton, RouterOutlet, RouterLink],\n  template: `\n    <div class=\"app-container\">\n      <h1>ks UI-kit</h1>\n      <div class=\"navigation\">\n        <a [routerLink]=\"'/inputs'\">Form Controls</a>\n        <a [routerLink]=\"'/buttons'\">Buttons</a>\n        <a [routerLink]=\"'/alerts'\">Alerts</a>\n        <a [routerLink]=\"'/layout'\">Layout</a>\n        <a [routerLink]=\"'/indicators'\">Indicators</a>\n        <a [routerLink]=\"'/pipes'\">Pipes</a>\n        <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n      </div>\n      <hr />\n      <div class=\"app-content\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  `,\n  styles: [\n    `\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    `\n  ]\n})\nexport class AppComponent {}\n",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { RouterLink, RouterOutlet } from '@angular/router';\nimport { KsInput } from '@ngx-ks/input';\nimport { KsButton } from '@ngx-ks/button';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [KsInput, KsButton, RouterOutlet, RouterLink],\n  template: `\n    <div class=\"app-container\">\n      <h1>ks UI-kit <code>14.08-16.669</code></h1>\n      <div class=\"navigation\">\n        <a [routerLink]=\"'/inputs'\">Form Controls</a>\n        <a [routerLink]=\"'/buttons'\">Buttons</a>\n        <a [routerLink]=\"'/alerts'\">Alerts</a>\n        <a [routerLink]=\"'/layout'\">Layout</a>\n        <a [routerLink]=\"'/indicators'\">Indicators</a>\n        <a [routerLink]=\"'/pipes'\">Pipes</a>\n        <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n      </div>\n      <hr />\n      <div class=\"app-content\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  `,\n  styles: [\n    `\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    `\n  ]\n})\nexport class AppComponent {}\n",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    \n",
@@ -1955,7 +1955,7 @@
     },
     {
       "name": "ButtonsComponent",
-      "id": "component-ButtonsComponent-f5fab688f48e5ba1daace421ddf16ce4fff175fa5d465378fdaaf0783678fc9732fb4c326865d4e507ddaa82eeca3de6b7f3195054de6af8e953cd3f7515f154",
+      "id": "component-ButtonsComponent-eca161bd7f2d71113831c73e90d829f638ed81e60dd0b0db31e12d096c37c43ab0e3a8da07e7a2af36807a8705b22b5641d980470199bc40571404f34e66ffe7",
       "file": "src/app/features/buttons/buttons.component.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -1965,7 +1965,7 @@
       "selector": "ks-buttons",
       "styleUrls": [],
       "styles": [],
-      "template": "<button ks-button>Button</button>\n<ks-divider></ks-divider>\n<button ks-button disabled>Disabled</button>\n<ks-divider></ks-divider>\n<ks-icon-button></ks-icon-button>\n<ks-icon-button icon=\"arrow_forward\"></ks-icon-button>\n<ks-icon-button\n  icon=\"favorite\"\n  [size]=\"30\"\n></ks-icon-button>\n",
+      "template": "<button ks-button>Button</button>\n<ks-divider></ks-divider>\n<button ks-button disabled>Disabled</button>\n<ks-divider></ks-divider>\n<ks-icon-button></ks-icon-button>\n<br />\n<ks-icon-button [disabled]=\"true\"></ks-icon-button>\n<br />\n<ks-icon-button icon=\"arrow_forward\"></ks-icon-button>\n<br />\n<ks-icon-button\n  icon=\"favorite\"\n  [size]=\"30\"\n  [color]=\"'red'\"\n></ks-icon-button>\n",
       "templateUrl": [],
       "viewProviders": [],
       "hostDirectives": [],
@@ -1994,7 +1994,7 @@
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\nimport { KsButton } from '@ngx-ks/button';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { IconButtonComponent } from '@ngx-ks/icon-button';\n\n@Component({\n  selector: 'ks-buttons',\n  standalone: true,\n  imports: [\n    KsButton,\n    KsDividerComponent,\n    IconButtonComponent\n  ],\n  template: `\n    <button ks-button>Button</button>\n    <ks-divider></ks-divider>\n    <button ks-button disabled>Disabled</button>\n    <ks-divider></ks-divider>\n    <ks-icon-button></ks-icon-button>\n    <ks-icon-button icon=\"arrow_forward\"></ks-icon-button>\n    <ks-icon-button\n      icon=\"favorite\"\n      [size]=\"30\"\n    ></ks-icon-button>\n  `\n})\nexport class ButtonsComponent {}\n",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { KsButton } from '@ngx-ks/button';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { IconButtonComponent } from '@ngx-ks/icon-button';\n\n@Component({\n  selector: 'ks-buttons',\n  standalone: true,\n  imports: [\n    KsButton,\n    KsDividerComponent,\n    IconButtonComponent\n  ],\n  template: `\n    <button ks-button>Button</button>\n    <ks-divider></ks-divider>\n    <button ks-button disabled>Disabled</button>\n    <ks-divider></ks-divider>\n    <ks-icon-button></ks-icon-button>\n    <br />\n    <ks-icon-button [disabled]=\"true\"></ks-icon-button>\n    <br />\n    <ks-icon-button icon=\"arrow_forward\"></ks-icon-button>\n    <br />\n    <ks-icon-button\n      icon=\"favorite\"\n      [size]=\"30\"\n      [color]=\"'red'\"\n    ></ks-icon-button>\n  `\n})\nexport class ButtonsComponent {}\n",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "",
@@ -2544,6 +2544,175 @@
       "stylesData": "",
       "extends": [],
       "templateData": "<h4>Login page</h4>\n<ks-login-page (submit)=\"loginPageSubmit($event)\"></ks-login-page>\n<ks-divider></ks-divider>\n{{ loginData | json }}\n\n<ks-divider></ks-divider>\n<h4>Page Not Found - 404</h4>\n<ks-page-not-found></ks-page-not-found>\n"
+    },
+    {
+      "name": "DateRangePickerComponent",
+      "id": "component-DateRangePickerComponent-f196da31fb5f627cc0e2abeadfc28d3e2469c43c235daff0679eec9f825adcdb54dffffeb8b4a98e77df68c46064db6f39bc17ce787db8b0f6b52a49a48cbcaf",
+      "file": "src/components/date-range-picker/date-range-picker.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "ks-date-range-picker",
+      "styleUrls": [
+        "./date-range-picker.component.scss"
+      ],
+      "styles": [],
+      "templateUrl": [
+        "./date-range-picker.component.html"
+      ],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [
+        {
+          "name": "endDate",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 13,
+          "type": "string",
+          "decorators": []
+        },
+        {
+          "name": "startDate",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 12,
+          "type": "string",
+          "decorators": []
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [
+        {
+          "name": "onEndDateChange",
+          "args": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 20,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        },
+        {
+          "name": "onStartDateChange",
+          "args": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 15,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "FormsModule",
+          "type": "module"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, Input } from '@angular/core';\nimport { FormsModule } from '@angular/forms';\n\n@Component({\n  selector: 'ks-date-range-picker',\n  templateUrl: './date-range-picker.component.html',\n  styleUrls: ['./date-range-picker.component.scss'],\n  imports: [FormsModule],\n  standalone: true\n})\nexport class DateRangePickerComponent {\n  @Input() startDate: string = '';\n  @Input() endDate: string = '';\n\n  onStartDateChange(event: Event): void {\n    const input = event.target as HTMLInputElement;\n    this.startDate = input.value;\n  }\n\n  onEndDateChange(event: Event): void {\n    const input = event.target as HTMLInputElement;\n    this.endDate = input.value;\n  }\n}\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "@use '../../core/styles/palette';\n\n.date-range-picker-container {\n  display: flex;\n  justify-content: space-between;\n  gap: 1rem;\n\n  .neumorphic-input {\n    display: flex;\n    flex-direction: column;\n    position: relative;\n\n    label {\n      margin-bottom: 0.5rem;\n      font-size: 0.9rem;\n      color: #6c757d;\n    }\n\n    input {\n      padding: 0.5rem 1rem;\n      border: none;\n      border-radius: 12px;\n      background-color: palette.$background-color;\n      box-shadow: inset 2px 2px 3px palette.$outer-box-shadow,\n      inset -1px -1px 2px palette.$inner-box-shadow;\n      transition: box-shadow 0.3s ease-in-out;\n      outline: none;\n      font-size: 1rem;\n      color: #333;\n\n      &:focus {\n        box-shadow: inset 5px 5px 10px palette.$outer-box-shadow,\n        inset -5px -5px 10px palette.$inner-box-shadow;\n      }\n    }\n  }\n}\n",
+          "styleUrl": "./date-range-picker.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "extends": [],
+      "templateData": "<div class=\"date-range-picker-container\">\n  <div class=\"neumorphic-input\">\n    <label for=\"start-date\">Start Date</label>\n    <input\n      (change)=\"onStartDateChange($event)\"\n      [(ngModel)]=\"startDate\"\n      id=\"start-date\"\n      type=\"date\"\n    />\n  </div>\n\n  <div class=\"neumorphic-input\">\n    <label for=\"end-date\">End Date</label>\n    <input\n      (change)=\"onEndDateChange($event)\"\n      [(ngModel)]=\"endDate\"\n      id=\"end-date\"\n      type=\"date\"\n    />\n  </div>\n</div>\n"
+    },
+    {
+      "name": "DateRangePickerStoryComponent",
+      "id": "component-DateRangePickerStoryComponent-ae5821a13c4aa1bf26c2af371ba3803e3749b9f7e2096d94a197e6fe89851b57c6f60c10eb785d2f2d89fc2bf92370fcbc6eaecbd13aaf733821f41363b73f80",
+      "file": "src/stories/date-range-picker/date-range-picker.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "storybook-button",
+      "styleUrls": [],
+      "styles": [],
+      "template": "<ks-storybook-wrapper>\n  <ks-date-range-picker></ks-date-range-picker>\n</ks-storybook-wrapper>\n",
+      "templateUrl": [],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "WrapperComponent",
+          "type": "component"
+        },
+        {
+          "name": "DateRangePickerComponent",
+          "type": "component"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { WrapperComponent } from '../wrapper/wrapper.component';\nimport { DateRangePickerComponent } from '@ngx-ks/date-range-picker';\n\n@Component({\n  selector: 'storybook-button',\n  imports: [WrapperComponent, DateRangePickerComponent],\n  template: `\n    <ks-storybook-wrapper>\n      <ks-date-range-picker></ks-date-range-picker>\n    </ks-storybook-wrapper>\n  `,\n  standalone: true\n})\nexport default class DateRangePickerStoryComponent {}\n",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "extends": []
     },
     {
       "name": "DialogComponent",
@@ -3297,7 +3466,7 @@
     },
     {
       "name": "InputsComponent",
-      "id": "component-InputsComponent-03195c4d5e1738e2acc88e623ec932807e0674b6d5487679e1577727676f12f49710b5497e2964450731b46ec6804aaa07f9ed6ab00bb3a86dda4f269a2447ea",
+      "id": "component-InputsComponent-d17f6bcfd518f39f747cafef648ce8f197f23df67fc02669efb844f5b04ac9c53a97efa434860c8ac207e8cf2988b8cf4dc8ade37ab87e3e9b47254ad231a99d",
       "file": "src/app/features/inputs/inputs.component.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -3307,7 +3476,7 @@
       "selector": "ks-inputs",
       "styleUrls": [],
       "styles": [],
-      "template": "<ks-form-field>\n  <ks-label>Label Text</ks-label>\n  <input ks-input placeholder=\"input component\" />\n</ks-form-field>\n<ks-form-field>\n  <input\n    ks-input\n    placeholder=\"disabled input\"\n    [disabled]=\"true\"\n  />\n</ks-form-field>\n<ks-form-field>\n  <ks-label>RequiredInput</ks-label>\n  <input\n    ks-input\n    placeholder=\"required input\"\n    [formControl]=\"inputCntrl\"\n  />\n  <ks-error\n    *ngIf=\"\n      inputCntrl.hasError('required') &&\n      inputCntrl.touched\n    \"\n    >Required\n  </ks-error>\n</ks-form-field>\n<ks-divider></ks-divider>\n<ks-form-field>\n  <ks-unit-input></ks-unit-input>\n</ks-form-field>\n<ks-divider></ks-divider>\n<ks-radio-group>\n  <ks-radio-button value=\"option1\"\n    >Option 1\n  </ks-radio-button>\n  <ks-radio-button value=\"option2\"\n    >Option 2\n  </ks-radio-button>\n  <ks-radio-button value=\"option3\"\n    >Option 3\n  </ks-radio-button>\n</ks-radio-group>\n<ks-divider></ks-divider>\n<ks-form-field>\n  <textarea\n    ks-textarea\n    placeholder=\"simple text area\"\n  ></textarea>\n</ks-form-field>\n<ks-form-field>\n  <ks-label>Disabled</ks-label>\n  <textarea\n    ks-textarea\n    placeholder=\"disabled text area\"\n    [disabled]=\"true\"\n  ></textarea>\n</ks-form-field>\n<ks-form-field>\n  <ks-label>RequiredTextarea</ks-label>\n  <textarea\n    ks-textarea\n    placeholder=\"required textarea\"\n    [formControl]=\"textareaCntrl\"\n  ></textarea>\n</ks-form-field>\n<ks-divider></ks-divider>\n<ks-selector\n  [formControl]=\"selectorCntrl\"\n  [options]=\"[\n    { label: 'Option 1', value: 'option1' },\n    { label: 'Option 2', value: 'option2' },\n    { label: 'Option 3', value: 'option3' }\n  ]\"\n>\n</ks-selector>\n<br />\n<br />\n<ks-selector\n  [formControl]=\"disabledSelector\"\n  [options]=\"[\n    { label: 'Option 1', value: 'option1' },\n    { label: 'Option 2', value: 'option2' },\n    { label: 'Option 3', value: 'option3' }\n  ]\"\n>\n</ks-selector>\n<ks-divider></ks-divider>\n<ks-slide-toggle\n  [formControl]=\"slideToggle\"\n></ks-slide-toggle>\n<ks-divider></ks-divider>\n<ks-checkbox\n  label=\"checkbox\"\n  [formControl]=\"checkboxCntrl\"\n></ks-checkbox>\n<ks-checkbox\n  label=\"disabled\"\n  [formControl]=\"checkboxDisabledCntrl\"\n></ks-checkbox>\n<ks-divider></ks-divider>\n<ks-dropdown [options]=\"['42', '100']\"></ks-dropdown>\n",
+      "template": "<ks-form-field>\n  <ks-label>Label Text</ks-label>\n  <input ks-input placeholder=\"input component\" />\n</ks-form-field>\n<ks-form-field>\n  <input\n    ks-input\n    placeholder=\"disabled input\"\n    [disabled]=\"true\"\n  />\n</ks-form-field>\n<ks-form-field>\n  <ks-label>RequiredInput</ks-label>\n  <input\n    ks-input\n    placeholder=\"required input\"\n    [formControl]=\"inputCntrl\"\n  />\n  <ks-error\n    *ngIf=\"\n      inputCntrl.hasError('required') &&\n      inputCntrl.touched\n    \"\n    >Required\n  </ks-error>\n</ks-form-field>\n<ks-divider></ks-divider>\n<ks-form-field>\n  <ks-unit-input></ks-unit-input>\n</ks-form-field>\n<ks-divider></ks-divider>\n<ks-radio-group>\n  <ks-radio-button value=\"option1\"\n    >Option 1\n  </ks-radio-button>\n  <ks-radio-button value=\"option2\"\n    >Option 2\n  </ks-radio-button>\n  <ks-radio-button value=\"option3\"\n    >Option 3\n  </ks-radio-button>\n</ks-radio-group>\n<ks-divider></ks-divider>\n<ks-form-field>\n  <textarea\n    ks-textarea\n    placeholder=\"simple text area\"\n  ></textarea>\n</ks-form-field>\n<ks-form-field>\n  <ks-label>Disabled</ks-label>\n  <textarea\n    ks-textarea\n    placeholder=\"disabled text area\"\n    [disabled]=\"true\"\n  ></textarea>\n</ks-form-field>\n<ks-form-field>\n  <ks-label>RequiredTextarea</ks-label>\n  <textarea\n    ks-textarea\n    placeholder=\"required textarea\"\n    [formControl]=\"textareaCntrl\"\n  ></textarea>\n</ks-form-field>\n<ks-divider></ks-divider>\n<ks-selector\n  [formControl]=\"selectorCntrl\"\n  [options]=\"[\n    { label: 'Option 1', value: 'option1' },\n    { label: 'Option 2', value: 'option2' },\n    { label: 'Option 3', value: 'option3' }\n  ]\"\n>\n</ks-selector>\n<br />\n<br />\n<ks-selector\n  [formControl]=\"disabledSelector\"\n  [options]=\"[\n    { label: 'Option 1', value: 'option1' },\n    { label: 'Option 2', value: 'option2' },\n    { label: 'Option 3', value: 'option3' }\n  ]\"\n>\n</ks-selector>\n<ks-divider></ks-divider>\n<ks-slide-toggle\n  [formControl]=\"slideToggle\"\n></ks-slide-toggle>\n<ks-divider></ks-divider>\n<ks-checkbox\n  label=\"checkbox\"\n  [formControl]=\"checkboxCntrl\"\n></ks-checkbox>\n<ks-checkbox\n  label=\"disabled\"\n  [formControl]=\"checkboxDisabledCntrl\"\n></ks-checkbox>\n<ks-divider></ks-divider>\n<ks-dropdown [options]=\"['42', '100']\"></ks-dropdown>\n<ks-divider></ks-divider>\n<ks-date-range-picker></ks-date-range-picker>\n",
       "templateUrl": [],
       "viewProviders": [],
       "hostDirectives": [],
@@ -3322,7 +3491,7 @@
           "type": "",
           "optional": false,
           "description": "",
-          "line": 163
+          "line": 167
         },
         {
           "name": "checkboxDisabledCntrl",
@@ -3332,7 +3501,7 @@
           "type": "",
           "optional": false,
           "description": "",
-          "line": 164
+          "line": 168
         },
         {
           "name": "disabledSelector",
@@ -3342,7 +3511,7 @@
           "type": "",
           "optional": false,
           "description": "",
-          "line": 158
+          "line": 162
         },
         {
           "name": "inputCntrl",
@@ -3352,7 +3521,7 @@
           "type": "",
           "optional": false,
           "description": "",
-          "line": 150
+          "line": 154
         },
         {
           "name": "selectorCntrl",
@@ -3362,7 +3531,7 @@
           "type": "",
           "optional": false,
           "description": "",
-          "line": 154
+          "line": 158
         },
         {
           "name": "slideToggle",
@@ -3372,7 +3541,7 @@
           "type": "",
           "optional": false,
           "description": "",
-          "line": 162
+          "line": 166
         },
         {
           "name": "textareaCntrl",
@@ -3382,7 +3551,7 @@
           "type": "",
           "optional": false,
           "description": "",
-          "line": 151
+          "line": 155
         }
       ],
       "methodsClass": [],
@@ -3451,12 +3620,16 @@
         {
           "name": "UnitInputComponent",
           "type": "component"
+        },
+        {
+          "name": "DateRangePickerComponent",
+          "type": "component"
         }
       ],
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\nimport { KsInput } from '@ngx-ks/input';\nimport { KsTextArea } from '@ngx-ks/textarea';\nimport {\n  KsRadioButtonComponent,\n  KsRadioGroupComponent\n} from '@ngx-ks/radio-button';\nimport { KsSelectorComponent } from '@ngx-ks/selector';\nimport {\n  FormControl,\n  ReactiveFormsModule,\n  Validators\n} from '@angular/forms';\nimport { KsSlideToggleComponent } from '@ngx-ks/slide-toggle';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { FormFieldComponent } from '@ngx-ks/form-field';\nimport { KsLabel } from '@ngx-ks/label';\nimport { ErrorDirective } from '@ngx-ks/error';\nimport { NgIf } from '@angular/common';\nimport { CheckboxComponent } from '@ngx-ks/checkbox';\nimport { DropdownComponent } from '@ngx-ks/dropdown';\nimport { UnitInputComponent } from '@ngx-ks/unit-input';\n\n@Component({\n  selector: 'ks-inputs',\n  standalone: true,\n  imports: [\n    KsInput,\n    KsTextArea,\n    KsSelectorComponent,\n    KsSelectorComponent,\n    ReactiveFormsModule,\n    KsSlideToggleComponent,\n    KsDividerComponent,\n    KsRadioGroupComponent,\n    KsRadioButtonComponent,\n    FormFieldComponent,\n    KsLabel,\n    ErrorDirective,\n    NgIf,\n    CheckboxComponent,\n    DropdownComponent,\n    UnitInputComponent\n  ],\n  template: `\n    <ks-form-field>\n      <ks-label>Label Text</ks-label>\n      <input ks-input placeholder=\"input component\" />\n    </ks-form-field>\n    <ks-form-field>\n      <input\n        ks-input\n        placeholder=\"disabled input\"\n        [disabled]=\"true\"\n      />\n    </ks-form-field>\n    <ks-form-field>\n      <ks-label>RequiredInput</ks-label>\n      <input\n        ks-input\n        placeholder=\"required input\"\n        [formControl]=\"inputCntrl\"\n      />\n      <ks-error\n        *ngIf=\"\n          inputCntrl.hasError('required') &&\n          inputCntrl.touched\n        \"\n        >Required\n      </ks-error>\n    </ks-form-field>\n    <ks-divider></ks-divider>\n    <ks-form-field>\n      <ks-unit-input></ks-unit-input>\n    </ks-form-field>\n    <ks-divider></ks-divider>\n    <ks-radio-group>\n      <ks-radio-button value=\"option1\"\n        >Option 1\n      </ks-radio-button>\n      <ks-radio-button value=\"option2\"\n        >Option 2\n      </ks-radio-button>\n      <ks-radio-button value=\"option3\"\n        >Option 3\n      </ks-radio-button>\n    </ks-radio-group>\n    <ks-divider></ks-divider>\n    <ks-form-field>\n      <textarea\n        ks-textarea\n        placeholder=\"simple text area\"\n      ></textarea>\n    </ks-form-field>\n    <ks-form-field>\n      <ks-label>Disabled</ks-label>\n      <textarea\n        ks-textarea\n        placeholder=\"disabled text area\"\n        [disabled]=\"true\"\n      ></textarea>\n    </ks-form-field>\n    <ks-form-field>\n      <ks-label>RequiredTextarea</ks-label>\n      <textarea\n        ks-textarea\n        placeholder=\"required textarea\"\n        [formControl]=\"textareaCntrl\"\n      ></textarea>\n    </ks-form-field>\n    <ks-divider></ks-divider>\n    <ks-selector\n      [formControl]=\"selectorCntrl\"\n      [options]=\"[\n        { label: 'Option 1', value: 'option1' },\n        { label: 'Option 2', value: 'option2' },\n        { label: 'Option 3', value: 'option3' }\n      ]\"\n    >\n    </ks-selector>\n    <br />\n    <br />\n    <ks-selector\n      [formControl]=\"disabledSelector\"\n      [options]=\"[\n        { label: 'Option 1', value: 'option1' },\n        { label: 'Option 2', value: 'option2' },\n        { label: 'Option 3', value: 'option3' }\n      ]\"\n    >\n    </ks-selector>\n    <ks-divider></ks-divider>\n    <ks-slide-toggle\n      [formControl]=\"slideToggle\"\n    ></ks-slide-toggle>\n    <ks-divider></ks-divider>\n    <ks-checkbox\n      label=\"checkbox\"\n      [formControl]=\"checkboxCntrl\"\n    ></ks-checkbox>\n    <ks-checkbox\n      label=\"disabled\"\n      [formControl]=\"checkboxDisabledCntrl\"\n    ></ks-checkbox>\n    <ks-divider></ks-divider>\n    <ks-dropdown [options]=\"['42', '100']\"></ks-dropdown>\n  `\n})\nexport class InputsComponent {\n  inputCntrl = new FormControl(null, [Validators.required]);\n  textareaCntrl = new FormControl(null, [\n    Validators.required\n  ]);\n  selectorCntrl = new FormControl({\n    value: 'option1',\n    disabled: false\n  });\n  disabledSelector = new FormControl({\n    value: 'option1',\n    disabled: true\n  });\n  slideToggle = new FormControl(true);\n  checkboxCntrl = new FormControl(false);\n  checkboxDisabledCntrl = new FormControl({\n    value: true,\n    disabled: true\n  });\n}\n",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { KsInput } from '@ngx-ks/input';\nimport { KsTextArea } from '@ngx-ks/textarea';\nimport {\n  KsRadioButtonComponent,\n  KsRadioGroupComponent\n} from '@ngx-ks/radio-button';\nimport { KsSelectorComponent } from '@ngx-ks/selector';\nimport {\n  FormControl,\n  ReactiveFormsModule,\n  Validators\n} from '@angular/forms';\nimport { KsSlideToggleComponent } from '@ngx-ks/slide-toggle';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { FormFieldComponent } from '@ngx-ks/form-field';\nimport { KsLabel } from '@ngx-ks/label';\nimport { ErrorDirective } from '@ngx-ks/error';\nimport { NgIf } from '@angular/common';\nimport { CheckboxComponent } from '@ngx-ks/checkbox';\nimport { DropdownComponent } from '@ngx-ks/dropdown';\nimport { UnitInputComponent } from '@ngx-ks/unit-input';\nimport { DateRangePickerComponent } from '@ngx-ks/date-range-picker';\n\n@Component({\n  selector: 'ks-inputs',\n  standalone: true,\n  imports: [\n    KsInput,\n    KsTextArea,\n    KsSelectorComponent,\n    KsSelectorComponent,\n    ReactiveFormsModule,\n    KsSlideToggleComponent,\n    KsDividerComponent,\n    KsRadioGroupComponent,\n    KsRadioButtonComponent,\n    FormFieldComponent,\n    KsLabel,\n    ErrorDirective,\n    NgIf,\n    CheckboxComponent,\n    DropdownComponent,\n    UnitInputComponent,\n    DateRangePickerComponent\n  ],\n  template: `\n    <ks-form-field>\n      <ks-label>Label Text</ks-label>\n      <input ks-input placeholder=\"input component\" />\n    </ks-form-field>\n    <ks-form-field>\n      <input\n        ks-input\n        placeholder=\"disabled input\"\n        [disabled]=\"true\"\n      />\n    </ks-form-field>\n    <ks-form-field>\n      <ks-label>RequiredInput</ks-label>\n      <input\n        ks-input\n        placeholder=\"required input\"\n        [formControl]=\"inputCntrl\"\n      />\n      <ks-error\n        *ngIf=\"\n          inputCntrl.hasError('required') &&\n          inputCntrl.touched\n        \"\n        >Required\n      </ks-error>\n    </ks-form-field>\n    <ks-divider></ks-divider>\n    <ks-form-field>\n      <ks-unit-input></ks-unit-input>\n    </ks-form-field>\n    <ks-divider></ks-divider>\n    <ks-radio-group>\n      <ks-radio-button value=\"option1\"\n        >Option 1\n      </ks-radio-button>\n      <ks-radio-button value=\"option2\"\n        >Option 2\n      </ks-radio-button>\n      <ks-radio-button value=\"option3\"\n        >Option 3\n      </ks-radio-button>\n    </ks-radio-group>\n    <ks-divider></ks-divider>\n    <ks-form-field>\n      <textarea\n        ks-textarea\n        placeholder=\"simple text area\"\n      ></textarea>\n    </ks-form-field>\n    <ks-form-field>\n      <ks-label>Disabled</ks-label>\n      <textarea\n        ks-textarea\n        placeholder=\"disabled text area\"\n        [disabled]=\"true\"\n      ></textarea>\n    </ks-form-field>\n    <ks-form-field>\n      <ks-label>RequiredTextarea</ks-label>\n      <textarea\n        ks-textarea\n        placeholder=\"required textarea\"\n        [formControl]=\"textareaCntrl\"\n      ></textarea>\n    </ks-form-field>\n    <ks-divider></ks-divider>\n    <ks-selector\n      [formControl]=\"selectorCntrl\"\n      [options]=\"[\n        { label: 'Option 1', value: 'option1' },\n        { label: 'Option 2', value: 'option2' },\n        { label: 'Option 3', value: 'option3' }\n      ]\"\n    >\n    </ks-selector>\n    <br />\n    <br />\n    <ks-selector\n      [formControl]=\"disabledSelector\"\n      [options]=\"[\n        { label: 'Option 1', value: 'option1' },\n        { label: 'Option 2', value: 'option2' },\n        { label: 'Option 3', value: 'option3' }\n      ]\"\n    >\n    </ks-selector>\n    <ks-divider></ks-divider>\n    <ks-slide-toggle\n      [formControl]=\"slideToggle\"\n    ></ks-slide-toggle>\n    <ks-divider></ks-divider>\n    <ks-checkbox\n      label=\"checkbox\"\n      [formControl]=\"checkboxCntrl\"\n    ></ks-checkbox>\n    <ks-checkbox\n      label=\"disabled\"\n      [formControl]=\"checkboxDisabledCntrl\"\n    ></ks-checkbox>\n    <ks-divider></ks-divider>\n    <ks-dropdown [options]=\"['42', '100']\"></ks-dropdown>\n    <ks-divider></ks-divider>\n    <ks-date-range-picker></ks-date-range-picker>\n  `\n})\nexport class InputsComponent {\n  inputCntrl = new FormControl(null, [Validators.required]);\n  textareaCntrl = new FormControl(null, [\n    Validators.required\n  ]);\n  selectorCntrl = new FormControl({\n    value: 'option1',\n    disabled: false\n  });\n  disabledSelector = new FormControl({\n    value: 'option1',\n    disabled: true\n  });\n  slideToggle = new FormControl(true);\n  checkboxCntrl = new FormControl(false);\n  checkboxDisabledCntrl = new FormControl({\n    value: true,\n    disabled: true\n  });\n}\n",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "",
@@ -5138,7 +5311,7 @@
     },
     {
       "name": "LayoutComponent",
-      "id": "component-LayoutComponent-9a635e228cf59ebd65cf1b0d10eb9b725f91d282ef793276861ae763609c1ba8c9500500fb06a777208b189309cb505527b7efee68e3fc84880c96d9bf7b4c9d",
+      "id": "component-LayoutComponent-8891f6df74624e2ce037eca6892ca0164ba95a7cf53f550ca28ccef97b80d7f0bae07c72f70857d8e4c534a858eb696833d21d8fffcabcef1dd288a9a6705b42",
       "file": "src/app/features/layout/layout.component.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -5164,7 +5337,7 @@
           "type": "",
           "optional": false,
           "description": "",
-          "line": 35
+          "line": 37
         }
       ],
       "methodsClass": [],
@@ -5215,18 +5388,22 @@
         {
           "name": "AvatarComponent",
           "type": "component"
+        },
+        {
+          "name": "TableComponent",
+          "type": "component"
         }
       ],
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\nimport {\n  KsCardBodyDirective,\n  KsCardComponent,\n  KsCardFooterDirective,\n  KsCardHeaderDirective\n} from '@ngx-ks/card';\nimport { NgIf } from '@angular/common';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { DialogComponent } from '@ngx-ks/dialog';\nimport { KsButton } from '@ngx-ks/button';\nimport { TabComponent, TabsComponent } from '@ngx-ks/tabs';\nimport { AvatarComponent } from '@ngx-ks/avatar';\n\n@Component({\n  selector: 'ks-layout',\n  standalone: true,\n  imports: [\n    KsCardComponent,\n    KsCardFooterDirective,\n    KsCardHeaderDirective,\n    KsCardBodyDirective,\n    NgIf,\n    KsDividerComponent,\n    DialogComponent,\n    KsButton,\n    TabsComponent,\n    TabComponent,\n    AvatarComponent\n  ],\n  templateUrl: './layout.component.html',\n  styleUrl: './layout.component.scss'\n})\nexport class LayoutComponent {\n  isOpenDialog = false;\n}\n",
+      "sourceCode": "import { Component } from '@angular/core';\nimport {\n  KsCardBodyDirective,\n  KsCardComponent,\n  KsCardFooterDirective,\n  KsCardHeaderDirective\n} from '@ngx-ks/card';\nimport { NgIf } from '@angular/common';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { DialogComponent } from '@ngx-ks/dialog';\nimport { KsButton } from '@ngx-ks/button';\nimport { TabComponent, TabsComponent } from '@ngx-ks/tabs';\nimport { AvatarComponent } from '@ngx-ks/avatar';\nimport { TableComponent } from '@ngx-ks/table';\n\n@Component({\n  selector: 'ks-layout',\n  standalone: true,\n  imports: [\n    KsCardComponent,\n    KsCardFooterDirective,\n    KsCardHeaderDirective,\n    KsCardBodyDirective,\n    NgIf,\n    KsDividerComponent,\n    DialogComponent,\n    KsButton,\n    TabsComponent,\n    TabComponent,\n    AvatarComponent,\n    TableComponent\n  ],\n  templateUrl: './layout.component.html',\n  styleUrl: './layout.component.scss'\n})\nexport class LayoutComponent {\n  isOpenDialog = false;\n}\n",
       "styleUrl": "./layout.component.scss",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "",
       "extends": [],
-      "templateData": "<div class=\"card-container\">\n  <ks-card>\n    <div ksCardHeader>Card Header</div>\n\n    <div ksCardBody>Card body</div>\n\n    <div ksCardFooter>Card Footer</div>\n  </ks-card>\n</div>\n<ks-divider></ks-divider>\n<button (click)=\"isOpenDialog = true\" ks-button>Open Dialog</button>\n<ks-dialog (close)=\"isOpenDialog = false\" [isOpen]=\"isOpenDialog\">\n  <h2>Title</h2>\n  <p>Dialog body content</p>\n</ks-dialog>\n<ks-divider></ks-divider>\n<ks-tabs>\n  <ks-tab title=\"Tab 1\">\n    <!-- Tab 1 content goes here -->\n    <p>Content of Tab 1</p>\n  </ks-tab>\n  <ks-tab title=\"Tab 2\">\n    <!-- Tab 2 content goes here -->\n    <p>Content of Tab 2</p>\n  </ks-tab>\n</ks-tabs>\n<ks-divider></ks-divider>\n<div style=\"display: flex; gap: 30px;\">\n  <ks-avatar></ks-avatar>\n  <ks-avatar\n    [imageUrl]=\"'https://img.freepik.com/premium-vector/kawaii-cartoon-bear-art-illustration_839893-112.jpg'\"></ks-avatar>\n  <ks-avatar\n    [imageUrl]=\"'https://img.freepik.com/premium-vector/kawaii-cartoon-bear-art-illustration_839893-112.jpg'\"\n    [size]=\"50\"></ks-avatar>\n</div>\n\n"
+      "templateData": "<div class=\"card-container\">\n  <ks-card>\n    <div ksCardHeader>Card Header</div>\n\n    <div ksCardBody>Card body</div>\n\n    <div ksCardFooter>Card Footer</div>\n  </ks-card>\n</div>\n<ks-divider></ks-divider>\n<button (click)=\"isOpenDialog = true\" ks-button>Open Dialog</button>\n<ks-dialog (close)=\"isOpenDialog = false\" [isOpen]=\"isOpenDialog\">\n  <h2>Title</h2>\n  <p>Dialog body content</p>\n</ks-dialog>\n<ks-divider></ks-divider>\n<ks-tabs>\n  <ks-tab title=\"Tab 1\">\n    <!-- Tab 1 content goes here -->\n    <p>Content of Tab 1</p>\n  </ks-tab>\n  <ks-tab title=\"Tab 2\">\n    <!-- Tab 2 content goes here -->\n    <p>Content of Tab 2</p>\n  </ks-tab>\n</ks-tabs>\n<ks-divider></ks-divider>\n<div style=\"display: flex; gap: 30px;\">\n  <ks-avatar></ks-avatar>\n  <ks-avatar\n    [imageUrl]=\"'https://img.freepik.com/premium-vector/kawaii-cartoon-bear-art-illustration_839893-112.jpg'\"></ks-avatar>\n  <ks-avatar\n    [imageUrl]=\"'https://img.freepik.com/premium-vector/kawaii-cartoon-bear-art-illustration_839893-112.jpg'\"\n    [size]=\"50\"></ks-avatar>\n</div>\n<ks-divider></ks-divider>\n<ks-table [columns]=\"['name', 'age', 'Occupation']\" [data]=\"[\n  { name: 'John Doe', age: 30, Occupation: 'Engineer', id: '42' },\n  { name: 'Jane Smith', age: 25, Occupation: 'Designer', id: '43' },\n  { name: 'Sam Johnson', age: 40, Occupation: 'Manager', id: '44' }\n]\"></ks-table>\n\n"
     },
     {
       "name": "LoginPageComponent",
@@ -6013,6 +6190,115 @@
       "templateData": "<ng-container *ngIf=\"active\">\n  <ng-content></ng-content>\n</ng-container>\n"
     },
     {
+      "name": "TableComponent",
+      "id": "component-TableComponent-2a08dc5ec7eb77744881577b6db5122e99dacc63c583efa6912378aa405dafac6f39f8018ff841af7c8c467d69ec4fa6e7322dd1bc7666aeb5f15e7a561e61b2",
+      "file": "src/components/table/table.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "ks-table",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": [
+        "./table.component.html"
+      ],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [
+        {
+          "name": "columns",
+          "defaultValue": "[]",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 17,
+          "type": "string[]",
+          "decorators": []
+        },
+        {
+          "name": "data",
+          "defaultValue": "[]",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 18,
+          "type": "T[]",
+          "decorators": []
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "CommonModule",
+          "type": "module"
+        },
+        {
+          "name": "NgFor"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, Input } from '@angular/core';\nimport { CommonModule, NgFor } from '@angular/common';\n\n@Component({\n  selector: 'ks-table',\n  standalone: true,\n  imports: [CommonModule, NgFor],\n  templateUrl: './table.component.html',\n  styleUrl: './table.component.scss'\n})\nexport class TableComponent<\n  T extends { id: string | number } & Record<\n    string,\n    string | number\n  >\n> {\n  @Input() columns: string[] = [];\n  @Input() data: T[] = [];\n}\n",
+      "styleUrl": "./table.component.scss",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "extends": [],
+      "templateData": "<div class=\"table-container\">\n  <table class=\"neumorphic-table\">\n    <thead>\n    <tr>\n      @for (column of columns; track $index) {\n        <th>{{ column }}</th>\n      }\n    </tr>\n    </thead>\n    <tbody>\n      @for (row of data; track $index) {\n        <tr>\n          @for (column of columns; track $index) {\n            <td>{{ row[column] }}</td>\n          }\n        </tr>\n      }\n    </tbody>\n  </table>\n</div>\n"
+    },
+    {
+      "name": "TableStoryComponent",
+      "id": "component-TableStoryComponent-08deca38b1a76fece5d7ac65502e8303c9d448df794eabe5acf8e490ac36dd57d3ee1b34c938dd3d1fd727acacb1b2e480562e9eba003fcfbfa135b932a0dea2",
+      "file": "src/stories/table/table.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "storybook-button",
+      "styleUrls": [],
+      "styles": [],
+      "template": "<ks-storybook-wrapper>\n  <ks-table\n    [columns]=\"['name', 'age', 'Occupation']\"\n    [data]=\"[\n      {\n        name: 'John Doe',\n        age: 30,\n        Occupation: 'Engineer',\n        id: '42'\n      },\n      {\n        name: 'Jane Smith',\n        age: 25,\n        Occupation: 'Designer',\n        id: '43'\n      },\n      {\n        name: 'Sam Johnson',\n        age: 40,\n        Occupation: 'Manager',\n        id: '44'\n      }\n    ]\"\n  ></ks-table>\n</ks-storybook-wrapper>\n",
+      "templateUrl": [],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "TableComponent",
+          "type": "component"
+        },
+        {
+          "name": "WrapperComponent",
+          "type": "component"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { WrapperComponent } from '../wrapper/wrapper.component';\nimport { TableComponent } from '@ngx-ks/table';\n\n@Component({\n  selector: 'storybook-button',\n  imports: [TableComponent, WrapperComponent],\n  template: `\n    <ks-storybook-wrapper>\n      <ks-table\n        [columns]=\"['name', 'age', 'Occupation']\"\n        [data]=\"[\n          {\n            name: 'John Doe',\n            age: 30,\n            Occupation: 'Engineer',\n            id: '42'\n          },\n          {\n            name: 'Jane Smith',\n            age: 25,\n            Occupation: 'Designer',\n            id: '43'\n          },\n          {\n            name: 'Sam Johnson',\n            age: 40,\n            Occupation: 'Manager',\n            id: '44'\n          }\n        ]\"\n      ></ks-table>\n    </ks-storybook-wrapper>\n  `,\n  standalone: true\n})\nexport default class TableStoryComponent {}\n",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "extends": []
+    },
+    {
       "name": "Tabs",
       "id": "component-Tabs-dd66d6e852cdd1a7103c7fb40a72e10664920962396f93040ea406cacec15b0023c1493c5415a9ab0dc3a9a6baaa090d925a7911a7ba121ae831cea17dbbf030",
       "file": "src/stories/tabs/Tabs.stories.ts",
@@ -6455,6 +6741,16 @@
         "name": "Default",
         "ctype": "miscellaneous",
         "subtype": "variable",
+        "file": "src/stories/date-range-picker/DateRangePicker.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Story",
+        "defaultValue": "{\n  args: {}\n}"
+      },
+      {
+        "name": "Default",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
         "file": "src/stories/divider/Divider.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
@@ -6536,6 +6832,16 @@
         "ctype": "miscellaneous",
         "subtype": "variable",
         "file": "src/stories/slide-toggle/SlideToggle.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Story",
+        "defaultValue": "{\n  args: {}\n}"
+      },
+      {
+        "name": "Default",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/stories/table/Table.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Story",
@@ -6705,6 +7011,16 @@
         "name": "meta",
         "ctype": "miscellaneous",
         "subtype": "variable",
+        "file": "src/stories/date-range-picker/DateRangePicker.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Meta<DateRangePickerStoryComponent>",
+        "defaultValue": "{\n  title: 'Example/DateRangePicker',\n  component: DateRangePickerStoryComponent,\n  render: (args: DateRangePickerStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+      },
+      {
+        "name": "meta",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
         "file": "src/stories/divider/Divider.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
@@ -6790,6 +7106,16 @@
         "deprecationMessage": "",
         "type": "Meta<SlideToggleComponent>",
         "defaultValue": "{\n  title: 'Example/SlideToggle',\n  component: SlideToggleComponent,\n  render: (args: SlideToggleComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+      },
+      {
+        "name": "meta",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/stories/table/Table.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Meta<TableStoryComponent>",
+        "defaultValue": "{\n  title: 'Example/Table',\n  component: TableStoryComponent,\n  render: (args: TableStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7073,6 +7399,17 @@
         "name": "Story",
         "ctype": "miscellaneous",
         "subtype": "typealias",
+        "rawtype": "StoryObj<DateRangePickerStoryComponent>",
+        "file": "src/stories/date-range-picker/DateRangePicker.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "description": "",
+        "kind": 183
+      },
+      {
+        "name": "Story",
+        "ctype": "miscellaneous",
+        "subtype": "typealias",
         "rawtype": "StoryObj<Divider>",
         "file": "src/stories/divider/Divider.stories.ts",
         "deprecated": false,
@@ -7163,6 +7500,17 @@
         "subtype": "typealias",
         "rawtype": "StoryObj<SlideToggleComponent>",
         "file": "src/stories/slide-toggle/SlideToggle.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "description": "",
+        "kind": 183
+      },
+      {
+        "name": "Story",
+        "ctype": "miscellaneous",
+        "subtype": "typealias",
+        "rawtype": "StoryObj<TableStoryComponent>",
+        "file": "src/stories/table/Table.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
         "description": "",
@@ -7375,6 +7723,28 @@
           "deprecationMessage": "",
           "type": "Meta<CheckboxStoryBookComponent>",
           "defaultValue": "{\n  title: 'Example/Checkbox',\n  component: CheckboxStoryBookComponent,\n  render: (args: CheckboxStoryBookComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        }
+      ],
+      "src/stories/date-range-picker/DateRangePicker.stories.ts": [
+        {
+          "name": "Default",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/date-range-picker/DateRangePicker.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Story",
+          "defaultValue": "{\n  args: {}\n}"
+        },
+        {
+          "name": "meta",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/date-range-picker/DateRangePicker.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Meta<DateRangePickerStoryComponent>",
+          "defaultValue": "{\n  title: 'Example/DateRangePicker',\n  component: DateRangePickerStoryComponent,\n  render: (args: DateRangePickerStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
         }
       ],
       "src/stories/divider/Divider.stories.ts": [
@@ -7603,6 +7973,28 @@
           "deprecationMessage": "",
           "type": "Meta<SlideToggleComponent>",
           "defaultValue": "{\n  title: 'Example/SlideToggle',\n  component: SlideToggleComponent,\n  render: (args: SlideToggleComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        }
+      ],
+      "src/stories/table/Table.stories.ts": [
+        {
+          "name": "Default",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/table/Table.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Story",
+          "defaultValue": "{\n  args: {}\n}"
+        },
+        {
+          "name": "meta",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/table/Table.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Meta<TableStoryComponent>",
+          "defaultValue": "{\n  title: 'Example/Table',\n  component: TableStoryComponent,\n  render: (args: TableStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
         }
       ],
       "src/stories/tabs/Tabs.stories.ts": [
@@ -7954,6 +8346,19 @@
           "kind": 183
         }
       ],
+      "src/stories/date-range-picker/DateRangePicker.stories.ts": [
+        {
+          "name": "Story",
+          "ctype": "miscellaneous",
+          "subtype": "typealias",
+          "rawtype": "StoryObj<DateRangePickerStoryComponent>",
+          "file": "src/stories/date-range-picker/DateRangePicker.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "description": "",
+          "kind": 183
+        }
+      ],
       "src/stories/divider/Divider.stories.ts": [
         {
           "name": "Story",
@@ -8065,6 +8470,19 @@
           "subtype": "typealias",
           "rawtype": "StoryObj<SlideToggleComponent>",
           "file": "src/stories/slide-toggle/SlideToggle.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "description": "",
+          "kind": 183
+        }
+      ],
+      "src/stories/table/Table.stories.ts": [
+        {
+          "name": "Story",
+          "ctype": "miscellaneous",
+          "subtype": "typealias",
+          "rawtype": "StoryObj<TableStoryComponent>",
+          "file": "src/stories/table/Table.stories.ts",
           "deprecated": false,
           "deprecationMessage": "",
           "description": "",
@@ -8334,6 +8752,15 @@
         "status": "low"
       },
       {
+        "filePath": "src/components/date-range-picker/date-range-picker.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "DateRangePickerComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/5",
+        "status": "low"
+      },
+      {
         "filePath": "src/components/dialog/dialog.component.ts",
         "type": "component",
         "linktype": "component",
@@ -8457,6 +8884,15 @@
         "name": "KsSlideToggleComponent",
         "coveragePercent": 0,
         "coverageCount": "0/10",
+        "status": "low"
+      },
+      {
+        "filePath": "src/components/table/table.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "TableComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/3",
         "status": "low"
       },
       {
@@ -8853,6 +9289,35 @@
         "status": "low"
       },
       {
+        "filePath": "src/stories/date-range-picker/DateRangePicker.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "Default",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/date-range-picker/DateRangePicker.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "meta",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/date-range-picker/date-range-picker.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "DateRangePickerStoryComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
         "filePath": "src/stories/divider/Divider.stories.ts",
         "type": "variable",
         "linktype": "miscellaneous",
@@ -9141,6 +9606,35 @@
         "name": "SlideToggleComponent",
         "coveragePercent": 0,
         "coverageCount": "0/2",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/table/Table.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "Default",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/table/Table.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "meta",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/table/table.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "TableStoryComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
         "status": "low"
       },
       {
