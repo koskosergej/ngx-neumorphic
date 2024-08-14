@@ -1,0 +1,33 @@
+@use '../../core/styles/palette';
+
+.table-container {
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.neumorphic-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: palette.$background-color;
+  box-shadow: 5px 5px 10px palette.$outer-box-shadow,
+  -5px -5px 10px palette.$inner-box-shadow;
+  border-radius: 8px;
+
+  th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    background-color: palette.$background-color;
+    box-shadow: 2px 2px 5px palette.$outer-box-shadow,
+    -2px -2px 5px palette.$inner-box-shadow;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  tr {
+    &:hover {
+      background-color: #d1d9e6;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<div class="table-container">
+  <table class="neumorphic-table">
+    <thead>
+    <tr>
+      @for (column of columns; track $index) {
+        <th>{{ column }}</th>
+      }
+    </tr>
+    </thead>
+    <tbody>
+      @for (row of data; track $index) {
+        <tr>
+          @for (column of columns; track $index) {
+            <td>{{ row[column] }}</td>
+          }
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
