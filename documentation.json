@@ -1658,7 +1658,7 @@
     },
     {
       "name": "AppComponent",
-      "id": "component-AppComponent-62d84ddefdc10c1abdcfc8ee64bd2fbb3a23b2fcd15d8ff271a33eb25c868f83a2140a7607f337741bb06bd3195fad2bcf944cc732830a369d60b92271f9463e",
+      "id": "component-AppComponent-9eede4e417e80a0a8d2da8bbc20c41f198e59737fad854d55190995989eb38268e5f46d7c11e16848a60b8473663284ae6c1e6228f9a743cb914b8eb6cdd86e7",
       "file": "src/app/app.component.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -1670,7 +1670,7 @@
       "styles": [
         "\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    "
       ],
-      "template": "<div class=\"app-container\">\n  <h1>ks UI-kit <code>14.08-16.669</code></h1>\n  <div class=\"navigation\">\n    <a [routerLink]=\"'/inputs'\">Form Controls</a>\n    <a [routerLink]=\"'/buttons'\">Buttons</a>\n    <a [routerLink]=\"'/alerts'\">Alerts</a>\n    <a [routerLink]=\"'/layout'\">Layout</a>\n    <a [routerLink]=\"'/indicators'\">Indicators</a>\n    <a [routerLink]=\"'/pipes'\">Pipes</a>\n    <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n  </div>\n  <hr />\n  <div class=\"app-content\">\n    <router-outlet></router-outlet>\n  </div>\n</div>\n",
+      "template": "<div class=\"app-container\">\n  <h1>ks UI-kit <code>14.08-17.505</code></h1>\n  <div class=\"navigation\">\n    <a [routerLink]=\"'/inputs'\">Form Controls</a>\n    <a [routerLink]=\"'/buttons'\">Buttons</a>\n    <a [routerLink]=\"'/alerts'\">Alerts</a>\n    <a [routerLink]=\"'/layout'\">Layout</a>\n    <a [routerLink]=\"'/indicators'\">Indicators</a>\n    <a [routerLink]=\"'/pipes'\">Pipes</a>\n    <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n  </div>\n  <hr />\n  <div class=\"app-content\">\n    <router-outlet></router-outlet>\n  </div>\n</div>\n",
       "templateUrl": [],
       "viewProviders": [],
       "hostDirectives": [],
@@ -1700,7 +1700,7 @@
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\nimport { RouterLink, RouterOutlet } from '@angular/router';\nimport { KsInput } from '@ngx-ks/input';\nimport { KsButton } from '@ngx-ks/button';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [KsInput, KsButton, RouterOutlet, RouterLink],\n  template: `\n    <div class=\"app-container\">\n      <h1>ks UI-kit <code>14.08-16.669</code></h1>\n      <div class=\"navigation\">\n        <a [routerLink]=\"'/inputs'\">Form Controls</a>\n        <a [routerLink]=\"'/buttons'\">Buttons</a>\n        <a [routerLink]=\"'/alerts'\">Alerts</a>\n        <a [routerLink]=\"'/layout'\">Layout</a>\n        <a [routerLink]=\"'/indicators'\">Indicators</a>\n        <a [routerLink]=\"'/pipes'\">Pipes</a>\n        <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n      </div>\n      <hr />\n      <div class=\"app-content\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  `,\n  styles: [\n    `\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    `\n  ]\n})\nexport class AppComponent {}\n",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { RouterLink, RouterOutlet } from '@angular/router';\nimport { KsInput } from '@ngx-ks/input';\nimport { KsButton } from '@ngx-ks/button';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [KsInput, KsButton, RouterOutlet, RouterLink],\n  template: `\n    <div class=\"app-container\">\n      <h1>ks UI-kit <code>14.08-17.505</code></h1>\n      <div class=\"navigation\">\n        <a [routerLink]=\"'/inputs'\">Form Controls</a>\n        <a [routerLink]=\"'/buttons'\">Buttons</a>\n        <a [routerLink]=\"'/alerts'\">Alerts</a>\n        <a [routerLink]=\"'/layout'\">Layout</a>\n        <a [routerLink]=\"'/indicators'\">Indicators</a>\n        <a [routerLink]=\"'/pipes'\">Pipes</a>\n        <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n      </div>\n      <hr />\n      <div class=\"app-content\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  `,\n  styles: [\n    `\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    `\n  ]\n})\nexport class AppComponent {}\n",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    \n",
@@ -3295,7 +3295,7 @@
     },
     {
       "name": "IndicatorsComponent",
-      "id": "component-IndicatorsComponent-b6d9084d0fa4dd3f1db21eac73df5052b798802fd9db7c5acdf33fbd00140e7cc4e5cefe7b9383961b3e3535f81b0baf606a9769627359edcb066d808529fcbb",
+      "id": "component-IndicatorsComponent-63c5b8a1a0a0fc6d4e99c53f06584392f06d3912b482da0daabe04720ce2036d5815475e9ee49923cde995626e5de12bc182325de66ab84be4c02fa4fb396e39",
       "file": "src/app/features/indicators/indicators.component.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -3331,18 +3331,22 @@
         {
           "name": "PillComponent",
           "type": "component"
+        },
+        {
+          "name": "StatusIndicatorComponent",
+          "type": "component"
         }
       ],
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\nimport { ProgressBarComponent } from '@ngx-ks/progress-bar';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { PillComponent } from '@ngx-ks/pill';\n\n@Component({\n  selector: 'ks-indicators',\n  standalone: true,\n  imports: [\n    ProgressBarComponent,\n    KsDividerComponent,\n    PillComponent\n  ],\n  templateUrl: './indicators.component.html',\n  styleUrl: './indicators.component.scss'\n})\nexport class IndicatorsComponent {}\n",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { ProgressBarComponent } from '@ngx-ks/progress-bar';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { PillComponent } from '@ngx-ks/pill';\nimport { StatusIndicatorComponent } from '@ngx-ks/status-indicator';\n\n@Component({\n  selector: 'ks-indicators',\n  standalone: true,\n  imports: [\n    ProgressBarComponent,\n    KsDividerComponent,\n    PillComponent,\n    StatusIndicatorComponent\n  ],\n  templateUrl: './indicators.component.html',\n  styleUrl: './indicators.component.scss'\n})\nexport class IndicatorsComponent {}\n",
       "styleUrl": "./indicators.component.scss",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "",
       "extends": [],
-      "templateData": "<ks-progress-bar [progress]=\"10\"></ks-progress-bar>\n<ks-progress-bar [progress]=\"50\"></ks-progress-bar>\n<ks-progress-bar [progress]=\"100\"></ks-progress-bar>\n<ks-divider></ks-divider>\n<ks-pill>My Pill</ks-pill>\n"
+      "templateData": "<ks-progress-bar [progress]=\"10\"></ks-progress-bar>\n<ks-progress-bar [progress]=\"50\"></ks-progress-bar>\n<ks-progress-bar [progress]=\"100\"></ks-progress-bar>\n<ks-divider></ks-divider>\n<ks-pill>My Pill</ks-pill>\n<ks-divider></ks-divider>\n<div style=\"display: flex; align-items: center; justify-content: space-around\">\n  <ks-status-indicator status=\"success\"></ks-status-indicator>\n  <ks-status-indicator status=\"warning\"></ks-status-indicator>\n  <ks-status-indicator status=\"error\"></ks-status-indicator>\n  <ks-status-indicator status=\"info\"></ks-status-indicator>\n  <ks-status-indicator status=\"loading\"></ks-status-indicator>\n</div>\n"
     },
     {
       "name": "InputComponent",
@@ -6125,6 +6129,108 @@
       "extends": []
     },
     {
+      "name": "StatusIndicator",
+      "id": "component-StatusIndicator-dd9d0d80d663c5193388614b8bdb8c669d7ccc22ff5c3370761c1bf0bcd6d1e5c79602991c5071157c009ad3957b3507b61928744d95c46f99e3fc22a568cb78",
+      "file": "src/stories/status-indicator/Pill.stories.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "styleUrls": [],
+      "styles": [],
+      "template": "<ks-status-indicator   status=\"success\"\n ></ks-status-indicator>",
+      "templateUrl": [],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "StatusIndicatorComponent",
+          "type": "component"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import type { Meta, StoryObj } from '@storybook/angular';\nimport { Component } from '@angular/core';\nimport { StatusIndicatorComponent } from '@ngx-ks/status-indicator';\n\n@Component({\n  standalone: true,\n  imports: [StatusIndicatorComponent],\n  template: ` <ks-status-indicator\n    status=\"success\"\n  ></ks-status-indicator>`\n})\nclass StatusIndicator {}\n\n// More on how to set up stories at: https://storybook.js.org/docs/writing-stories\nconst meta: Meta<StatusIndicator> = {\n  title: 'Example/StatusIndicator',\n  component: StatusIndicator,\n  render: (args: StatusIndicator) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n};\n\nexport default meta;\ntype Story = StoryObj<StatusIndicator>;\n\nexport const Default: Story = {\n  args: {}\n};\n",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "extends": []
+    },
+    {
+      "name": "StatusIndicatorComponent",
+      "id": "component-StatusIndicatorComponent-4ef801053ae6b3db76f2853bbfcf9d419146a1d5fa0e40c0c3a604d5cfc33f8287fc607873d7fc69b7eb55957d6a32d34db64dce5b243f33e57eadef0f1bfd7e",
+      "file": "src/components/status-indicator/status-indicator.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "ks-status-indicator",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": [
+        "./status-indicator.component.html"
+      ],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [
+        {
+          "name": "status",
+          "defaultValue": "'info'",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 12,
+          "type": "\"success\" | \"warning\" | \"error\" | \"info\" | \"loading\"",
+          "decorators": []
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "NgClass"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, Input } from '@angular/core';\nimport { NgClass } from '@angular/common';\n\n@Component({\n  selector: 'ks-status-indicator',\n  standalone: true,\n  imports: [NgClass],\n  templateUrl: './status-indicator.component.html',\n  styleUrl: './status-indicator.component.scss'\n})\nexport class StatusIndicatorComponent {\n  @Input() status:\n    | 'success'\n    | 'warning'\n    | 'error'\n    | 'info'\n    | 'loading' = 'info';\n\n  get statusIcon(): string {\n    switch (this.status) {\n      case 'success':\n        return '✔️';\n      case 'warning':\n        return '⚠️';\n      case 'error':\n        return '❌';\n      case 'loading':\n        return '⏳';\n      default:\n        return 'ℹ️';\n    }\n  }\n}\n",
+      "styleUrl": "./status-indicator.component.scss",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "extends": [],
+      "accessors": {
+        "statusIcon": {
+          "name": "statusIcon",
+          "getSignature": {
+            "name": "statusIcon",
+            "type": "string",
+            "returnType": "string",
+            "line": 19
+          }
+        }
+      },
+      "templateData": "<div [ngClass]=\"status\" class=\"status-indicator\">\n  <span class=\"icon\">{{ statusIcon }}</span>\n</div>\n"
+    },
+    {
       "name": "TabComponent",
       "id": "component-TabComponent-f0824a45723b758cb867bd57f3e42484358ea86cf167742648e8f732ed8277f6c21f05f102ee45accad58628f69d545851ebc3d24754dccc4f6fed7d2fd94b95",
       "file": "src/components/tabs/tab/tab.component.ts",
@@ -6841,6 +6947,16 @@
         "name": "Default",
         "ctype": "miscellaneous",
         "subtype": "variable",
+        "file": "src/stories/status-indicator/Pill.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Story",
+        "defaultValue": "{\n  args: {}\n}"
+      },
+      {
+        "name": "Default",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
         "file": "src/stories/table/Table.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
@@ -7106,6 +7222,16 @@
         "deprecationMessage": "",
         "type": "Meta<SlideToggleComponent>",
         "defaultValue": "{\n  title: 'Example/SlideToggle',\n  component: SlideToggleComponent,\n  render: (args: SlideToggleComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+      },
+      {
+        "name": "meta",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/stories/status-indicator/Pill.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Meta<StatusIndicator>",
+        "defaultValue": "{\n  title: 'Example/StatusIndicator',\n  component: StatusIndicator,\n  render: (args: StatusIndicator) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7500,6 +7626,17 @@
         "subtype": "typealias",
         "rawtype": "StoryObj<SlideToggleComponent>",
         "file": "src/stories/slide-toggle/SlideToggle.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "description": "",
+        "kind": 183
+      },
+      {
+        "name": "Story",
+        "ctype": "miscellaneous",
+        "subtype": "typealias",
+        "rawtype": "StoryObj<StatusIndicator>",
+        "file": "src/stories/status-indicator/Pill.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
         "description": "",
@@ -7973,6 +8110,28 @@
           "deprecationMessage": "",
           "type": "Meta<SlideToggleComponent>",
           "defaultValue": "{\n  title: 'Example/SlideToggle',\n  component: SlideToggleComponent,\n  render: (args: SlideToggleComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        }
+      ],
+      "src/stories/status-indicator/Pill.stories.ts": [
+        {
+          "name": "Default",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/status-indicator/Pill.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Story",
+          "defaultValue": "{\n  args: {}\n}"
+        },
+        {
+          "name": "meta",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/status-indicator/Pill.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Meta<StatusIndicator>",
+          "defaultValue": "{\n  title: 'Example/StatusIndicator',\n  component: StatusIndicator,\n  render: (args: StatusIndicator) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
         }
       ],
       "src/stories/table/Table.stories.ts": [
@@ -8476,6 +8635,19 @@
           "kind": 183
         }
       ],
+      "src/stories/status-indicator/Pill.stories.ts": [
+        {
+          "name": "Story",
+          "ctype": "miscellaneous",
+          "subtype": "typealias",
+          "rawtype": "StoryObj<StatusIndicator>",
+          "file": "src/stories/status-indicator/Pill.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "description": "",
+          "kind": 183
+        }
+      ],
       "src/stories/table/Table.stories.ts": [
         {
           "name": "Story",
@@ -8884,6 +9056,15 @@
         "name": "KsSlideToggleComponent",
         "coveragePercent": 0,
         "coverageCount": "0/10",
+        "status": "low"
+      },
+      {
+        "filePath": "src/components/status-indicator/status-indicator.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "StatusIndicatorComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/2",
         "status": "low"
       },
       {
@@ -9606,6 +9787,35 @@
         "name": "SlideToggleComponent",
         "coveragePercent": 0,
         "coverageCount": "0/2",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/status-indicator/Pill.stories.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "StatusIndicator",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/status-indicator/Pill.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "Default",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/status-indicator/Pill.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "meta",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
         "status": "low"
       },
       {

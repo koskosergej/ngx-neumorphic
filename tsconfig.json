@@ -93,6 +93,9 @@
       "@ngx-ks/pill": [
         "./src/components/pill"
       ],
+      "@ngx-ks/status-indicator": [
+        "./src/components/status-indicator/status-indicator.component"
+      ],
       "@ngx-ks/label": [
         "./src/directives/label"
       ],
