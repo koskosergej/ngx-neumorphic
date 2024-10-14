@@ -10,6 +10,9 @@ const meta: Meta<Button> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

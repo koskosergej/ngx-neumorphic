@@ -20,6 +20,9 @@ const meta: Meta<Dropdown> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

@@ -3,6 +3,8 @@ import { ProgressBarComponent } from '@ngx-ks/progress-bar';
 import { KsDividerComponent } from '@ngx-ks/divider';
 import { PillComponent } from '@ngx-ks/pill';
 import { StatusIndicatorComponent } from '@ngx-ks/status-indicator';
+import { TooltipComponent } from '@ngx-ks/tooltip';
+import { KsButton } from '@ngx-ks/button';
 
 @Component({
   selector: 'ks-indicators',
@@ -11,7 +13,9 @@ import { StatusIndicatorComponent } from '@ngx-ks/status-indicator';
     ProgressBarComponent,
     KsDividerComponent,
     PillComponent,
-    StatusIndicatorComponent
+    StatusIndicatorComponent,
+    TooltipComponent,
+    KsButton
   ],
   templateUrl: './indicators.component.html',
   styleUrl: './indicators.component.scss'

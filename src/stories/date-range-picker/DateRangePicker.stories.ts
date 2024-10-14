@@ -10,6 +10,9 @@ const meta: Meta<DateRangePickerStoryComponent> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

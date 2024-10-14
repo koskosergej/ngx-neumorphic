@@ -27,6 +27,9 @@ const meta: Meta<Tabs> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

@@ -10,6 +10,9 @@ const meta: Meta<TextareaComponent> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

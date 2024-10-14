@@ -10,6 +10,9 @@ const meta: Meta<SelectorComponent> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

@@ -20,6 +20,9 @@ const meta: Meta<StatusIndicator> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

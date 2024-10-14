@@ -10,6 +10,9 @@ const meta: Meta<AvatarStoryComponent> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

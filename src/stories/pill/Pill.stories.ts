@@ -18,6 +18,9 @@ const meta: Meta<Pill> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

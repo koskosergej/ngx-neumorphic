@@ -1,0 +1,4 @@
+<div (mouseenter)="toggleTooltip(true)" (mouseleave)="toggleTooltip(false)" class="tooltip-container">
+  <ng-content></ng-content>
+  <div *ngIf="showTooltip" class="tooltip">{{ message }}</div>
+</div>

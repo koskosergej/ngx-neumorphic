@@ -10,6 +10,9 @@ const meta: Meta<Input> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

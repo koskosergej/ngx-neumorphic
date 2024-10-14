@@ -10,6 +10,9 @@ const meta: Meta<ProgressBar> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

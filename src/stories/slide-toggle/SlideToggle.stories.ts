@@ -10,6 +10,9 @@ const meta: Meta<SlideToggleComponent> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

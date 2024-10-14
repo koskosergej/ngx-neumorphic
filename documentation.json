@@ -1658,7 +1658,7 @@
     },
     {
       "name": "AppComponent",
-      "id": "component-AppComponent-9eede4e417e80a0a8d2da8bbc20c41f198e59737fad854d55190995989eb38268e5f46d7c11e16848a60b8473663284ae6c1e6228f9a743cb914b8eb6cdd86e7",
+      "id": "component-AppComponent-081b7a392c75fb1904c10b6fd466c68221976242565ae1a9d88577b84a9015cca1d273d406c21091c90997e72e6ce95c54733e7129cd4ef68b0f851b215f29d0",
       "file": "src/app/app.component.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -1670,7 +1670,7 @@
       "styles": [
         "\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    "
       ],
-      "template": "<div class=\"app-container\">\n  <h1>ks UI-kit <code>14.08-17.505</code></h1>\n  <div class=\"navigation\">\n    <a [routerLink]=\"'/inputs'\">Form Controls</a>\n    <a [routerLink]=\"'/buttons'\">Buttons</a>\n    <a [routerLink]=\"'/alerts'\">Alerts</a>\n    <a [routerLink]=\"'/layout'\">Layout</a>\n    <a [routerLink]=\"'/indicators'\">Indicators</a>\n    <a [routerLink]=\"'/pipes'\">Pipes</a>\n    <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n  </div>\n  <hr />\n  <div class=\"app-content\">\n    <router-outlet></router-outlet>\n  </div>\n</div>\n",
+      "template": "<div class=\"app-container\">\n  <h1>ks UI-kit <code>14.10-17.505</code></h1>\n  <div class=\"navigation\">\n    <a [routerLink]=\"'/inputs'\">Form Controls</a>\n    <a [routerLink]=\"'/buttons'\">Buttons</a>\n    <a [routerLink]=\"'/alerts'\">Alerts</a>\n    <a [routerLink]=\"'/layout'\">Layout</a>\n    <a [routerLink]=\"'/indicators'\">Indicators</a>\n    <a [routerLink]=\"'/pipes'\">Pipes</a>\n    <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n  </div>\n  <hr />\n  <div class=\"app-content\">\n    <router-outlet></router-outlet>\n  </div>\n</div>\n",
       "templateUrl": [],
       "viewProviders": [],
       "hostDirectives": [],
@@ -1700,7 +1700,7 @@
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\nimport { RouterLink, RouterOutlet } from '@angular/router';\nimport { KsInput } from '@ngx-ks/input';\nimport { KsButton } from '@ngx-ks/button';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [KsInput, KsButton, RouterOutlet, RouterLink],\n  template: `\n    <div class=\"app-container\">\n      <h1>ks UI-kit <code>14.08-17.505</code></h1>\n      <div class=\"navigation\">\n        <a [routerLink]=\"'/inputs'\">Form Controls</a>\n        <a [routerLink]=\"'/buttons'\">Buttons</a>\n        <a [routerLink]=\"'/alerts'\">Alerts</a>\n        <a [routerLink]=\"'/layout'\">Layout</a>\n        <a [routerLink]=\"'/indicators'\">Indicators</a>\n        <a [routerLink]=\"'/pipes'\">Pipes</a>\n        <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n      </div>\n      <hr />\n      <div class=\"app-content\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  `,\n  styles: [\n    `\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    `\n  ]\n})\nexport class AppComponent {}\n",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { RouterLink, RouterOutlet } from '@angular/router';\nimport { KsInput } from '@ngx-ks/input';\nimport { KsButton } from '@ngx-ks/button';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [KsInput, KsButton, RouterOutlet, RouterLink],\n  template: `\n    <div class=\"app-container\">\n      <h1>ks UI-kit <code>14.10-17.505</code></h1>\n      <div class=\"navigation\">\n        <a [routerLink]=\"'/inputs'\">Form Controls</a>\n        <a [routerLink]=\"'/buttons'\">Buttons</a>\n        <a [routerLink]=\"'/alerts'\">Alerts</a>\n        <a [routerLink]=\"'/layout'\">Layout</a>\n        <a [routerLink]=\"'/indicators'\">Indicators</a>\n        <a [routerLink]=\"'/pipes'\">Pipes</a>\n        <a [routerLink]=\"'/common-pages'\">Common Pages</a>\n      </div>\n      <hr />\n      <div class=\"app-content\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  `,\n  styles: [\n    `\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    `\n  ]\n})\nexport class AppComponent {}\n",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "\n      .app-content {\n        max-width: 500px;\n        padding: 20px;\n      }\n\n      .navigation {\n        padding-left: 30px;\n        display: flex;\n        gap: 20px;\n      }\n    \n",
@@ -2846,7 +2846,7 @@
     },
     {
       "name": "Dropdown",
-      "id": "component-Dropdown-db59e74a2cf8f0ec0b6138894b57404f07f1c3370c8249e2545be0e5f2dd570517a0d38d930d7e1bba55514e2788ad6c9ec5be6bc3ad4866f8fcf830034cbb54",
+      "id": "component-Dropdown-535bb1edf0c8c2d27724cdfdbf9cf300c891c4749852f392e4df9abb3a61d90d775a0cdc84d11fe43a4d3ba065aeb91d0fbb577e2dfe63c3dc5c00ce17f4f113",
       "file": "src/stories/dropdown/Dropdown.stories.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -2877,7 +2877,7 @@
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import type { Meta, StoryObj } from '@storybook/angular';\nimport { Component } from '@angular/core';\nimport { DropdownComponent } from '@ngx-ks/dropdown';\n\n@Component({\n  standalone: true,\n  imports: [DropdownComponent],\n  template: ` <ks-dropdown\n    [options]=\"['42', '100']\"\n  ></ks-dropdown>`\n})\nclass Dropdown {}\n\n// More on how to set up stories at: https://storybook.js.org/docs/writing-stories\nconst meta: Meta<Dropdown> = {\n  title: 'Example/Dropdown',\n  component: Dropdown,\n  render: (args: Dropdown) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n};\n\nexport default meta;\ntype Story = StoryObj<Dropdown>;\n\nexport const Default: Story = {\n  args: {}\n};\n",
+      "sourceCode": "import type { Meta, StoryObj } from '@storybook/angular';\nimport { Component } from '@angular/core';\nimport { DropdownComponent } from '@ngx-ks/dropdown';\n\n@Component({\n  standalone: true,\n  imports: [DropdownComponent],\n  template: ` <ks-dropdown\n    [options]=\"['42', '100']\"\n  ></ks-dropdown>`\n})\nclass Dropdown {}\n\n// More on how to set up stories at: https://storybook.js.org/docs/writing-stories\nconst meta: Meta<Dropdown> = {\n  title: 'Example/Dropdown',\n  component: Dropdown,\n  render: (args: Dropdown) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n};\n\nexport default meta;\ntype Story = StoryObj<Dropdown>;\n\nexport const Default: Story = {\n  args: {}\n};\n",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "",
@@ -3295,7 +3295,7 @@
     },
     {
       "name": "IndicatorsComponent",
-      "id": "component-IndicatorsComponent-63c5b8a1a0a0fc6d4e99c53f06584392f06d3912b482da0daabe04720ce2036d5815475e9ee49923cde995626e5de12bc182325de66ab84be4c02fa4fb396e39",
+      "id": "component-IndicatorsComponent-0ac7d521f1470c035cd1ec3da4546d3733b34ffc74f07eb4195563d93a839531af7a3a9bdfe5df68f0c33157ba05623512b915f980954cf940de1d875cb07b06",
       "file": "src/app/features/indicators/indicators.component.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -3335,18 +3335,25 @@
         {
           "name": "StatusIndicatorComponent",
           "type": "component"
+        },
+        {
+          "name": "TooltipComponent",
+          "type": "component"
+        },
+        {
+          "name": "KsButton"
         }
       ],
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import { Component } from '@angular/core';\nimport { ProgressBarComponent } from '@ngx-ks/progress-bar';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { PillComponent } from '@ngx-ks/pill';\nimport { StatusIndicatorComponent } from '@ngx-ks/status-indicator';\n\n@Component({\n  selector: 'ks-indicators',\n  standalone: true,\n  imports: [\n    ProgressBarComponent,\n    KsDividerComponent,\n    PillComponent,\n    StatusIndicatorComponent\n  ],\n  templateUrl: './indicators.component.html',\n  styleUrl: './indicators.component.scss'\n})\nexport class IndicatorsComponent {}\n",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { ProgressBarComponent } from '@ngx-ks/progress-bar';\nimport { KsDividerComponent } from '@ngx-ks/divider';\nimport { PillComponent } from '@ngx-ks/pill';\nimport { StatusIndicatorComponent } from '@ngx-ks/status-indicator';\nimport { TooltipComponent } from '@ngx-ks/tooltip';\nimport { KsButton } from '@ngx-ks/button';\n\n@Component({\n  selector: 'ks-indicators',\n  standalone: true,\n  imports: [\n    ProgressBarComponent,\n    KsDividerComponent,\n    PillComponent,\n    StatusIndicatorComponent,\n    TooltipComponent,\n    KsButton\n  ],\n  templateUrl: './indicators.component.html',\n  styleUrl: './indicators.component.scss'\n})\nexport class IndicatorsComponent {}\n",
       "styleUrl": "./indicators.component.scss",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "",
       "extends": [],
-      "templateData": "<ks-progress-bar [progress]=\"10\"></ks-progress-bar>\n<ks-progress-bar [progress]=\"50\"></ks-progress-bar>\n<ks-progress-bar [progress]=\"100\"></ks-progress-bar>\n<ks-divider></ks-divider>\n<ks-pill>My Pill</ks-pill>\n<ks-divider></ks-divider>\n<div style=\"display: flex; align-items: center; justify-content: space-around\">\n  <ks-status-indicator status=\"success\"></ks-status-indicator>\n  <ks-status-indicator status=\"warning\"></ks-status-indicator>\n  <ks-status-indicator status=\"error\"></ks-status-indicator>\n  <ks-status-indicator status=\"info\"></ks-status-indicator>\n  <ks-status-indicator status=\"loading\"></ks-status-indicator>\n</div>\n"
+      "templateData": "<ks-progress-bar [progress]=\"10\"></ks-progress-bar>\n<ks-progress-bar [progress]=\"50\"></ks-progress-bar>\n<ks-progress-bar [progress]=\"100\"></ks-progress-bar>\n<ks-divider></ks-divider>\n<ks-pill>My Pill</ks-pill>\n<ks-divider></ks-divider>\n<div style=\"display: flex; align-items: center; justify-content: space-around\">\n  <ks-status-indicator status=\"success\"></ks-status-indicator>\n  <ks-status-indicator status=\"warning\"></ks-status-indicator>\n  <ks-status-indicator status=\"error\"></ks-status-indicator>\n  <ks-status-indicator status=\"info\"></ks-status-indicator>\n  <ks-status-indicator status=\"loading\"></ks-status-indicator>\n</div>\n<ks-divider></ks-divider>\n<ks-tooltip message=\"This is a tooltip!\">\n  <button ks-button>Hover me</button>\n</ks-tooltip>\n"
     },
     {
       "name": "InputComponent",
@@ -5596,7 +5603,7 @@
     },
     {
       "name": "Pill",
-      "id": "component-Pill-8462f627b821db07d00098fcece0f58489b71747c80ced258411c62846dcece2874ae913a6b6c94426fa8842c6eb7188ab1b7897495c3a27b18e19c6442230cd",
+      "id": "component-Pill-f16c95a7697f87a915d15a130bdf1dacaa21cb4f38b8b9c09c968ef12574b2e00a662f8c6a82985350f4525a30a462a1071c20197227e40dd6036cbcfcdda6e6",
       "file": "src/stories/pill/Pill.stories.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -5627,7 +5634,7 @@
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import type { Meta, StoryObj } from '@storybook/angular';\nimport { Component } from '@angular/core';\nimport { PillComponent } from '@ngx-ks/pill';\n\n@Component({\n  standalone: true,\n  imports: [PillComponent],\n  template: ` <ks-pill>Pill</ks-pill>`\n})\nclass Pill {}\n\n// More on how to set up stories at: https://storybook.js.org/docs/writing-stories\nconst meta: Meta<Pill> = {\n  title: 'Example/Pill',\n  component: Pill,\n  render: (args: Pill) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n};\n\nexport default meta;\ntype Story = StoryObj<Pill>;\n\nexport const Default: Story = {\n  args: {}\n};\n",
+      "sourceCode": "import type { Meta, StoryObj } from '@storybook/angular';\nimport { Component } from '@angular/core';\nimport { PillComponent } from '@ngx-ks/pill';\n\n@Component({\n  standalone: true,\n  imports: [PillComponent],\n  template: ` <ks-pill>Pill</ks-pill>`\n})\nclass Pill {}\n\n// More on how to set up stories at: https://storybook.js.org/docs/writing-stories\nconst meta: Meta<Pill> = {\n  title: 'Example/Pill',\n  component: Pill,\n  render: (args: Pill) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n};\n\nexport default meta;\ntype Story = StoryObj<Pill>;\n\nexport const Default: Story = {\n  args: {}\n};\n",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "",
@@ -6130,8 +6137,8 @@
     },
     {
       "name": "StatusIndicator",
-      "id": "component-StatusIndicator-dd9d0d80d663c5193388614b8bdb8c669d7ccc22ff5c3370761c1bf0bcd6d1e5c79602991c5071157c009ad3957b3507b61928744d95c46f99e3fc22a568cb78",
-      "file": "src/stories/status-indicator/Pill.stories.ts",
+      "id": "component-StatusIndicator-ceae6c2ee959985cc37cc1bff4503a44678dfa723d108265746c4a0265dbeb21dbaab65e94f1fefb46c6b347234ccef386900d5e525d5e48488d1605af1a8cf5",
+      "file": "src/stories/status-indicator/StatusIndicator.stories.ts",
       "encapsulation": [],
       "entryComponents": [],
       "inputs": [],
@@ -6161,7 +6168,7 @@
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import type { Meta, StoryObj } from '@storybook/angular';\nimport { Component } from '@angular/core';\nimport { StatusIndicatorComponent } from '@ngx-ks/status-indicator';\n\n@Component({\n  standalone: true,\n  imports: [StatusIndicatorComponent],\n  template: ` <ks-status-indicator\n    status=\"success\"\n  ></ks-status-indicator>`\n})\nclass StatusIndicator {}\n\n// More on how to set up stories at: https://storybook.js.org/docs/writing-stories\nconst meta: Meta<StatusIndicator> = {\n  title: 'Example/StatusIndicator',\n  component: StatusIndicator,\n  render: (args: StatusIndicator) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n};\n\nexport default meta;\ntype Story = StoryObj<StatusIndicator>;\n\nexport const Default: Story = {\n  args: {}\n};\n",
+      "sourceCode": "import type { Meta, StoryObj } from '@storybook/angular';\nimport { Component } from '@angular/core';\nimport { StatusIndicatorComponent } from '@ngx-ks/status-indicator';\n\n@Component({\n  standalone: true,\n  imports: [StatusIndicatorComponent],\n  template: ` <ks-status-indicator\n    status=\"success\"\n  ></ks-status-indicator>`\n})\nclass StatusIndicator {}\n\n// More on how to set up stories at: https://storybook.js.org/docs/writing-stories\nconst meta: Meta<StatusIndicator> = {\n  title: 'Example/StatusIndicator',\n  component: StatusIndicator,\n  render: (args: StatusIndicator) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n};\n\nexport default meta;\ntype Story = StoryObj<StatusIndicator>;\n\nexport const Default: Story = {\n  args: {}\n};\n",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "",
@@ -6406,7 +6413,7 @@
     },
     {
       "name": "Tabs",
-      "id": "component-Tabs-dd66d6e852cdd1a7103c7fb40a72e10664920962396f93040ea406cacec15b0023c1493c5415a9ab0dc3a9a6baaa090d925a7911a7ba121ae831cea17dbbf030",
+      "id": "component-Tabs-89a4b55151416af49808f86400d247565d02766ab671b0d8bb4362204528f798d70b020b98e9773a47586e10921c979ecf4607f48fc40d069cd6fc628ad096ff",
       "file": "src/stories/tabs/Tabs.stories.ts",
       "encapsulation": [],
       "entryComponents": [],
@@ -6441,7 +6448,7 @@
       "description": "",
       "rawdescription": "\n",
       "type": "component",
-      "sourceCode": "import type { Meta, StoryObj } from '@storybook/angular';\nimport { Component } from '@angular/core';\nimport { TabComponent, TabsComponent } from '@ngx-ks/tabs';\n\n@Component({\n  standalone: true,\n  imports: [TabComponent, TabsComponent],\n  template: ` <ks-tabs>\n    <ks-tab title=\"Tab 1\">\n      <!-- Tab 1 content goes here -->\n      <p>Content of Tab 1</p>\n    </ks-tab>\n    <ks-tab title=\"Tab 2\">\n      <!-- Tab 2 content goes here -->\n      <p>Content of Tab 2</p>\n    </ks-tab>\n  </ks-tabs>`\n})\nclass Tabs {}\n\n// More on how to set up stories at: https://storybook.js.org/docs/writing-stories\nconst meta: Meta<Tabs> = {\n  title: 'Example/Tabs',\n  component: Tabs,\n  render: (args: Tabs) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n};\n\nexport default meta;\ntype Story = StoryObj<Tabs>;\n\nexport const Default: Story = {\n  args: {}\n};\n",
+      "sourceCode": "import type { Meta, StoryObj } from '@storybook/angular';\nimport { Component } from '@angular/core';\nimport { TabComponent, TabsComponent } from '@ngx-ks/tabs';\n\n@Component({\n  standalone: true,\n  imports: [TabComponent, TabsComponent],\n  template: ` <ks-tabs>\n    <ks-tab title=\"Tab 1\">\n      <!-- Tab 1 content goes here -->\n      <p>Content of Tab 1</p>\n    </ks-tab>\n    <ks-tab title=\"Tab 2\">\n      <!-- Tab 2 content goes here -->\n      <p>Content of Tab 2</p>\n    </ks-tab>\n  </ks-tabs>`\n})\nclass Tabs {}\n\n// More on how to set up stories at: https://storybook.js.org/docs/writing-stories\nconst meta: Meta<Tabs> = {\n  title: 'Example/Tabs',\n  component: Tabs,\n  render: (args: Tabs) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n};\n\nexport default meta;\ntype Story = StoryObj<Tabs>;\n\nexport const Default: Story = {\n  args: {}\n};\n",
       "assetsDirs": [],
       "styleUrlsData": "",
       "stylesData": "",
@@ -6636,6 +6643,140 @@
       "styleUrlsData": "",
       "stylesData": "",
       "extends": []
+    },
+    {
+      "name": "Tooltip",
+      "id": "component-Tooltip-7b3c6d93c1f3d4bb6cd982bc593ea78332c0c8acbbf824df864b700ad0b0c1a4e340365eaa559426dbfce7b2e2b928613e587f05632e13c277cf695a1ae6126a",
+      "file": "src/stories/tooltip/Tooltip.stories.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "styleUrls": [],
+      "styles": [],
+      "template": "<ks-tooltip message=\"This is a tooltip!\">   <button ks-button>Hover me</button>\n </ks-tooltip>",
+      "templateUrl": [],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "TooltipComponent",
+          "type": "component"
+        },
+        {
+          "name": "KsButton"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import type { Meta, StoryObj } from '@storybook/angular';\nimport { Component } from '@angular/core';\nimport { TooltipComponent } from '@ngx-ks/tooltip';\nimport { KsButton } from '@ngx-ks/button';\n\n@Component({\n  standalone: true,\n  imports: [TooltipComponent, KsButton],\n  template: ` <ks-tooltip message=\"This is a tooltip!\">\n    <button ks-button>Hover me</button>\n  </ks-tooltip>`\n})\nclass Tooltip {}\n\n// More on how to set up stories at: https://storybook.js.org/docs/writing-stories\nconst meta: Meta<Tooltip> = {\n  title: 'Example/Tooltip',\n  component: Tooltip,\n  render: (args: Tooltip) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n};\n\nexport default meta;\ntype Story = StoryObj<Tooltip>;\n\nexport const Default: Story = {\n  args: {}\n};\n",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "extends": []
+    },
+    {
+      "name": "TooltipComponent",
+      "id": "component-TooltipComponent-9ef719a23e1570cf8c0ce5c3ebc00ba9c490b34b49a51e90c955b800e8b5d49370af76c6bf09ca73b8ebb0e9c11993dce9fa9b320401908410afecfff58dd3e9",
+      "file": "src/components/tooltip/tooltip.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "ks-tooltip",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": [
+        "./tooltip.component.html"
+      ],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [
+        {
+          "name": "message",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 12,
+          "type": "string",
+          "decorators": []
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "showTooltip",
+          "defaultValue": "false",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "boolean",
+          "optional": false,
+          "description": "",
+          "line": 13
+        }
+      ],
+      "methodsClass": [
+        {
+          "name": "toggleTooltip",
+          "args": [
+            {
+              "name": "show",
+              "type": "boolean",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 15,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "show",
+              "type": "boolean",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": true,
+      "imports": [
+        {
+          "name": "NgIf"
+        }
+      ],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, Input } from '@angular/core';\nimport { NgIf } from '@angular/common';\n\n@Component({\n  selector: 'ks-tooltip',\n  standalone: true,\n  imports: [NgIf],\n  templateUrl: './tooltip.component.html',\n  styleUrl: './tooltip.component.scss'\n})\nexport class TooltipComponent {\n  @Input() message: string = '';\n  showTooltip: boolean = false;\n\n  toggleTooltip(show: boolean): void {\n    this.showTooltip = show;\n  }\n}\n",
+      "styleUrl": "./tooltip.component.scss",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "extends": [],
+      "templateData": "<div (mouseenter)=\"toggleTooltip(true)\" (mouseleave)=\"toggleTooltip(false)\" class=\"tooltip-container\">\n  <ng-content></ng-content>\n  <div *ngIf=\"showTooltip\" class=\"tooltip\">{{ message }}</div>\n</div>\n"
     },
     {
       "name": "UnitInputComponent",
@@ -6947,7 +7088,7 @@
         "name": "Default",
         "ctype": "miscellaneous",
         "subtype": "variable",
-        "file": "src/stories/status-indicator/Pill.stories.ts",
+        "file": "src/stories/status-indicator/StatusIndicator.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Story",
@@ -6978,6 +7119,16 @@
         "ctype": "miscellaneous",
         "subtype": "variable",
         "file": "src/stories/textarea/Textarea.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Story",
+        "defaultValue": "{\n  args: {}\n}"
+      },
+      {
+        "name": "Default",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/stories/tooltip/Tooltip.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Story",
@@ -7091,7 +7242,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<AvatarStoryComponent>",
-        "defaultValue": "{\n  title: 'Example/Avatar',\n  component: AvatarStoryComponent,\n  render: (args: AvatarStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Avatar',\n  component: AvatarStoryComponent,\n  render: (args: AvatarStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7101,7 +7252,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<Button>",
-        "defaultValue": "{\n  title: 'Example/Button',\n  component: Button,\n  render: (args: Button) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Button',\n  component: Button,\n  render: (args: Button) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7111,7 +7262,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<CardComponent>",
-        "defaultValue": "{\n  title: 'Example/Card',\n  component: CardComponent,\n  render: (args: CardComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Card',\n  component: CardComponent,\n  render: (args: CardComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7121,7 +7272,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<CheckboxStoryBookComponent>",
-        "defaultValue": "{\n  title: 'Example/Checkbox',\n  component: CheckboxStoryBookComponent,\n  render: (args: CheckboxStoryBookComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Checkbox',\n  component: CheckboxStoryBookComponent,\n  render: (args: CheckboxStoryBookComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7131,7 +7282,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<DateRangePickerStoryComponent>",
-        "defaultValue": "{\n  title: 'Example/DateRangePicker',\n  component: DateRangePickerStoryComponent,\n  render: (args: DateRangePickerStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/DateRangePicker',\n  component: DateRangePickerStoryComponent,\n  render: (args: DateRangePickerStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7141,7 +7292,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<Divider>",
-        "defaultValue": "{\n  title: 'Example/Divider',\n  component: Divider,\n  render: (args: Divider) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Divider',\n  component: Divider,\n  render: (args: Divider) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7151,7 +7302,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<Dropdown>",
-        "defaultValue": "{\n  title: 'Example/Dropdown',\n  component: Dropdown,\n  render: (args: Dropdown) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Dropdown',\n  component: Dropdown,\n  render: (args: Dropdown) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7161,7 +7312,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<Button>",
-        "defaultValue": "{\n  title: 'Example/Icon Button',\n  component: Button,\n  render: (args: Button) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Icon Button',\n  component: Button,\n  render: (args: Button) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7171,7 +7322,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<Input>",
-        "defaultValue": "{\n  title: 'Example/Input',\n  component: Input,\n  render: (args: Input) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Input',\n  component: Input,\n  render: (args: Input) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7181,7 +7332,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<Pill>",
-        "defaultValue": "{\n  title: 'Example/Pill',\n  component: Pill,\n  render: (args: Pill) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Pill',\n  component: Pill,\n  render: (args: Pill) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7191,7 +7342,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<ProgressBar>",
-        "defaultValue": "{\n  title: 'Example/ProgressBar',\n  component: ProgressBar,\n  render: (args: ProgressBar) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/ProgressBar',\n  component: ProgressBar,\n  render: (args: ProgressBar) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7201,7 +7352,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<RadioButtonComponent>",
-        "defaultValue": "{\n  title: 'Example/RadioButton',\n  component: RadioButtonComponent,\n  render: (args: RadioButtonComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/RadioButton',\n  component: RadioButtonComponent,\n  render: (args: RadioButtonComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7211,7 +7362,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<SelectorComponent>",
-        "defaultValue": "{\n  title: 'Example/Selector',\n  component: SelectorComponent,\n  render: (args: SelectorComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Selector',\n  component: SelectorComponent,\n  render: (args: SelectorComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7221,17 +7372,17 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<SlideToggleComponent>",
-        "defaultValue": "{\n  title: 'Example/SlideToggle',\n  component: SlideToggleComponent,\n  render: (args: SlideToggleComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/SlideToggle',\n  component: SlideToggleComponent,\n  render: (args: SlideToggleComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
         "ctype": "miscellaneous",
         "subtype": "variable",
-        "file": "src/stories/status-indicator/Pill.stories.ts",
+        "file": "src/stories/status-indicator/StatusIndicator.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<StatusIndicator>",
-        "defaultValue": "{\n  title: 'Example/StatusIndicator',\n  component: StatusIndicator,\n  render: (args: StatusIndicator) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/StatusIndicator',\n  component: StatusIndicator,\n  render: (args: StatusIndicator) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7241,7 +7392,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<TableStoryComponent>",
-        "defaultValue": "{\n  title: 'Example/Table',\n  component: TableStoryComponent,\n  render: (args: TableStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Table',\n  component: TableStoryComponent,\n  render: (args: TableStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7251,7 +7402,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<Tabs>",
-        "defaultValue": "{\n  title: 'Example/Tabs',\n  component: Tabs,\n  render: (args: Tabs) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Tabs',\n  component: Tabs,\n  render: (args: Tabs) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7261,7 +7412,17 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<TextareaComponent>",
-        "defaultValue": "{\n  title: 'Example/Textarea',\n  component: TextareaComponent,\n  render: (args: TextareaComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Textarea',\n  component: TextareaComponent,\n  render: (args: TextareaComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
+      },
+      {
+        "name": "meta",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "src/stories/tooltip/Tooltip.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Meta<Tooltip>",
+        "defaultValue": "{\n  title: 'Example/Tooltip',\n  component: Tooltip,\n  render: (args: Tooltip) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "meta",
@@ -7271,7 +7432,7 @@
         "deprecated": false,
         "deprecationMessage": "",
         "type": "Meta<Input>",
-        "defaultValue": "{\n  title: 'Example/Unit Input',\n  component: Input,\n  render: (args: Input) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+        "defaultValue": "{\n  title: 'Example/Unit Input',\n  component: Input,\n  render: (args: Input) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
       },
       {
         "name": "preview",
@@ -7636,7 +7797,7 @@
         "ctype": "miscellaneous",
         "subtype": "typealias",
         "rawtype": "StoryObj<StatusIndicator>",
-        "file": "src/stories/status-indicator/Pill.stories.ts",
+        "file": "src/stories/status-indicator/StatusIndicator.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
         "description": "",
@@ -7670,6 +7831,17 @@
         "subtype": "typealias",
         "rawtype": "StoryObj<TextareaComponent>",
         "file": "src/stories/textarea/Textarea.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "description": "",
+        "kind": 183
+      },
+      {
+        "name": "Story",
+        "ctype": "miscellaneous",
+        "subtype": "typealias",
+        "rawtype": "StoryObj<Tooltip>",
+        "file": "src/stories/tooltip/Tooltip.stories.ts",
         "deprecated": false,
         "deprecationMessage": "",
         "description": "",
@@ -7753,7 +7925,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<AvatarStoryComponent>",
-          "defaultValue": "{\n  title: 'Example/Avatar',\n  component: AvatarStoryComponent,\n  render: (args: AvatarStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Avatar',\n  component: AvatarStoryComponent,\n  render: (args: AvatarStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/button/Button.stories.ts": [
@@ -7785,7 +7957,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<Button>",
-          "defaultValue": "{\n  title: 'Example/Button',\n  component: Button,\n  render: (args: Button) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Button',\n  component: Button,\n  render: (args: Button) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/card/Card.stories.ts": [
@@ -7807,7 +7979,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<CardComponent>",
-          "defaultValue": "{\n  title: 'Example/Card',\n  component: CardComponent,\n  render: (args: CardComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Card',\n  component: CardComponent,\n  render: (args: CardComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         },
         {
           "name": "WithoutFooter",
@@ -7859,7 +8031,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<CheckboxStoryBookComponent>",
-          "defaultValue": "{\n  title: 'Example/Checkbox',\n  component: CheckboxStoryBookComponent,\n  render: (args: CheckboxStoryBookComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Checkbox',\n  component: CheckboxStoryBookComponent,\n  render: (args: CheckboxStoryBookComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/date-range-picker/DateRangePicker.stories.ts": [
@@ -7881,7 +8053,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<DateRangePickerStoryComponent>",
-          "defaultValue": "{\n  title: 'Example/DateRangePicker',\n  component: DateRangePickerStoryComponent,\n  render: (args: DateRangePickerStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/DateRangePicker',\n  component: DateRangePickerStoryComponent,\n  render: (args: DateRangePickerStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/divider/Divider.stories.ts": [
@@ -7903,7 +8075,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<Divider>",
-          "defaultValue": "{\n  title: 'Example/Divider',\n  component: Divider,\n  render: (args: Divider) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Divider',\n  component: Divider,\n  render: (args: Divider) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/dropdown/Dropdown.stories.ts": [
@@ -7925,7 +8097,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<Dropdown>",
-          "defaultValue": "{\n  title: 'Example/Dropdown',\n  component: Dropdown,\n  render: (args: Dropdown) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Dropdown',\n  component: Dropdown,\n  render: (args: Dropdown) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/icon-button/IconButton.stories.ts": [
@@ -7957,7 +8129,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<Button>",
-          "defaultValue": "{\n  title: 'Example/Icon Button',\n  component: Button,\n  render: (args: Button) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Icon Button',\n  component: Button,\n  render: (args: Button) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/input/Input.stories.ts": [
@@ -7989,7 +8161,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<Input>",
-          "defaultValue": "{\n  title: 'Example/Input',\n  component: Input,\n  render: (args: Input) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Input',\n  component: Input,\n  render: (args: Input) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/pill/Pill.stories.ts": [
@@ -8011,7 +8183,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<Pill>",
-          "defaultValue": "{\n  title: 'Example/Pill',\n  component: Pill,\n  render: (args: Pill) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Pill',\n  component: Pill,\n  render: (args: Pill) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/progress-bar/ProgressBar.stories.ts": [
@@ -8033,7 +8205,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<ProgressBar>",
-          "defaultValue": "{\n  title: 'Example/ProgressBar',\n  component: ProgressBar,\n  render: (args: ProgressBar) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/ProgressBar',\n  component: ProgressBar,\n  render: (args: ProgressBar) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/radio-button/RadioButton.stories.ts": [
@@ -8055,7 +8227,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<RadioButtonComponent>",
-          "defaultValue": "{\n  title: 'Example/RadioButton',\n  component: RadioButtonComponent,\n  render: (args: RadioButtonComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/RadioButton',\n  component: RadioButtonComponent,\n  render: (args: RadioButtonComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/selector/Selector.stories.ts": [
@@ -8087,7 +8259,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<SelectorComponent>",
-          "defaultValue": "{\n  title: 'Example/Selector',\n  component: SelectorComponent,\n  render: (args: SelectorComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Selector',\n  component: SelectorComponent,\n  render: (args: SelectorComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/slide-toggle/SlideToggle.stories.ts": [
@@ -8109,15 +8281,15 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<SlideToggleComponent>",
-          "defaultValue": "{\n  title: 'Example/SlideToggle',\n  component: SlideToggleComponent,\n  render: (args: SlideToggleComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/SlideToggle',\n  component: SlideToggleComponent,\n  render: (args: SlideToggleComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
-      "src/stories/status-indicator/Pill.stories.ts": [
+      "src/stories/status-indicator/StatusIndicator.stories.ts": [
         {
           "name": "Default",
           "ctype": "miscellaneous",
           "subtype": "variable",
-          "file": "src/stories/status-indicator/Pill.stories.ts",
+          "file": "src/stories/status-indicator/StatusIndicator.stories.ts",
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Story",
@@ -8127,11 +8299,11 @@
           "name": "meta",
           "ctype": "miscellaneous",
           "subtype": "variable",
-          "file": "src/stories/status-indicator/Pill.stories.ts",
+          "file": "src/stories/status-indicator/StatusIndicator.stories.ts",
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<StatusIndicator>",
-          "defaultValue": "{\n  title: 'Example/StatusIndicator',\n  component: StatusIndicator,\n  render: (args: StatusIndicator) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/StatusIndicator',\n  component: StatusIndicator,\n  render: (args: StatusIndicator) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/table/Table.stories.ts": [
@@ -8153,7 +8325,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<TableStoryComponent>",
-          "defaultValue": "{\n  title: 'Example/Table',\n  component: TableStoryComponent,\n  render: (args: TableStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Table',\n  component: TableStoryComponent,\n  render: (args: TableStoryComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/tabs/Tabs.stories.ts": [
@@ -8175,7 +8347,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<Tabs>",
-          "defaultValue": "{\n  title: 'Example/Tabs',\n  component: Tabs,\n  render: (args: Tabs) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Tabs',\n  component: Tabs,\n  render: (args: Tabs) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/textarea/Textarea.stories.ts": [
@@ -8207,7 +8379,29 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<TextareaComponent>",
-          "defaultValue": "{\n  title: 'Example/Textarea',\n  component: TextareaComponent,\n  render: (args: TextareaComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Textarea',\n  component: TextareaComponent,\n  render: (args: TextareaComponent) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
+        }
+      ],
+      "src/stories/tooltip/Tooltip.stories.ts": [
+        {
+          "name": "Default",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/tooltip/Tooltip.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Story",
+          "defaultValue": "{\n  args: {}\n}"
+        },
+        {
+          "name": "meta",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "src/stories/tooltip/Tooltip.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Meta<Tooltip>",
+          "defaultValue": "{\n  title: 'Example/Tooltip',\n  component: Tooltip,\n  render: (args: Tooltip) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/stories/unit-input/UnitInput.stories.ts": [
@@ -8229,7 +8423,7 @@
           "deprecated": false,
           "deprecationMessage": "",
           "type": "Meta<Input>",
-          "defaultValue": "{\n  title: 'Example/Unit Input',\n  component: Input,\n  render: (args: Input) => ({\n    props: {\n      ...args\n    }\n  }),\n  argTypes: {}\n}"
+          "defaultValue": "{\n  title: 'Example/Unit Input',\n  component: Input,\n  render: (args: Input) => ({\n    props: {\n      ...args\n    }\n  }),\n  parameters: {\n    layout: 'centered'\n  },\n  argTypes: {}\n}"
         }
       ],
       "src/components/alert/utils.ts": [
@@ -8635,13 +8829,13 @@
           "kind": 183
         }
       ],
-      "src/stories/status-indicator/Pill.stories.ts": [
+      "src/stories/status-indicator/StatusIndicator.stories.ts": [
         {
           "name": "Story",
           "ctype": "miscellaneous",
           "subtype": "typealias",
           "rawtype": "StoryObj<StatusIndicator>",
-          "file": "src/stories/status-indicator/Pill.stories.ts",
+          "file": "src/stories/status-indicator/StatusIndicator.stories.ts",
           "deprecated": false,
           "deprecationMessage": "",
           "description": "",
@@ -8681,6 +8875,19 @@
           "subtype": "typealias",
           "rawtype": "StoryObj<TextareaComponent>",
           "file": "src/stories/textarea/Textarea.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "description": "",
+          "kind": 183
+        }
+      ],
+      "src/stories/tooltip/Tooltip.stories.ts": [
+        {
+          "name": "Story",
+          "ctype": "miscellaneous",
+          "subtype": "typealias",
+          "rawtype": "StoryObj<Tooltip>",
+          "file": "src/stories/tooltip/Tooltip.stories.ts",
           "deprecated": false,
           "deprecationMessage": "",
           "description": "",
@@ -9101,6 +9308,15 @@
         "name": "KsTextArea",
         "coveragePercent": 0,
         "coverageCount": "0/7",
+        "status": "low"
+      },
+      {
+        "filePath": "src/components/tooltip/tooltip.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "TooltipComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/4",
         "status": "low"
       },
       {
@@ -9790,7 +10006,7 @@
         "status": "low"
       },
       {
-        "filePath": "src/stories/status-indicator/Pill.stories.ts",
+        "filePath": "src/stories/status-indicator/StatusIndicator.stories.ts",
         "type": "component",
         "linktype": "component",
         "name": "StatusIndicator",
@@ -9799,7 +10015,7 @@
         "status": "low"
       },
       {
-        "filePath": "src/stories/status-indicator/Pill.stories.ts",
+        "filePath": "src/stories/status-indicator/StatusIndicator.stories.ts",
         "type": "variable",
         "linktype": "miscellaneous",
         "linksubtype": "variable",
@@ -9809,7 +10025,7 @@
         "status": "low"
       },
       {
-        "filePath": "src/stories/status-indicator/Pill.stories.ts",
+        "filePath": "src/stories/status-indicator/StatusIndicator.stories.ts",
         "type": "variable",
         "linktype": "miscellaneous",
         "linksubtype": "variable",
@@ -9913,6 +10129,35 @@
         "name": "TextareaComponent",
         "coveragePercent": 0,
         "coverageCount": "0/2",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/tooltip/Tooltip.stories.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "Tooltip",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/tooltip/Tooltip.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "Default",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "src/stories/tooltip/Tooltip.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "meta",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
         "status": "low"
       },
       {

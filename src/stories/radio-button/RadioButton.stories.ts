@@ -10,6 +10,9 @@ const meta: Meta<RadioButtonComponent> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

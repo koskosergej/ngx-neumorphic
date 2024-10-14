@@ -96,6 +96,9 @@
       "@ngx-ks/status-indicator": [
         "./src/components/status-indicator/status-indicator.component"
       ],
+      "@ngx-ks/tooltip": [
+        "./src/components/tooltip/tooltip.component"
+      ],
       "@ngx-ks/label": [
         "./src/directives/label"
       ],

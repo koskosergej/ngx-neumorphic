@@ -10,6 +10,9 @@ const meta: Meta<CardComponent> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

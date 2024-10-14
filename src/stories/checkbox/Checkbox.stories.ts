@@ -10,6 +10,9 @@ const meta: Meta<CheckboxStoryBookComponent> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

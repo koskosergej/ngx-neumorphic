@@ -10,6 +10,9 @@ const meta: Meta<Divider> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 

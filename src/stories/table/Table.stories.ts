@@ -10,6 +10,9 @@ const meta: Meta<TableStoryComponent> = {
       ...args
     }
   }),
+  parameters: {
+    layout: 'centered'
+  },
   argTypes: {}
 };
 
